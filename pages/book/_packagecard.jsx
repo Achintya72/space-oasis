@@ -17,7 +17,13 @@ export default function PackageCard({ img, title, description, price, location, 
 
     return (
         <div className={styles.card}>
-            <Image className={styles.cardImg} src={img} width={500} height={500} alt={description} />
+            <div className={styles.cardImg}>
+                <Image
+                    src={img}
+                    fill
+                    alt={description}
+                />
+            </div>
             <div style={{ display: "flex" }}>
                 <div>
                     <strong>{title}</strong> <br />

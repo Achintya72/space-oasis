@@ -16,6 +16,9 @@ export default function Home() {
       <Wrapper>
         <Navbar />
         <section id="hero" className={styles.hero}>
+          <div className={styles.waterMark}>
+            <p >Explore</p>
+          </div>
           <div className={styles.heroText}>
             <h5>Explore Beyond the Confines of Your Existence</h5>
             <Button size="regular">Hello</Button>
@@ -28,7 +31,8 @@ export default function Home() {
             />
           </div>
         </section>
-        <section>
+        <section className={styles.promotion}>
+          <h1>Find a Venture</h1>
           <div className={styles.cardGrid}>
             <PackageCard
               title="Lunar Exploration"
