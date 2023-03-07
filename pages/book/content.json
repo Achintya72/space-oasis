@@ -1,0 +1,52 @@
+{
+    "packages": [
+        {
+            "title": "Lunar Exploration",
+            "location": "The Moon",
+            "description": "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
+            "price": "450",
+            "stars": 4,
+            "img": "/static/HeroImg.jpg"
+        },
+        {
+            "title": "Lunar Exploration",
+            "location": "The Moon",
+            "description": "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
+            "price": "450",
+            "stars": 4,
+            "img": "/static/HeroImg.jpg"
+        },
+        {
+            "title": "Lunar Exploration",
+            "location": "The Moon",
+            "description": "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
+            "price": "450",
+            "stars": 4,
+            "img": "/static/HeroImg.jpg"
+        },
+        {
+            "title": "Lunar Exploration",
+            "location": "The Moon",
+            "description": "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
+            "price": "450",
+            "stars": 4,
+            "img": "/static/HeroImg.jpg"
+        },
+        {
+            "title": "Lunar Exploration",
+            "location": "The Moon",
+            "description": "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
+            "price": "450",
+            "stars": 4,
+            "img": "/static/HeroImg.jpg"
+        },
+        {
+            "title": "Custom",
+            "location": "",
+            "description": "Create your own custom trip designed for you by you.",
+            "price": "4000 - 5000",
+            "stars": 5,
+            "img": "/static/HeroImg.jpg"
+        }
+    ]
+}

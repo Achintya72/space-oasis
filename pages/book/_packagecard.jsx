@@ -21,7 +21,7 @@ export default function PackageCard({ img, title, description, price, location, 
             <div style={{ display: "flex" }}>
                 <div>
                     <strong>{title}</strong> <br />
-                    {location}
+                    <div style={{color: "#717171"}}>{location}</div>
                 </div>
                 <h3 className={styles.price}>
                     ${price}
