@@ -1,0 +1,21 @@
+.hero {
+  display: flex;
+  color: #fff;
+  padding: 1rem 0rem;
+  align-items: center;
+  gap: 10%;
+}
+.heroText {
+  flex: 2;
+}
+.img {
+  flex: 1;
+  aspect-ratio: 3 / 4;
+  position: relative;
+  border-radius: var(--font-size-p);
+  overflow: hidden;
+}
+
+.img img {
+  object-fit: cover;
+}

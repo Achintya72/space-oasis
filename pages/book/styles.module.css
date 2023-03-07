@@ -1,0 +1,24 @@
+.card {
+  background: none;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+  min-width: 315px;
+  max-width: 33%;
+}
+
+.cardImg {
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: var(--font-size-p);
+  overflow: hidden;
+}
+
+.price {
+  text-align: right;
+  flex: 1;
+}
