@@ -6,7 +6,9 @@
   gap: 10px;
   color: #fff;
   min-width: 315px;
-  max-width: 33%;
+  max-width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .cardImg {
@@ -14,6 +16,13 @@
   position: relative;
   border-radius: var(--font-size-p);
   overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.cardImg img {
+  object-fit: cover;
+  object-position: center;
 }
 
 .cardImg img {
@@ -23,4 +32,11 @@
 .price {
   text-align: right;
   flex: 1;
+}
+
+.cardGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 }
