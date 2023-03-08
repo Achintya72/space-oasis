@@ -25,6 +25,10 @@
   object-position: center;
 }
 
+.cardImg img {
+  object-fit: cover;
+  object-position: center;
+}
 .price {
   text-align: right;
   flex: 1;
