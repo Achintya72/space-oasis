@@ -12,12 +12,17 @@
 }
 
 .cardImg {
-  background-size: cover;
+  aspect-ratio: 16 / 9;
   position: relative;
-  width: 100%;
-  height: auto;
   border-radius: var(--font-size-p);
   overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.cardImg img {
+  object-fit: cover;
+  object-position: center;
 }
 
 .price {
