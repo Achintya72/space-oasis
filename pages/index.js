@@ -3,9 +3,64 @@ import Image from 'next/image'
 import styles from './home.module.css';
 import { Navbar, Button } from "../components";
 import Wrapper from "../components/Wrapper/index";
-import PackageCard from "./book/_packagecard"
+import PackageCard from "./book/_packagecard";
 
+const promotions = [
+  {
+    title: "Lunar Exploration",
+    img: "/static/HeroImg.jpg",
+    description: "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
+    price: 450,
+    location: "The moon",
+    stars: 4
+  },
+  {
+    title: "Lunar Exploration",
+    img: "/static/HeroImg.jpg",
+    description: "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
+    price: 450,
+    location: "The moon",
+    stars: 4
+  }, {
+    title: "Lunar Exploration",
+    img: "/static/HeroImg.jpg",
+    description: "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
+    price: 450,
+    location: "The moon",
+    stars: 4
+  },
+];
+
+const gallery = [
+  {
+    src: "/static/Gallery/1.jpg",
+    alt: "An astronaut in mars"
+  },
+  {
+    src: "/static/Gallery/2.jpg",
+    alt: "An astronaut in mars"
+  }, {
+    src: "/static/Gallery/3.jpg",
+    alt: "An astronaut in mars"
+  }, {
+    src: "/static/Gallery/4.jpg",
+    alt: "An astronaut in mars"
+  }
+]
 export default function Home() {
+
+  const renderPromo = promotions.map((promotion, i) => (
+    <PackageCard
+      {...promotion}
+      key={i}
+    />
+  ))
+
+  const renderGallery = gallery.map((img, i) => (
+    <div key={"Gallery" + i} className={styles.galleryImg} >
+      <img {...img} key={"Gallery" + i} style={{ width: "100%", height: "auto" }} />
+    </div >
+  ))
   return (
     <>
       <Head>
@@ -16,6 +71,9 @@ export default function Home() {
       <Wrapper>
         <Navbar />
         <section id="hero" className={styles.hero}>
+          {/* <div className={styles.waterMark}>
+            <p >Explore</p>
+          </div> */}
           <div className={styles.heroText}>
             <h5>Explore Beyond the Confines of Your Existence</h5>
             <Button size="regular">Hello</Button>
@@ -28,15 +86,21 @@ export default function Home() {
             />
           </div>
         </section>
-        <section>
+        <section className={styles.promotion}>
+          <div className={styles.promoBacking} />
+          <h1>Find a Venture</h1>
+          <div className={styles.promoHeader}>
+            <h2>Top Picks</h2>
+            <p>See All</p>
+          </div>
           <div className={styles.cardGrid}>
-            <PackageCard
-              title="Lunar Exploration"
-              img="/static/HeroImg.jpg"
-              description="Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo."
-              price={450}
-              location="The moon"
-              stars={4} />
+            {renderPromo}
+          </div>
+        </section>
+        <section className={styles.gallery}>
+          <h1>Gallery</h1>
+          <div className={styles.galleryGrid}>
+            {renderGallery}
           </div>
         </section>
       </Wrapper>

@@ -4,9 +4,16 @@
   padding: 1rem 0rem;
   align-items: center;
   gap: 10%;
+  overflow: hidden;
+  height: max(90vh, 600px);
 }
 .heroText {
   flex: 2;
+}
+
+.heroText,
+.img {
+  z-index: 2;
 }
 .img {
   flex: 1;
@@ -15,7 +22,79 @@
   border-radius: var(--font-size-p);
   overflow: hidden;
 }
+/* .waterMark {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  color: #fff;
+  opacity: 0.05;
+  z-index: 0;
+  left: 0;
+  top: 600px;
+  user-select: none;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+
+.waterMark p {
+  font-size: max(400px, 27vw);
+  font-weight: 900;
+} */
 
 .img img {
   object-fit: cover;
+}
+.promotion {
+  color: white;
+  height: min(100vh, 1024px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.promotion h1 {
+  margin-top: 1rem;
+}
+.promoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5vh;
+}
+.cardGrid {
+  display: flex;
+  gap: 15px;
+  margin-top: 0.5rem;
+  justify-self: center;
+}
+.promoBacking {
+  background-color: #d9d9d9;
+  opacity: 19%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  transform: translateY(-30vh);
+}
+
+.gallery {
+  color: #fff;
+}
+
+.galleryGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.galleryImg {
+  flex: 1;
+  border-radius: 15px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  min-width: 350px;
+  max-width: 33%;
 }

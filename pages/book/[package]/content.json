@@ -1,0 +1,44 @@
+{
+    "Lunar Exploration": {
+        "gallery": [
+            {
+                "src": "/static/Gallery/1.jpg",
+                "alt": "An astronaut in mars"
+            },
+            {
+                "src": "/static/Gallery/2.jpg",
+                "alt": "An astronaut in mars"
+            },
+            {
+                "src": "/static/Gallery/3.jpg",
+                "alt": "An astronaut in mars"
+            },
+            {
+                "src": "/static/Gallery/4.jpg",
+                "alt": "An astronaut in mars"
+            }
+        ],
+        "location": "The Moon",
+        "includes": [
+            "Round trip to the moon",
+            "Moon rock souvenir",
+            "ATV Ride",
+            "Star Gazing",
+            "Asteroid Watching"
+        ],
+        "costs": [
+            {
+                "name": "Flight Tickets",
+                "price": 100000
+            },
+            {
+                "name": "Flight Tickets",
+                "price": 100000
+            },
+            {
+                "name": "Flight Tickets",
+                "price": 100000
+            }
+        ]
+    }
+}
