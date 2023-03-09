@@ -28,3 +28,44 @@
   justify-content: center;
   border-radius: 5px;
 }
+
+.datePicker {
+  display: flex;
+  gap: 5px;
+}
+
+.datePicker select {
+  background-color: var(--clr-background-s1);
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  border-radius: 5px;
+}
+
+.datePicker select:after {
+  background-color: var(--clr-background-s1);
+  font-family: "Inter", sans-serif;
+}
+.allOptions {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-background-s1);
+  padding: 10px 20px; 
+  border-radius: 2rem;
+  transition: border 200ms ease-in;
+}
+.inactive {
+  border: 2px solid var(--clr-background-s1)
+}
+.active {
+  border: 2px solid var(--clr-primary);
+}

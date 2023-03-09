@@ -1,0 +1,65 @@
+.gallery {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.galleryGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.galleryImg {
+  flex: 1;
+  border-radius: 15px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  min-width: 350px;
+  max-width: 33%;
+  z-index: 5;
+}
+
+.packageBack {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 25vh;
+  background-color: #fff;
+  opacity: 17%;
+  z-index: 0;
+}
+
+.packageInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.qualInfo {
+  flex: 1;
+}
+
+.priceInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.location {
+  color: #959595;
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+}

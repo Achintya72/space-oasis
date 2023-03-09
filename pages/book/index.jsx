@@ -46,81 +46,37 @@ export default function Book() {
                     Select a Destination:
                 </h3>
                 <div className={styles.cardGrid}>
-                    <LocationCard
-                        img="/static/HeroImg.jpg"
-                        price="4000 - 5000"
-                        time="3 MONTHS"
-                        title="Orbit"
-                        description="Lorem ipsum doler"
-                        active={location == "Orbit"}
-                        onClick={() => updateLocation("Orbit")}
-                    />
-                    <LocationCard
-                        img="/static/HeroImg.jpg"
-                        price="4000 - 5000"
-                        time="3 MONTHS"
-                        title="Moon"
-                        description="Lorem ipsum doler"
-                        active={location == "Moon"}
-                        onClick={() => updateLocation("Moon")}
-                    />
-                    <LocationCard
-                        img="/static/HeroImg.jpg"
-                        price="4000 - 5000"
-                        time="3 MONTHS"
-                        title="Mars"
-                        description="Lorem ipsum doler"
-                        active={location == "Mars"}
-                        onClick={() => updateLocation("Mars")}
-                    />
+                    {data["locations"].map((value, index) => (
+                        <LocationCard
+                            key={`location-${index}`}
+                            title={value.title}
+                            description={value.description}
+                            img={value.img}
+                            price={value.price}
+                            time={value.time}
+                            active={location == value.title}
+                            onClick={() => updateLocation(value.title)}
+                            />
+                    ))}
                 </div>
                 <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
-                    Select a Activities:
+                    Select Your Activities:
                 </h3>
                 <div className={styles.cardGrid}>
-                    <ActivityCard
-                        title="ATV Ride"
-                        age="18+"
-                        description="Lorem Ipsum doler"
-                        img="/static/HeroImg.jpg"
-                        alt="rocket"
-                        cost={300}
-                        time="2 HOURS"
-                        active={activity == 0}
-                        onClick={() => changeActivity(0)}
-                    />
-                    <ActivityCard
-                        title="ATV Ride"
-                        age="18+"
-                        description="Lorem Ipsum doler"
-                        img="/static/HeroImg.jpg"
-                        alt="rocket"
-                        cost={300}
-                        time="2 HOURS"
-                        active={activity == 1}
-                        onClick={() => changeActivity(1)}
-                    />
-                    <ActivityCard
-                        title="ATV Ride"
-                        age="18+"
-                        description="Lorem Ipsum doler"
-                        img="/static/HeroImg.jpg"
-                        alt="rocket"
-                        cost={300}
-                        time="2 HOURS"
-                        active={activity == 2}
-                        onClick={() => changeActivity(2)}
-                    />
-                    <ActivityCard
-                        title="ATV Ride"
-                        age="18+"
-                        description="Lorem Ipsum doler"
-                        img="/static/HeroImg.jpg"
-                        alt="rocket"
-                        cost={300}
-                        active={activity == 3}
-                        onClick={() => changeActivity(3)}
-                    />
+                    {data["activities"][location].map((value, index) => (
+                        <ActivityCard
+                            key={`activity-${location}-${index}`}
+                            title={value.title}
+                            age={value.age}
+                            description={value.description}
+                            img={value.img}
+                            alt={value.alt}
+                            cost={value.cost}
+                            time={value.time}
+                            active={activity == index}
+                            onClick={() => changeActivity(index)}/>
+                    ))}
+                    {location == "" ? "Please select a location to select your activities" : ""}
                 </div>
                 <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
                     Get A Quote:

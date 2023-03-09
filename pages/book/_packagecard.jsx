@@ -1,7 +1,21 @@
 import styles from "./styles.module.css"
 import Image from "next/image";
+import {useRouter} from "next/router";
 
 export default function PackageCard({ img, title, description, price, location, stars }) {
+
+    let router = useRouter()
+
+    const redirect = () => {
+        if (title == "Custom") {
+            return;
+        }
+        if (!window.confirm("Are you sure you want to leave this page?")) {
+            return;
+        }
+        router.push(`/book/${title}`)
+    }
+
     const getStars = () => {
         var s = [];
         for (var i = 0; i < stars; i++) {
@@ -16,7 +30,7 @@ export default function PackageCard({ img, title, description, price, location, 
     const starsList = getStars();
 
     return (
-        <div className={styles.card}>
+        <div className={styles.card} onClick={redirect}>
             <div className={styles.cardImg}>
                 <Image
                     src={img}
@@ -27,7 +41,7 @@ export default function PackageCard({ img, title, description, price, location, 
             <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <div>
                     <strong>{title}</strong> <br />
-                    <div style={{ color: "#717171" }}>{location}</div>
+                    <div style={{ color: "#959595" }}>{location}</div>
                 </div>
                 <h3 className={styles.price}>
                     ${price}

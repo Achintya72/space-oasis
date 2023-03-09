@@ -48,5 +48,145 @@
             "stars": 5,
             "img": "/static/HeroImg.jpg"
         }
-    ]
+    ],
+    "locations": [
+        {
+            "img":"/static/HeroImg.jpg",
+            "price":"4000 - 5000",
+            "time":"3 MONTHS",
+            "title":"Orbit",
+            "description":"Lorem ipsum doler"
+        },
+        {
+            "img":"/static/HeroImg.jpg",
+            "price":"4000 - 5000",
+            "time":"3 MONTHS",
+            "title":"Moon",
+            "description":"Lorem ipsum doler"
+        },
+        {
+            "img":"/static/HeroImg.jpg",
+            "price":"4000 - 5000",
+            "time":"3 MONTHS",
+            "title":"Mars",
+            "description":"Lorem ipsum doler"
+        }
+    ],
+    "activities": {
+        "":[],
+        "Orbit": [
+            {
+                "title": "ATV Ride",
+                "age": "18+",
+                "description": "Lorem ipsum doler",
+                "img": "/static/HeroImg.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "ATV Ride",
+                "age": "18+",
+                "description": "Lorem ipsum doler",
+                "img": "/static/HeroImg.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "ATV Ride",
+                "age": "18+",
+                "description": "Lorem ipsum doler",
+                "img": "/static/HeroImg.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "ATV Ride",
+                "age": "18+",
+                "description": "Lorem ipsum doler",
+                "img": "/static/HeroImg.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            }
+        ],
+        "Moon": [
+            {
+                "title": "ATV Ride",
+                "age": "18+",
+                "description": "Lorem ipsum doler",
+                "img": "/static/HeroImg.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "ATV Ride",
+                "age": "18+",
+                "description": "Lorem ipsum doler",
+                "img": "/static/HeroImg.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "ATV Ride",
+                "age": "18+",
+                "description": "Lorem ipsum doler",
+                "img": "/static/HeroImg.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "ATV Ride",
+                "age": "18+",
+                "description": "Lorem ipsum doler",
+                "img": "/static/HeroImg.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            }
+        ],
+        "Mars": [
+            {
+                "title": "ATV Ride",
+                "age": "18+",
+                "description": "Lorem ipsum doler",
+                "img": "/static/HeroImg.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "ATV Ride",
+                "age": "18+",
+                "description": "Lorem ipsum doler",
+                "img": "/static/HeroImg.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "ATV Ride",
+                "age": "18+",
+                "description": "Lorem ipsum doler",
+                "img": "/static/HeroImg.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "ATV Ride",
+                "age": "18+",
+                "description": "Lorem ipsum doler",
+                "img": "/static/HeroImg.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            }
+        ]
+    }
 }

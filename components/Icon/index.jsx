@@ -4,6 +4,7 @@ import LeftArrowIcon from "./LeftArrowIcon";
 import RightArrowIcon from "./RightArrowIcon";
 import MoneyIcon from "./MoneyIcon";
 import TimeIcon from "./TimeIcon";
+import LocationIcon from "./LocationIcon";
 
 function Icon({ name, size }) {
     const icons = {
@@ -12,7 +13,8 @@ function Icon({ name, size }) {
         left: <LeftArrowIcon size={size} />,
         right: <RightArrowIcon size={size} />,
         money: <MoneyIcon size={size} />,
-        time: <TimeIcon size={size} />
+        time: <TimeIcon size={size} />,
+        location: <LocationIcon size={size}/>
     }
     return icons[name];
 }
