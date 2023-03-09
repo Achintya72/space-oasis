@@ -1,16 +1,14 @@
 import styles from "./styles.module.css"
 import Image from "next/image";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
-export default function PackageCard({ img, title, description, price, location, stars }) {
+export default function PackageCard({ img, title, description, price, location, stars, changeCustom }) {
 
     let router = useRouter()
 
     const redirect = () => {
         if (title == "Custom") {
-            return;
-        }
-        if (!window.confirm("Are you sure you want to leave this page?")) {
+            changeCustom(true);
             return;
         }
         router.push(`/book/${title}`)

@@ -9,14 +9,14 @@ import dataset from "./content.json";
 export default function ProductDetail() {
     const router = useRouter();
     const packageName = router.query.package;
-    
-    if(Object.keys(dataset).indexOf(packageName) == -1) {
+
+    if (Object.keys(dataset).indexOf(packageName) == -1) {
         return (
             <>
                 <Wrapper>
                     <Navbar />
                     <h4>404 Error: The page you were looking for doesn't exist </h4>
-                    <Link style={{color: "#FFFFFF"}} href="/book">Back to Book</Link>
+                    <Link style={{ color: "#FFFFFF" }} href="/book">Back to Book</Link>
                 </Wrapper>
             </>
         )
@@ -25,7 +25,7 @@ export default function ProductDetail() {
     const data = dataset[packageName]
     const gallery = data["gallery"]
 
-    const renderGallery = gallery.map((img, i) => (
+    const renderGallery = [gallery[0], gallery[1], gallery[2]].map((img, i) => (
         <div key={"Gallery" + i} className={styles.galleryImg} >
             <img {...img} key={"Gallery" + i} style={{ width: "100%", height: "auto" }} />
         </div >
@@ -36,7 +36,7 @@ export default function ProductDetail() {
         for (var i = 0; i < data.costs.length; i++) {
             total += data.costs[i].price
         }
-        return total.toLocaleString(undefined, {maximumFractionDigits: 2})
+        return total.toLocaleString(undefined, { maximumFractionDigits: 2 })
     }
 
     return (

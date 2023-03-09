@@ -1,6 +1,6 @@
 .button {
   background-color: var(--clr-primary);
-  color: var(--clr-background);
+  color: #fff;
   outline: none;
   border: none;
   font-family: "Inter", sans-serif;

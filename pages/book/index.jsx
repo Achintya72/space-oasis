@@ -11,9 +11,9 @@ import ActivityCard from './_activitycard';
 import QuoteForm from './_quoteForm';
 
 export default function Book() {
-
+    const [custom, changeCustom] = useState(false);
     const [location, updateLocation] = useState("");
-    const [activity, changeActivity] = useState(null);
+    const [activities, changeActivity] = useState([]);
     return (
         <>
             <Head>
@@ -36,52 +36,64 @@ export default function Book() {
                             stars={value.stars}
                             img={value.img}
                             price={value.price}
+                            changeCustom={changeCustom}
                         />
                     ))}
                 </div>
-                <h2 style={{ marginTop: "10px", marginBottom: "10px" }}>
-                    Customize:
-                </h2>
-                <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
-                    Select a Destination:
-                </h3>
-                <div className={styles.cardGrid}>
-                    {data["locations"].map((value, index) => (
-                        <LocationCard
-                            key={`location-${index}`}
-                            title={value.title}
-                            description={value.description}
-                            img={value.img}
-                            price={value.price}
-                            time={value.time}
-                            active={location == value.title}
-                            onClick={() => updateLocation(value.title)}
-                            />
-                    ))}
-                </div>
-                <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
-                    Select Your Activities:
-                </h3>
-                <div className={styles.cardGrid}>
-                    {data["activities"][location].map((value, index) => (
-                        <ActivityCard
-                            key={`activity-${location}-${index}`}
-                            title={value.title}
-                            age={value.age}
-                            description={value.description}
-                            img={value.img}
-                            alt={value.alt}
-                            cost={value.cost}
-                            time={value.time}
-                            active={activity == index}
-                            onClick={() => changeActivity(index)}/>
-                    ))}
-                    {location == "" ? "Please select a location to select your activities" : ""}
-                </div>
-                <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
-                    Get A Quote:
-                </h3>
-                <QuoteForm />
+                {custom &&
+                    <>
+                        <h2 style={{ marginTop: "10px", marginBottom: "10px" }}>
+                            Customize:
+                        </h2>
+                        <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
+                            Select a Destination:
+                        </h3>
+                        <div className={styles.cardGrid}>
+                            {data["locations"].map((value, index) => (
+                                <LocationCard
+                                    key={`location-${index}`}
+                                    title={value.title}
+                                    description={value.description}
+                                    img={value.img}
+                                    price={value.price}
+                                    time={value.time}
+                                    active={location == value.title}
+                                    onClick={() => updateLocation(value.title)}
+                                />
+                            ))}
+                        </div>
+                        <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
+                            Select Your Activities:
+                        </h3>
+                        <div className={styles.cardGrid}>
+                            {data["activities"][location].map((value, index) => (
+                                <ActivityCard
+                                    key={`activity-${location}-${index}`}
+                                    title={value.title}
+                                    age={value.age}
+                                    description={value.description}
+                                    img={value.img}
+                                    alt={value.alt}
+                                    cost={value.cost}
+                                    time={value.time}
+                                    active={activities.includes(index)}
+                                    onClick={() => changeActivity(prev => {
+                                        if (prev.includes(index)) {
+                                            return prev.filter(val => val != index);
+                                        }
+                                        else {
+                                            return [...prev, index]
+                                        }
+                                    })} />
+                            ))}
+                            {location == "" ? "Please select a location to select your activities" : ""}
+                        </div>
+                        <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
+                            Get A Quote:
+                        </h3>
+                        <QuoteForm />
+                    </>
+                }
             </Wrapper>
         </>
     )
