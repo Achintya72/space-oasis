@@ -15,7 +15,7 @@ export default function ProductDetail() {
             <>
                 <Wrapper>
                     <Navbar />
-                    <h4>404 Error: The page you were looking for doesn't exist </h4>
+                    <h4>404 Error: The page you were looking for doesn&apos;t exist </h4>
                     <Link style={{ color: "#FFFFFF" }} href="/book">Back to Book</Link>
                 </Wrapper>
             </>
@@ -27,7 +27,7 @@ export default function ProductDetail() {
 
     const renderGallery = [gallery[0], gallery[1], gallery[2]].map((img, i) => (
         <div key={"Gallery" + i} className={styles.galleryImg} >
-            <img {...img} key={"Gallery" + i} style={{ width: "100%", height: "auto" }} />
+            <img src={img.src} alt={img.alt} key={"Gallery" + i} style={{ width: "100%", height: "auto" }} />
         </div >
     ))
 
