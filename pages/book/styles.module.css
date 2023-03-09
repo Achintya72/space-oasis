@@ -48,7 +48,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 50vh;
+  height: min(45vh, 300px);
   background-color: #fff;
   opacity: 17%;
   z-index: 0;
@@ -134,4 +134,23 @@
   .cardGrid {
     grid-template-columns: 100%;
   }
+}
+.card:nth-child(2) {
+  transition-delay: 100ms;
+}
+.card:nth-child(3) {
+  transition-delay: 200ms;
+}
+.show,
+.hide {
+  transition: all 1s ease-out;
+}
+.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.hide {
+  transform: translateY(40%);
+  opacity: 0;
 }

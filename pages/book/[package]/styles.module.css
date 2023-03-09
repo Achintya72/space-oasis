@@ -19,14 +19,19 @@
   min-width: 350px;
   max-width: 33%;
   z-index: 5;
+  position: relative;
 }
 
+.galleryImg img {
+  object-fit: cover;
+  object-position: top;
+}
 .packageBack {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 50vh;
+  height: 300px;
   background-color: #fff;
   opacity: 17%;
   z-index: 0;

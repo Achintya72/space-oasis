@@ -5,6 +5,7 @@ import Wrapper from "../../../components/Wrapper/index";
 import { Navbar, Icon } from "../../../components";
 import styles from "./styles.module.css";
 import dataset from "./content.json";
+import Image from 'next/image';
 
 export default function ProductDetail() {
     const router = useRouter();
@@ -27,7 +28,7 @@ export default function ProductDetail() {
 
     const renderGallery = [gallery[0], gallery[1], gallery[2]].map((img, i) => (
         <div key={"Gallery" + i} className={styles.galleryImg} >
-            <img src={img.src} alt={img.alt} key={"Gallery" + i} style={{ width: "100%", height: "auto" }} />
+            <Image src={img.src} fill alt={img.alt} key={"Gallery" + i} />
         </div >
     ))
 

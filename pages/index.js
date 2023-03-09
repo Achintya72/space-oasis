@@ -4,6 +4,8 @@ import styles from './home.module.css';
 import { Navbar, Button } from "../components";
 import Wrapper from "../components/Wrapper/index";
 import PackageCard from "./book/_packagecard";
+import getClasses from './api/_getClasses';
+import useGetVisibility from './api/_useGetVisibility';
 
 const promotions = [
   {
@@ -47,20 +49,34 @@ const gallery = [
     alt: "An astronaut in mars"
   }
 ]
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.3
+};
 export default function Home() {
-
+  const [heroVisible, heroRef] = useGetVisibility(options);
+  const [promoVisible, promoRef] = useGetVisibility({
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.8
+  });
   const renderPromo = promotions.map((promotion, i) => (
     <PackageCard
       {...promotion}
       key={i}
+      show={promoVisible}
     />
-  ))
+  ));
+
+
 
   const renderGallery = gallery.map((img, i) => (
     <div key={"Gallery" + i} className={styles.galleryImg} >
       <img {...img} key={"Gallery" + i} style={{ width: "100%", height: "auto" }} />
     </div >
-  ))
+  ));
+
   return (
     <>
       <Head>
@@ -78,7 +94,7 @@ export default function Home() {
             <h5>Explore Beyond the Confines of Your Existence</h5>
             <Button size="regular">Hello</Button>
           </div>
-          <div className={styles.img}>
+          <div className={getClasses(styles.img, heroVisible ? styles.show : styles.hide)} ref={heroRef}>
             <Image
               src={"/static/HeroImg.jpg"}
               fill
@@ -93,7 +109,7 @@ export default function Home() {
             <h2>Top Picks</h2>
             <p>See All</p>
           </div>
-          <div className={styles.cardGrid}>
+          <div className={styles.cardGrid} ref={promoRef}>
             {renderPromo}
           </div>
         </section>
