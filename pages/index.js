@@ -31,6 +31,22 @@ const promotions = [
   },
 ];
 
+const gallery = [
+  {
+    src: "/static/Gallery/1.jpg",
+    alt: "An astronaut in mars"
+  },
+  {
+    src: "/static/Gallery/2.jpg",
+    alt: "An astronaut in mars"
+  }, {
+    src: "/static/Gallery/3.jpg",
+    alt: "An astronaut in mars"
+  }, {
+    src: "/static/Gallery/4.jpg",
+    alt: "An astronaut in mars"
+  }
+]
 export default function Home() {
 
   const renderPromo = promotions.map((promotion, i) => (
@@ -38,6 +54,12 @@ export default function Home() {
       {...promotion}
       key={i}
     />
+  ))
+
+  const renderGallery = gallery.map((img, i) => (
+    <div key={"Gallery" + i} className={styles.galleryImg} >
+      <img {...img} key={"Gallery" + i} style={{ width: "100%", height: "auto" }} />
+    </div >
   ))
   return (
     <>
@@ -49,9 +71,9 @@ export default function Home() {
       <Wrapper>
         <Navbar />
         <section id="hero" className={styles.hero}>
-          <div className={styles.waterMark}>
+          {/* <div className={styles.waterMark}>
             <p >Explore</p>
-          </div>
+          </div> */}
           <div className={styles.heroText}>
             <h5>Explore Beyond the Confines of Your Existence</h5>
             <Button size="regular">Hello</Button>
@@ -78,9 +100,7 @@ export default function Home() {
         <section className={styles.gallery}>
           <h1>Gallery</h1>
           <div className={styles.galleryGrid}>
-            <div className={styles.col1}></div>
-            <div className={styles.col2}></div>
-            <div className={styles.col3}></div>
+            {renderGallery}
           </div>
         </section>
       </Wrapper>

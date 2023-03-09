@@ -1,0 +1,30 @@
+.form {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formInfoPair {
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter {
+  display: flex;
+  gap: 5px;
+}
+
+.counter p {
+  width: 30px;
+  height: 30px;
+  background-color: var(--clr-background-s1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}

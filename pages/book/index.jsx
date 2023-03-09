@@ -4,9 +4,16 @@ import styles from './styles.module.css';
 import { Navbar, Button } from "../../components";
 import Wrapper from "../../components/Wrapper/index";
 import PackageCard from "./_packagecard";
+import LocationCard from "./_locationcard"
 import data from "./content.json";
+import { useState } from 'react';
+import ActivityCard from './_activitycard';
+import QuoteForm from './_quoteForm';
 
 export default function Book() {
+
+    const [location, updateLocation] = useState("");
+    const [activity, changeActivity] = useState(null);
     return (
         <>
             <Head>
@@ -15,13 +22,10 @@ export default function Book() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Wrapper>
-                <Navbar/>
-                <h1>
-                    Choose a Package
-                </h1>
-                <h2>
-                    Pick an Existing Package
-                </h2>
+                <Navbar />
+                <h1>Choose a Package</h1>
+                <h2>Pick an Existing Package</h2>
+                <div className={styles.bookBack} />
                 <div className={styles.cardGrid}>
                     {data["packages"].map((value, index) => (
                         <PackageCard
@@ -32,9 +36,96 @@ export default function Book() {
                             stars={value.stars}
                             img={value.img}
                             price={value.price}
-                            />
+                        />
                     ))}
                 </div>
+                <h2 style={{ marginTop: "10px", marginBottom: "10px" }}>
+                    Customize:
+                </h2>
+                <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
+                    Select a Destination:
+                </h3>
+                <div className={styles.cardGrid}>
+                    <LocationCard
+                        img="/static/HeroImg.jpg"
+                        price="4000 - 5000"
+                        time="3 MONTHS"
+                        title="Orbit"
+                        description="Lorem ipsum doler"
+                        active={location == "Orbit"}
+                        onClick={() => updateLocation("Orbit")}
+                    />
+                    <LocationCard
+                        img="/static/HeroImg.jpg"
+                        price="4000 - 5000"
+                        time="3 MONTHS"
+                        title="Moon"
+                        description="Lorem ipsum doler"
+                        active={location == "Moon"}
+                        onClick={() => updateLocation("Moon")}
+                    />
+                    <LocationCard
+                        img="/static/HeroImg.jpg"
+                        price="4000 - 5000"
+                        time="3 MONTHS"
+                        title="Mars"
+                        description="Lorem ipsum doler"
+                        active={location == "Mars"}
+                        onClick={() => updateLocation("Mars")}
+                    />
+                </div>
+                <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
+                    Select a Activities:
+                </h3>
+                <div className={styles.cardGrid}>
+                    <ActivityCard
+                        title="ATV Ride"
+                        age="18+"
+                        description="Lorem Ipsum doler"
+                        img="/static/HeroImg.jpg"
+                        alt="rocket"
+                        cost={300}
+                        time="2 HOURS"
+                        active={activity == 0}
+                        onClick={() => changeActivity(0)}
+                    />
+                    <ActivityCard
+                        title="ATV Ride"
+                        age="18+"
+                        description="Lorem Ipsum doler"
+                        img="/static/HeroImg.jpg"
+                        alt="rocket"
+                        cost={300}
+                        time="2 HOURS"
+                        active={activity == 1}
+                        onClick={() => changeActivity(1)}
+                    />
+                    <ActivityCard
+                        title="ATV Ride"
+                        age="18+"
+                        description="Lorem Ipsum doler"
+                        img="/static/HeroImg.jpg"
+                        alt="rocket"
+                        cost={300}
+                        time="2 HOURS"
+                        active={activity == 2}
+                        onClick={() => changeActivity(2)}
+                    />
+                    <ActivityCard
+                        title="ATV Ride"
+                        age="18+"
+                        description="Lorem Ipsum doler"
+                        img="/static/HeroImg.jpg"
+                        alt="rocket"
+                        cost={300}
+                        active={activity == 3}
+                        onClick={() => changeActivity(3)}
+                    />
+                </div>
+                <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
+                    Get A Quote:
+                </h3>
+                <QuoteForm />
             </Wrapper>
         </>
     )

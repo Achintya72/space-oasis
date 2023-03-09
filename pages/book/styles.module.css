@@ -1,3 +1,5 @@
+/* Package Card Styles */
+
 .card {
   background: none;
   flex: 1;
@@ -5,12 +7,59 @@
   flex-direction: column;
   gap: 10px;
   color: #fff;
-  min-width: 315px;
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
+/* Location Card Styles */
+.locationCard,
+.activeLocationCard {
+  border-radius: var(--font-size-p);
+  background: var(--clr-background-s1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  transition: border-bottom 200ms ease-in;
+}
+.locationCard {
+  border-bottom: 0px solid var(--clr-background-s1);
+}
+
+.activeLocationCard {
+  border-bottom: 3px solid var(--clr-primary);
+}
+.locationText {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.iconPairs {
+  display: flex;
+  justify-content: space-between;
+}
+.bookBack {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: #fff;
+  opacity: 17%;
+  z-index: 0;
+}
+.pair {
+  display: flex;
+  gap: 5px;
+}
+.pair p {
+  font-weight: 700;
+}
 .cardImg {
   aspect-ratio: 16 / 9;
   position: relative;
@@ -25,18 +74,64 @@
   object-position: center;
 }
 
-.cardImg img {
-  object-fit: cover;
-  object-position: center;
-}
-.price {
-  text-align: right;
-  flex: 1;
+.cardGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 15px;
+  row-gap: 15px;
 }
 
-.cardGrid {
+.activityCard {
+  padding: 5px;
+  background-color: var(--clr-background-s1);
+  border-radius: 20px;
+  position: relative;
+  transition: border-bottom 300ms ease-out;
+}
+.activityImg {
+  position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.activityImg img {
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  aspect-ratio: 16/9;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  padding: 25px 25px 20px 25px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  aspect-ratio: 16 / 9;
+}
+.activityCard .iconPairs {
+  padding: 10px;
+}
+.cardHeader {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 10px;
+  justify-content: space-between;
+}
+
+.active {
+  border-bottom: 4px solid var(--clr-primary);
+}
+
+.inactive {
+  border-bottom: 4px solid var(--clr-background-s2);
+}
+@media screen and (max-width: 840px) {
+  .cardGrid {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .cardGrid {
+    grid-template-columns: 100%;
+  }
 }
