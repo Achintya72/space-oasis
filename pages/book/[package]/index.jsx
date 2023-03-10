@@ -6,11 +6,13 @@ import { Navbar, Icon } from "../../../components";
 import styles from "./styles.module.css";
 import dataset from "./content.json";
 import Image from 'next/image';
+import Tabs from './_tabs';
+import { useState } from 'react';
 
 export default function ProductDetail() {
     const router = useRouter();
     const packageName = router.query.package;
-
+    const [tab, changeTab] = useState(null);
     if (Object.keys(dataset).indexOf(packageName) == -1) {
         return (
             <>
@@ -94,6 +96,11 @@ export default function ProductDetail() {
                         </div>
                     </div>
                 </div>
+                <Tabs
+                    tab={tab}
+                    changeTab={changeTab}
+                    options={["Details", "Journey", "Vehicle & Safety"]}
+                />
             </Wrapper>
         </>
     )

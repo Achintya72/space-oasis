@@ -141,6 +141,16 @@
 .card:nth-child(3) {
   transition-delay: 200ms;
 }
+.card:nth-child(4) {
+  transition-delay: 300ms;
+}
+.card:nth-child(5) {
+  transition-delay: 400ms;
+}
+.card:nth-child(6) {
+  transition-delay: 500ms;
+}
+
 .show,
 .hide {
   transition: all 1s ease-out;
