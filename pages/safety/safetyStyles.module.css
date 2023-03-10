@@ -1,0 +1,81 @@
+.riskGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+.riskCard {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: var(--clr-background-s1);
+  border-radius: 20px;
+  gap: 15px;
+  align-items: center;
+}
+
+.riskCard .solution {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  background-color: var(--clr-background-s2);
+  border-radius: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.riskCard svg {
+  color: var(--clr-primary);
+}
+
+.solution span {
+  color: #d0d0d0;
+  font-weight: 600;
+  font-size: calc(var(--font-size-p) - 3px);
+}
+
+.statisticCard {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: var(--clr-background-s1);
+  border-radius: 20px;
+  gap: 15px;
+}
+
+.statisticGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+.statisticCard .statistic {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.statisticCard svg {
+  color: var(--clr-primary);
+}
+
+@media screen and (max-width: 840px) {
+  .riskGrid {
+    grid-template-columns: auto auto;
+  }
+
+  .statisticGrid {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .riskGrid {
+    grid-template-columns: 100%;
+  }
+
+  .statisticGrid {
+    grid-template-columns: 100%;
+  }
+}

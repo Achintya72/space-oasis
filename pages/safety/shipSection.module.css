@@ -1,0 +1,40 @@
+.shipSection {
+  display: flex;
+  gap: 15px;
+  height: min(90vh, 600px);
+  margin: 1.5rem 0;
+}
+
+.shipFeatures {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-right: 1rem;
+  overflow-y: scroll;
+}
+
+.feature {
+  padding: 15px;
+  background-color: var(--clr-background-s1);
+  border-radius: 15px;
+}
+
+.featureHeader {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.featureHeader svg {
+  color: var(--clr-primary);
+}
+.shipImg {
+  position: relative;
+  flex: 1;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.shipImg img {
+  object-fit: cover;
+}

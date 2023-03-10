@@ -1,0 +1,128 @@
+{
+    "risks": [
+        {
+            "icon": "close",
+            "title": "Radiation",
+            "description": "lorem ipsum doler sit etum smth smth smth",
+            "solution": "smth we'll figure it out later"
+        },
+        {
+            "icon": "close",
+            "title": "Radiation",
+            "description": "lorem ipsum doler sit etum smth smth smth",
+            "solution": "smth we'll figure it out later"
+        },
+        {
+            "icon": "close",
+            "title": "Radiation",
+            "description": "lorem ipsum doler sit etum smth smth smth",
+            "solution": "smth we'll figure it out later"
+        },
+        {
+            "icon": "close",
+            "title": "Radiation",
+            "description": "lorem ipsum doler sit etum smth smth smth",
+            "solution": "smth we'll figure it out later"
+        }
+    ],
+    "vehicles": {
+        "Space-X Starship": {
+            "features": [
+                {
+                    "icon": "menu",
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
+                },
+                {
+                    "icon": "menu",
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
+                },
+                {
+                    "icon": "menu",
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
+                },
+                {
+                    "icon": "menu",
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
+                }
+            ],
+            "img": "/static/Gallery/4.jpg",
+            "alt": "Picture of Space-X Starship"
+        },
+        "Falcon X": {
+            "features": [
+                {
+                    "icon": "menu",
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
+                },
+                {
+                    "icon": "menu",
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
+                },
+                {
+                    "icon": "menu",
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
+                },
+                {
+                    "icon": "menu",
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
+                }
+            ],
+            "img": "/static/Gallery/3.jpg",
+            "alt": "Picture of Space-X Starship"
+        },
+        "Hiroshima X": {
+            "features": [
+                {
+                    "icon": "menu",
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
+                },
+                {
+                    "icon": "menu",
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
+                },
+                {
+                    "icon": "menu",
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
+                },
+                {
+                    "icon": "menu",
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
+                }
+            ],
+            "img": "/static/Gallery/2.jpg",
+            "alt": "Picture of Space-X Starship"
+        }
+    },
+    "statistics": [
+        {
+            "number": "99%",
+            "ndesc": "of a family",
+            "icon": "close",
+            "description": "lorem ipsum doler sit etum smth smth smth"
+        },
+        {
+            "number": "99%",
+            "ndesc": "of a family",
+            "icon": "close",
+            "description": "lorem ipsum doler sit etum smth smth smth"
+        },
+        {
+            "number": "99%",
+            "ndesc": "of a family",
+            "icon": "close",
+            "description": "lorem ipsum doler sit etum smth smth smth"
+        }
+    ]
+}
