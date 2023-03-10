@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 export default function Details(props) {
     const router = useRouter();
     const packageName = router.query.package;
-    const features = data[packageName]["details"]
+    const features = data?.[packageName]?.["details"] ?? undefined;
 
     return (
         <div className={styles.detailCardGrid}>
