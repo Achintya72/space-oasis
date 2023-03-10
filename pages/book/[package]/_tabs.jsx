@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 export default function Tabs({ tab, changeTab, options }) {
     return (
         <div className={styles.options}>
-            {options.map(option => (
+            {options != undefined && options.map(option => (
                 <div
                     className={getClasses(styles.option, tab === option && styles.active)}
                     key={option}

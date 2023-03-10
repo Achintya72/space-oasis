@@ -8,7 +8,7 @@ export default function VehicleDetails({ title, numbers, description, img, rever
                     Vehicle: {title}
                 </h2>
                 <div className={styles.priceInfo}>
-                    {numbers.map((value, index) => (
+                    {numbers != undefined && numbers.map((value, index) => (
                         <div className={styles["price"]} key={`number-${index}`}>
                             <p>
                                 {value.name}
@@ -22,7 +22,7 @@ export default function VehicleDetails({ title, numbers, description, img, rever
                 <p>{description}</p>
             </div>
             <div className={styles.galleryImg} >
-                <img src={img} alt={"Img of " + title} style={{ width: "100%", height: "auto" }} />
+                {img != undefined && <img src={img} alt={"Img of " + title} style={{ width: "100%", height: "auto" }} />}
             </div >
         </div>
     )

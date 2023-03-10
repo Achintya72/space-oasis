@@ -16,8 +16,8 @@
   border-radius: 15px;
   overflow: hidden;
   aspect-ratio: 16/9;
-  min-width: 350px;
-  max-width: 33%;
+  min-width: 600px;
+  max-width: 50%;
   z-index: 5;
   position: relative;
 }
