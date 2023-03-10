@@ -5,6 +5,7 @@ import Wrapper from "../../../components/Wrapper/index";
 import { Navbar, Icon } from "../../../components";
 import styles from "./styles.module.css";
 import dataset from "./content.json";
+import VehicleDetails from './_vehicle';
 
 export default function ProductDetail() {
     const router = useRouter();
@@ -93,6 +94,9 @@ export default function ProductDetail() {
                         </div>
                     </div>
                 </div>
+                {data["vehicles"].map((value, index) => (
+                    <VehicleDetails key={`vehicle-${index}`} title={value.title} numbers={value.numbers} description={value.description} img={value.img} reverse={index % 2 == 1}/>
+                ))}
             </Wrapper>
         </>
     )
