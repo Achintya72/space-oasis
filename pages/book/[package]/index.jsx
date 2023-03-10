@@ -5,6 +5,7 @@ import Wrapper from "../../../components/Wrapper/index";
 import { Navbar, Icon } from "../../../components";
 import styles from "./styles.module.css";
 import dataset from "./content.json";
+import VehicleDetails from './_vehicle';
 import Image from 'next/image';
 import Tabs from './_tabs';
 import { useState } from 'react';
@@ -96,11 +97,14 @@ export default function ProductDetail() {
                         </div>
                     </div>
                 </div>
-                <Tabs
+                 <Tabs
                     tab={tab}
                     changeTab={changeTab}
                     options={["Details", "Journey", "Vehicle & Safety"]}
                 />
+                {data["vehicles"].map((value, index) => (
+                    <VehicleDetails key={`vehicle-${index}`} title={value.title} numbers={value.numbers} description={value.description} img={value.img} reverse={index % 2 == 1}/>
+                ))}
             </Wrapper>
         </>
     )

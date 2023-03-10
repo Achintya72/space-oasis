@@ -31,6 +31,7 @@
   left: 0;
   top: 0;
   width: 100%;
+  height: 25vh;
   height: 300px;
   background-color: #fff;
   opacity: 17%;
@@ -68,6 +69,19 @@
   align-items: baseline;
 }
 
+.vehicle_reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.vehicle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 .options {
   display: flex;
 }
