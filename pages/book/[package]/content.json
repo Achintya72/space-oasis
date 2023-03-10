@@ -87,6 +87,53 @@
                 "description": "Lorem ipsum dolor sit amet consectetur. Risus eu aliquet habitant ultrices dictumst quis lacus ultricies platea. Nulla neque egestas quis mattis sed tellus. Dui pellentesque cursus sed egestas magnis nisi blandit. Adipiscing nam lacus tincidunt nulla scelerisque ullamcorper nibh tortor. Enim sit pellentesque enim pulvinar at. Nisl vitae facilisi euismod tincidunt placerat quisque lorem. Eu nulla sed nisl tristique nunc velit dignissim lectus.",
                 "img": "/static/Gallery/4.jpg"
             }
+        ],
+        "details": [
+            {
+                "title": "Guided Tours",
+                "description": "Lorem ipsum dolor sit amet consectetur. Id id risus commodo turpis vulputate eget duis suspendisse faucibus. Eget urna quam ut nunc sed. Sed nunc egestas amet ante et. Cras elit arcu sit nibh. Ornare egestas tempor consequat etiam imperdiet quis hac tortor ac. Sed elit porttitor et in.",
+                "icon": "I"
+            },
+            {
+                "title": "In-house dining",
+                "description": "Lorem ipsum dolor sit amet consectetur. Quisque ultricies faucibus amet purus maecenas tempor est aliquam pellentesque. Cras risus maecenas in quam ultrices massa in velit nunc. Dui tortor aenean metus ultricies viverra non ac pretium nunc. Urna malesuada lobortis aliquam pulvinar.",
+                "icon": "food"
+            },
+            {
+                "title": "In-house dining",
+                "description": "3 meals a day, plus wine tastings and complimentary in-flight meals. We support a variety of dietary restrictions, from Vegetarian to Halal to non-allergenic foods.",
+                "icon": "food"
+            },
+            {
+                "title": "In-house dining",
+                "description": "3 meals a day, plus wine tastings and complimentary in-flight meals. We support a variety of dietary restrictions, from Vegetarian to Halal to non-allergenic foods.",
+                "icon": "food"
+            },
+            {
+                "title": "Guided Tours",
+                "description": "Lorem ipsum dolor sit amet consectetur. Id id risus commodo turpis vulputate eget duis suspendisse faucibus. Eget urna quam ut nunc sed. Sed nunc egestas amet ante et. Cras elit arcu sit nibh. Ornare egestas tempor consequat etiam imperdiet quis hac tortor ac. Sed elit porttitor et in.",
+                "icon": "I"
+            },
+            {
+                "title": "In-house dining",
+                "description": "Lorem ipsum dolor sit amet consectetur. Quisque ultricies faucibus amet purus maecenas tempor est aliquam pellentesque. Cras risus maecenas in quam ultrices massa in velit nunc. Dui tortor aenean metus ultricies viverra non ac pretium nunc. Urna malesuada lobortis aliquam pulvinar.",
+                "icon": "I"
+            },
+            {
+                "title": "In-house dining",
+                "description": "3 meals a day, plus wine tastings and complimentary in-flight meals. We support a variety of dietary restrictions, from Vegetarian to Halal to non-allergenic foods.",
+                "icon": "I"
+            },
+            {
+                "title": "Guided Tours",
+                "description": "Lorem ipsum dolor sit amet consectetur. Id id risus commodo turpis vulputate eget duis suspendisse faucibus. Eget urna quam ut nunc sed. Sed nunc egestas amet ante et. Cras elit arcu sit nibh. Ornare egestas tempor consequat etiam imperdiet quis hac tortor ac. Sed elit porttitor et in.",
+                "icon": "I"
+            },
+            {
+                "title": "In-house dining",
+                "description": "Lorem ipsum dolor sit amet consectetur. Quisque ultricies faucibus amet purus maecenas tempor est aliquam pellentesque. Cras risus maecenas in quam ultrices massa in velit nunc. Dui tortor aenean metus ultricies viverra non ac pretium nunc. Urna malesuada lobortis aliquam pulvinar.",
+                "icon": "I"
+            }
         ]
     }
 }

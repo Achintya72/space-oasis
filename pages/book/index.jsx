@@ -21,7 +21,14 @@ export default function Book() {
     const [location, updateLocation] = useState("");
     const [activities, changeActivity] = useState([]);
     const [visible, ref] = useGetVisibility(options);
-    console.log(data["packages"])
+
+    const goTo = (url) => {
+        const element = document.getElementById(url);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" })
+        }
+    }
+
     return (
         <>
             <Head>
@@ -32,77 +39,81 @@ export default function Book() {
             <Wrapper>
                 <Navbar />
                 <h1>Choose a Package</h1>
-                <h2>Pick an Existing Package</h2>
-                <div className={styles.bookBack} />
-                <div className={styles.cardGrid} ref={ref}>
-                    {data["packages"].map((value, index) => (
-                        <PackageCard
-                            key={`package-${index}`}
-                            title={value.title}
-                            description={value.description}
-                            location={value.location}
-                            stars={value.stars}
-                            img={value.img}
-                            price={value.price}
-                            changeCustom={changeCustom}
-                            show={visible}
-                        />
-                    ))}
-                </div>
-                {custom &&
-                    <>
-                        <h2 style={{ marginTop: "10px", marginBottom: "10px" }}>
-                            Customize:
-                        </h2>
-                        <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
-                            Select a Destination:
-                        </h3>
-                        <div className={styles.cardGrid}>
-                            {data["locations"].map((value, index) => (
-                                <LocationCard
-                                    key={`location-${index}`}
-                                    title={value.title}
-                                    description={value.description}
-                                    img={value.img}
-                                    price={value.price}
-                                    time={value.time}
-                                    active={location == value.title}
-                                    onClick={() => updateLocation(value.title)}
-                                />
-                            ))}
-                        </div>
-                        <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
-                            Select Your Activities:
-                        </h3>
-                        <div className={styles.cardGrid}>
-                            {data["activities"][location].map((value, index) => (
-                                <ActivityCard
-                                    key={`activity-${location}-${index}`}
-                                    title={value.title}
-                                    age={value.age}
-                                    description={value.description}
-                                    img={value.img}
-                                    alt={value.alt}
-                                    cost={value.cost}
-                                    time={value.time}
-                                    active={activities.includes(index)}
-                                    onClick={() => changeActivity(prev => {
-                                        if (prev.includes(index)) {
-                                            return prev.filter(val => val != index);
-                                        }
-                                        else {
-                                            return [...prev, index]
-                                        }
-                                    })} />
-                            ))}
-                            {location == "" ? "Please select a location to select your activities" : ""}
-                        </div>
-                        <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
-                            Get A Quote:
-                        </h3>
-                        <QuoteForm />
-                    </>
-                }
+                <section id="existing">
+                    <div className={styles.header}>
+                        <h2>Pick an Existing Package</h2>
+                        <Button size="regular" onClick={() => goTo("customize")}>Or Customize</Button>
+                    </div>
+                    <div className={styles.bookBack} />
+                    <div className={styles.cardGrid} ref={ref}>
+                        {data["packages"].map((value, index) => (
+                            <PackageCard
+                                key={`package-${index}`}
+                                title={value.title}
+                                description={value.description}
+                                location={value.location}
+                                stars={value.stars}
+                                img={value.img}
+                                price={value.price}
+                                changeCustom={changeCustom}
+                                show={visible}
+                            />
+                        ))}
+                    </div>
+                </section>
+                <section id='customize'>
+                    <div className={styles.header}>
+                        <h2>Customize</h2>
+                        <Button size="regular" onClick={() => goTo("existing")}>Or Pick An Existing Package</Button>
+                    </div>
+                    <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
+                        Select a Destination:
+                    </h3>
+                    <div className={styles.cardGrid}>
+                        {data["locations"].map((value, index) => (
+                            <LocationCard
+                                key={`location-${index}`}
+                                title={value.title}
+                                description={value.description}
+                                img={value.img}
+                                price={value.price}
+                                time={value.time}
+                                active={location == value.title}
+                                onClick={() => updateLocation(value.title)}
+                            />
+                        ))}
+                    </div>
+                    <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
+                        Select Your Activities:
+                    </h3>
+                    <div className={styles.cardGrid}>
+                        {data["activities"][location].map((value, index) => (
+                            <ActivityCard
+                                key={`activity-${location}-${index}`}
+                                title={value.title}
+                                age={value.age}
+                                description={value.description}
+                                img={value.img}
+                                alt={value.alt}
+                                cost={value.cost}
+                                time={value.time}
+                                active={activities.includes(index)}
+                                onClick={() => changeActivity(prev => {
+                                    if (prev.includes(index)) {
+                                        return prev.filter(val => val != index);
+                                    }
+                                    else {
+                                        return [...prev, index]
+                                    }
+                                })} />
+                        ))}
+                        {location == "" ? "Please select a location to select your activities" : ""}
+                    </div>
+                </section>
+                <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
+                    Get A Quote:
+                </h3>
+                <QuoteForm />
             </Wrapper>
         </>
     )

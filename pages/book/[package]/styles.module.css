@@ -4,20 +4,14 @@
 }
 
 .galleryGrid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  align-items: flex-start;
-  justify-content: center;
+  columns: 3;
 }
 
 .galleryImg {
-  flex: 1;
+  width: 100%;
   border-radius: 15px;
   overflow: hidden;
   aspect-ratio: 16/9;
-  min-width: 600px;
-  max-width: 50%;
   z-index: 5;
   position: relative;
 }
@@ -48,6 +42,7 @@
 
 .qualInfo {
   flex: 1;
+  min-width: 315px;
 }
 
 .priceInfo {
@@ -72,18 +67,19 @@
 .vehicle_reverse {
   display: flex;
   flex-direction: row-reverse;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   gap: 15px;
 }
 
 .vehicle {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   gap: 15px;
 }
 .options {
   display: flex;
+  margin: 50px 0px;
 }
 
 .option {
@@ -105,5 +101,110 @@
 }
 
 .active {
+  border-bottom: 2px solid var(--clr-primary);
+}
+
+.vehicleImg {
+  flex: 1;
+  border-radius: 15px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  z-index: 5;
+  position: relative;
+  min-width: 315px;
+  max-width: 100%;
+}
+
+.vehicleInfo {
+  flex: 1;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailCardGrid {
+  columns: 3;
+  column-gap: 1rem;
+}
+
+.detailCard {
+  display: inline-block;
+  padding: 15px;
+  background-color: var(--clr-background-s1);
+  margin: 7.5px 0px;
+  border-radius: 15px;
+}
+.detailCard svg {
+  color: var(--clr-primary);
+}
+
+.detailCard div {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.journeyContainer {
+  display: flex;
+  gap: 15px;
+  max-height: min(90vh, 600px);
+  position: relative;
+}
+.journeySteps {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2rem;
+  padding-right: 1rem;
+  overflow-y: scroll;
+}
+
+.journeyContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 4px;
+  width: 2px;
+  height: 100%;
+  z-index: 0;
+  background-color: var(--clr-background-s2);
+}
+.journeyImg {
+  position: relative;
+  aspect-ratio: 4/3;
+  flex: 1;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.journeyImg img {
+  object-fit: cover;
+}
+.stepRoot {
+  display: flex;
+  gap: 15px;
+  z-index: 1;
+}
+.stepBullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: var(--clr-primary);
+}
+.step {
+  padding: 15px;
+  border-radius: 15px;
+  flex: 1;
+  box-sizing: border-box;
+  transition: all 200ms ease-in-out;
+  border-bottom: 2px solid var(--clr-background);
+}
+
+.inactiveStep:hover {
+  background-color: var(--clr-background-s1);
+  border-bottom: 2px solid var(--clr-background-s1);
+}
+.activeStep {
+  background-color: var(--clr-background-s2);
   border-bottom: 2px solid var(--clr-primary);
 }
