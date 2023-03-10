@@ -1,9 +1,9 @@
 import styles from "./styles.module.css"
 import Image from "next/image";
 import { useRouter } from "next/router";
+import getClasses from "../api/_getClasses";
 
-export default function PackageCard({ img, title, description, price, location, stars, changeCustom }) {
-
+export default function PackageCard({ img, title, description, price, location, stars, changeCustom, show }) {
     let router = useRouter()
 
     const redirect = () => {
@@ -28,7 +28,7 @@ export default function PackageCard({ img, title, description, price, location, 
     const starsList = getStars();
 
     return (
-        <div className={styles.card} onClick={redirect}>
+        <div className={getClasses(styles.card, show ? styles.show : styles.hide)} onClick={redirect}>
             <div className={styles.cardImg}>
                 <Image
                     src={img}

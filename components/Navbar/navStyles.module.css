@@ -15,4 +15,53 @@
 .navLinks a {
   text-decoration: none;
   color: #fff;
+  position: relative;
+}
+
+.navbar h6::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 5px;
+  z-index: 0;
+  left: 0px;
+  background-color: var(--clr-primary);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-in-out;
+}
+.navbar h6 {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar h6:hover::after,
+.navbar h6:focus::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navLinks a:focus {
+  border: none;
+  outline: none;
+}
+
+.navLinks a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-in-out;
+}
+
+.navLinks a:hover::after,
+.navLinks a:focus::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

@@ -9,11 +9,19 @@ import data from "./content.json";
 import { useState } from 'react';
 import ActivityCard from './_activitycard';
 import QuoteForm from './_quoteForm';
+import useGetVisibility from "../api/_useGetVisibility";
 
+const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.3
+};
 export default function Book() {
     const [custom, changeCustom] = useState(false);
     const [location, updateLocation] = useState("");
     const [activities, changeActivity] = useState([]);
+    const [visible, ref] = useGetVisibility(options);
+    console.log(data["packages"])
     return (
         <>
             <Head>
@@ -26,7 +34,7 @@ export default function Book() {
                 <h1>Choose a Package</h1>
                 <h2>Pick an Existing Package</h2>
                 <div className={styles.bookBack} />
-                <div className={styles.cardGrid}>
+                <div className={styles.cardGrid} ref={ref}>
                     {data["packages"].map((value, index) => (
                         <PackageCard
                             key={`package-${index}`}
@@ -37,6 +45,7 @@ export default function Book() {
                             img={value.img}
                             price={value.price}
                             changeCustom={changeCustom}
+                            show={visible}
                         />
                     ))}
                 </div>

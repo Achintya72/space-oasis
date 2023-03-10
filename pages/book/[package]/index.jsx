@@ -6,11 +6,14 @@ import { Navbar, Icon } from "../../../components";
 import styles from "./styles.module.css";
 import dataset from "./content.json";
 import VehicleDetails from './_vehicle';
+import Image from 'next/image';
+import Tabs from './_tabs';
+import { useState } from 'react';
 
 export default function ProductDetail() {
     const router = useRouter();
     const packageName = router.query.package;
-
+    const [tab, changeTab] = useState(null);
     if (Object.keys(dataset).indexOf(packageName) == -1) {
         return (
             <>
@@ -28,7 +31,7 @@ export default function ProductDetail() {
 
     const renderGallery = [gallery[0], gallery[1], gallery[2]].map((img, i) => (
         <div key={"Gallery" + i} className={styles.galleryImg} >
-            <img src={img.src} alt={img.alt} key={"Gallery" + i} style={{ width: "100%", height: "auto" }} />
+            <Image src={img.src} fill alt={img.alt} key={"Gallery" + i} />
         </div >
     ))
 
@@ -94,6 +97,11 @@ export default function ProductDetail() {
                         </div>
                     </div>
                 </div>
+                 <Tabs
+                    tab={tab}
+                    changeTab={changeTab}
+                    options={["Details", "Journey", "Vehicle & Safety"]}
+                />
                 {data["vehicles"].map((value, index) => (
                     <VehicleDetails key={`vehicle-${index}`} title={value.title} numbers={value.numbers} description={value.description} img={value.img} reverse={index % 2 == 1}/>
                 ))}

@@ -19,14 +19,20 @@
   min-width: 350px;
   max-width: 33%;
   z-index: 5;
+  position: relative;
 }
 
+.galleryImg img {
+  object-fit: cover;
+  object-position: top;
+}
 .packageBack {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 25vh;
+  height: 300px;
   background-color: #fff;
   opacity: 17%;
   z-index: 0;
@@ -75,4 +81,29 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 15px;
+}
+.options {
+  display: flex;
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--clr-background);
+  transition: all 300ms ease-out;
+}
+
+.option h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.option:hover {
+  background-color: var(--clr-background-s1);
+}
+
+.active {
+  border-bottom: 2px solid var(--clr-primary);
 }
