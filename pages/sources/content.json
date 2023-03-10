@@ -1,0 +1,32 @@
+{
+    "Home": {
+        "citations": [
+            {
+                "title": "Rocket Photo",
+                "page": "Home Page",
+                "citation": "Nasa. “Photo by NASA on UNSPLASH.” Beautiful Free Images &amp; Pictures, 1 Mar. 2021, https://unsplash.com/photos/JkaKy_77wF8."
+            }
+        ],
+        "icon": "close"
+    },
+    "Book": {
+        "citations": [
+            {
+                "title": "Astronaut Photo",
+                "page": "Book Page",
+                "citation": "NASA. “Astronaut in Spacesuit Floating in Space.” Unsplash, 6 Feb. 2016, https://unsplash.com/photos/Yj1M5riCKk4. Accessed 18 Jan. 2023."
+            },
+            {
+                "title": "Moon Photo",
+                "page": "Book Page",
+                "citation": "NASA. “Photo of Moon Surface Photo.” Unsplash, 13 Nov. 2015, https://unsplash.com/photos/jlV2k_Fx0fc. Accessed 18 Jan. 2023."
+            },
+            {
+                "title": "Mars Photo",
+                "page": "Book Page",
+                "citation": "Colucci, Daniele. “Brown Sand under Blue Sky during Night Time.” Unsplash, 9 Feb. 2021, https://unsplash.com/photos/OtXJhYjbKeg. Accessed 18 Jan. 2023."
+            }
+        ],
+        "icon": "menu"
+    }
+}

@@ -1,47 +1,52 @@
-import { useRouter } from 'next/router';
-import Head from 'next/head';
-import Link from 'next/link';
+import { useRouter } from "next/router";
+import Head from "next/head";
+import Link from "next/link";
 import Wrapper from "../../../components/Wrapper/index";
 import { Navbar, Icon } from "../../../components";
 import styles from "./styles.module.css";
 import dataset from "./content.json";
-import VehicleDetails from './_vehicle';
-import Image from 'next/image';
-import Tabs from './_tabs';
-import { useState } from 'react';
+import VehicleDetails from "./_vehicle";
+import Image from "next/image";
+import Tabs from "./_tabs";
+import { useState } from "react";
+import Details from "./_details";
+import QuoteForm from "../_quoteForm";
+import Journey from "./_journey";
 
 export default function ProductDetail() {
     const router = useRouter();
     const packageName = router.query.package;
-    const [tab, changeTab] = useState(null);
+    const [tab, changeTab] = useState("Details");
     if (Object.keys(dataset).indexOf(packageName) == -1) {
         return (
             <>
                 <Wrapper>
                     <Navbar />
                     <h4>404 Error: The page you were looking for doesn&apos;t exist </h4>
-                    <Link style={{ color: "#FFFFFF" }} href="/book">Back to Book</Link>
+                    <Link style={{ color: "#FFFFFF" }} href="/book">
+                        Back to Book
+                    </Link>
                 </Wrapper>
             </>
-        )
+        );
     }
 
-    const data = dataset[packageName]
-    const gallery = data["gallery"]
+    const data = dataset[packageName];
+    const gallery = data["gallery"];
 
     const renderGallery = [gallery[0], gallery[1], gallery[2]].map((img, i) => (
-        <div key={"Gallery" + i} className={styles.galleryImg} >
+        <div key={"Gallery" + i} className={styles.galleryImg}>
             <Image src={img.src} fill alt={img.alt} key={"Gallery" + i} />
-        </div >
-    ))
+        </div>
+    ));
 
     const calcTotal = () => {
         var total = 0;
         for (var i = 0; i < data.costs.length; i++) {
-            total += data.costs[i].price
+            total += data.costs[i].price;
         }
-        return total.toLocaleString(undefined, { maximumFractionDigits: 2 })
-    }
+        return total.toLocaleString(undefined, { maximumFractionDigits: 2 });
+    };
 
     return (
         <>
@@ -55,14 +60,13 @@ export default function ProductDetail() {
                 <h1>{packageName}</h1>
                 <div className={styles.packageBack} />
                 <section className={styles.gallery}>
-                    <div className={styles.galleryGrid}>
-                        {renderGallery}
-                    </div>
+                    <div className={styles.galleryGrid}>{renderGallery}</div>
                 </section>
                 <div className={styles.packageInfo}>
                     <div className={styles.qualInfo}>
                         <p className={styles.location}>
-                            <Icon name="location" size={16} />{data["location"]}
+                            <Icon name="location" size={16} />
+                            {data["location"]}
                         </p>
                         <p style={{ marginTop: "10px" }}>Includes:</p>
                         <ul style={{ marginTop: "2px" }}>
@@ -70,42 +74,55 @@ export default function ProductDetail() {
                                 <li key={`includes-${index}`}>{value}</li>
                             ))}
                         </ul>
-                        <p><strong>*Please note: </strong> all availability is first come first serve and all prices are in USD before taxes.</p>
+                        <p>
+                            <strong>*Please note: </strong> all availability is first come
+                            first serve and all prices are in USD before taxes.
+                        </p>
                     </div>
                     <div className={styles.priceInfo}>
-                        <h3 style={{ marginBottom: "10px" }}>
-                            Price Breakdown
-                        </h3>
+                        <h3 style={{ marginBottom: "10px" }}>Price Breakdown</h3>
                         {data["costs"].map((value, index) => (
                             <div className={styles["price"]} key={`price-${index}`}>
+                                <p>{value.name}</p>
                                 <p>
-                                    {value.name}
-                                </p>
-                                <p>
-                                    ${value.price.toLocaleString(undefined, { maximumFractionDigits: 2 })}
+                                    $
+                                    {value.price.toLocaleString(undefined, {
+                                        maximumFractionDigits: 2,
+                                    })}
                                 </p>
                             </div>
                         ))}
                         <hr style={{ width: "100%" }} />
                         <div className={styles["price"]}>
-                            <p>
-                                Total
-                            </p>
-                            <p>
-                                ${calcTotal()}
-                            </p>
+                            <p>Total</p>
+                            <p>${calcTotal()}</p>
                         </div>
                     </div>
                 </div>
-                 <Tabs
+                <Tabs
                     tab={tab}
                     changeTab={changeTab}
                     options={["Details", "Journey", "Vehicle & Safety"]}
                 />
-                {data["vehicles"].map((value, index) => (
-                    <VehicleDetails key={`vehicle-${index}`} title={value.title} numbers={value.numbers} description={value.description} img={value.img} reverse={index % 2 == 1}/>
-                ))}
+                {tab == "Vehicle & Safety" && (
+                    <div className={styles.vehicleInfo}>
+                        {data["vehicles"].map((value, index) => (
+                            <VehicleDetails
+                                key={`vehicle-${index}`}
+                                title={value.title}
+                                numbers={value.numbers}
+                                description={value.description}
+                                img={value.img}
+                                reverse={index % 2 == 1}
+                            />
+                        ))}
+                    </div>
+                )}
+                {tab == "Details" && <Details />}
+                {tab == "Journey" && <Journey />}
+                <QuoteForm />
             </Wrapper>
         </>
-    )
+    );
 }
+

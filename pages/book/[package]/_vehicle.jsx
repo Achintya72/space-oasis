@@ -21,7 +21,7 @@ export default function VehicleDetails({ title, numbers, description, img, rever
                 </div>
                 <p>{description}</p>
             </div>
-            <div className={styles.galleryImg} >
+            <div className={styles.vehicleImg} >
                 {img != undefined && <img src={img} alt={"Img of " + title} style={{ width: "100%", height: "auto" }} />}
             </div >
         </div>

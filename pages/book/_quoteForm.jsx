@@ -113,7 +113,7 @@ const DatePicker = ({ date, changeDate }) => {
     const longMonths = ["JAN", "MAR", "MAY", "JUL", "AUG", "OCT", "DEC"];
     const shortMonths = ["APR", "JUN", "SEP", "NOV"];
     const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-    console.log(date);
+
     const getDays = () => {
         if (longMonths.includes(date.month)) {
             return 31;

@@ -12,6 +12,15 @@
   margin-top: 10px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button {
+  z-index: 3;
+}
 /* Location Card Styles */
 .locationCard,
 .activeLocationCard {

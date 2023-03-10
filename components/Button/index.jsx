@@ -3,10 +3,11 @@ import styles from "./button.module.css";
 function Button(props) {
     const {
         size,
-        children
+        children,
+        onClick
     } = props;
     return (
-        <button className={`${styles.button} ${styles[size]}`}>{children}</button>
+        <button onClick={onClick} className={`${styles.button} ${styles[size]}`}>{children}</button>
     )
 }
 
