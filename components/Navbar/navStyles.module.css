@@ -4,6 +4,7 @@
   color: #fff;
   position: relative;
   z-index: 100;
+  margin-top: 0.5rem;
 }
 .heading {
   flex: 1;
@@ -94,10 +95,9 @@
     gap: 0.5rem;
   }
   .navLinksHide {
-    transform: scaleY(0);
-    overflow: hidden;
+    display: none;
   }
   .navLinksShow {
-    transform: scaleY(1);
+    display: flex;
   }
 }

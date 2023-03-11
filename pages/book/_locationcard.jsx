@@ -28,7 +28,7 @@ export default function LocationCard({ img, title, time, description, price, act
                 <div className={styles.iconPairs}>
                     <div className={styles.pair}>
                         <Icon name="money" size={20} />
-                        <p>{price} USD</p>
+                        <p>{price}</p>
                     </div>
                     <div className={styles.pair}>
                         <Icon name="time" size={20} />

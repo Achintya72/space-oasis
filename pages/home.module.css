@@ -40,6 +40,7 @@
   color: white;
   display: flex;
   flex-direction: column;
+  height: max-content;
 }
 
 .promoHeader {
@@ -53,9 +54,21 @@
   grid-template-columns: auto auto auto;
   column-gap: 15px;
   row-gap: 15px;
-  overflow-x: scroll;
+}
+@media screen and (max-width: 975px) {
+  .cardGrid {
+    grid-template-columns: auto auto;
+  }
 }
 
+@media screen and (max-width: 640px) {
+  .cardGrid {
+    grid-template-columns: 100%;
+  }
+  .card {
+    transition-delay: 0ms !important;
+  }
+}
 .gallery {
   color: #fff;
 }
