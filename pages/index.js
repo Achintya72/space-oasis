@@ -47,6 +47,20 @@ const gallery = [
   }, {
     src: "/static/Gallery/4.jpg",
     alt: "An astronaut in mars"
+  },
+  {
+    src: "/static/Gallery/1.jpg",
+    alt: "An astronaut in mars"
+  },
+  {
+    src: "/static/Gallery/2.jpg",
+    alt: "An astronaut in mars"
+  }, {
+    src: "/static/Gallery/3.jpg",
+    alt: "An astronaut in mars"
+  }, {
+    src: "/static/Gallery/4.jpg",
+    alt: "An astronaut in mars"
   }
 ]
 const options = {
@@ -56,25 +70,18 @@ const options = {
 };
 export default function Home() {
   const [heroVisible, heroRef] = useGetVisibility(options);
-  const [promoVisible, promoRef] = useGetVisibility({
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.8
-  });
   const renderPromo = promotions.map((promotion, i) => (
     <PackageCard
       {...promotion}
       key={i}
-      show={promoVisible}
+      show
     />
   ));
 
 
 
   const renderGallery = gallery.map((img, i) => (
-    <div key={"Gallery" + i} className={styles.galleryImg} >
-      <img {...img} key={"Gallery" + i} style={{ width: "100%", height: "auto" }} />
-    </div >
+    <GalleryImg key={"Gallery" + i} img={img} />
   ));
 
   return (
@@ -103,13 +110,12 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.promotion}>
-          <div className={styles.promoBacking} />
           <h1>Find a Venture</h1>
           <div className={styles.promoHeader}>
             <h2>Top Picks</h2>
             <p>See All</p>
           </div>
-          <div className={styles.cardGrid} ref={promoRef}>
+          <div className={styles.cardGrid} >
             {renderPromo}
           </div>
         </section>
@@ -121,5 +127,18 @@ export default function Home() {
         </section>
       </Wrapper>
     </>
+  )
+}
+
+
+function GalleryImg(props) {
+  const [visible, ref] = useGetVisibility(options);
+  const {
+    img,
+  } = props;
+  return (
+    <div ref={ref} className={getClasses(styles.galleryImg, visible ? styles.showImg : styles.hideImg)} >
+      <img {...img} style={{ width: "100%", height: "auto" }} />
+    </div >
   )
 }
