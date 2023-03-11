@@ -1,0 +1,75 @@
+.certificate {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  background-color: var(--clr-background-s1);
+  border-radius: 20px;
+}
+
+.certificateImg {
+  position: relative;
+  aspect-ratio: 16/9;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.certificateImg img {
+  object-fit: cover;
+}
+
+.caption {
+  color: #d0d0d0;
+}
+
+.certificates {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 15px;
+  row-gap: 15px;
+  margin: 1.5rem 0;
+}
+.instructions {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--clr-background-s2);
+}
+.instructions span {
+  color: #d0d0d0;
+  font-weight: 600;
+  font-size: calc(var(--font-size-p) - 3px);
+}
+
+@media screen and (max-width: 840px) {
+  .certificates {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .certificates {
+    grid-template-columns: 100%;
+  }
+}
+
+.stages {
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+  margin: 1.5rem 0;
+}
+
+.stage {
+  border-radius: 15px;
+  background-color: var(--clr-background-s1);
+  overflow: hidden;
+  min-width: 33%;
+  margin: 0.5rem 0;
+}
+.stage video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.stageText {
+  padding: 15px;
+}

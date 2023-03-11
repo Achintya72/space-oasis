@@ -1,0 +1,55 @@
+{
+    "certificates": [
+        {
+            "img": "/static/HeroImg.jpg",
+            "alt": "The Hero Img",
+            "title": "Lunar Certificate",
+            "location": "Moon",
+            "description": "Lorem ipsum doler sit amet smth smth smth",
+            "instructions": "Figure it out"
+        },
+        {
+            "img": "/static/HeroImg.jpg",
+            "alt": "The Hero Img",
+            "title": "Lunar Certificate",
+            "location": "Moon",
+            "description": "Lorem ipsum doler sit amet smth smth smth",
+            "instructions": "Figure it out"
+        },
+        {
+            "img": "/static/HeroImg.jpg",
+            "alt": "The Hero Img",
+            "title": "Lunar Certificate",
+            "location": "Moon",
+            "description": "Lorem ipsum doler sit amet smth smth smth",
+            "instructions": "Figure it out"
+        }
+    ],
+    "videos": [
+        {
+            "src": "/static/IMG_1962.mp4",
+            "title": "Separatists",
+            "description": "Are not the best people I think"
+        },
+        {
+            "src": "/static/IMG_1962.mp4",
+            "title": "Separatists",
+            "description": "Are not the best people I think"
+        },
+        {
+            "src": "/static/IMG_1962.mp4",
+            "title": "Separatists",
+            "description": "Are not the best people I think"
+        },
+        {
+            "src": "/static/IMG_1962.mp4",
+            "title": "Separatists",
+            "description": "Are not the best people I think"
+        },
+        {
+            "src": "/static/IMG_1962.mp4",
+            "title": "Separatists",
+            "description": "Are not the best people I think"
+        }
+    ]
+}
