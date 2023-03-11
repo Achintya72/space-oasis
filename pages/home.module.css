@@ -1,14 +1,32 @@
 .hero {
   display: flex;
   color: #fff;
-  padding: 1rem 0rem;
-  align-items: center;
   gap: 10%;
   overflow: hidden;
-  height: calc(100vh - 2rem);
+  background-image: url("/static/HeroImg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  width: 100%;
 }
 .heroText {
-  flex: 2;
+  height: calc(100vh - 2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+  align-items: center;
+}
+.heroText h1 {
+  margin-top: 20vh;
+  font-size: clamp(60px, 8vw, 123px);
+}
+.heroText h5 {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(25px, 8vw, 50px);
+  width: 85%;
 }
 
 .heroText,
@@ -21,9 +39,15 @@
   position: relative;
   border-radius: var(--font-size-p);
   overflow: hidden;
-  transition: all 1s ease-in;
 }
-
+.show,
+.hide {
+  transition: all 500ms ease-out;
+}
+.show:nth-child(2),
+.hide:nth-child(2) {
+  transition-delay: 200ms;
+}
 .show {
   opacity: 1;
   transform: translateY(0);
@@ -41,6 +65,7 @@
   display: flex;
   flex-direction: column;
   height: max-content;
+  margin-top: 2rem;
 }
 
 .promoHeader {
@@ -70,6 +95,7 @@
   }
 }
 .gallery {
+  margin-top: 2rem;
   color: #fff;
 }
 
