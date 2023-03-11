@@ -11,7 +11,9 @@ export default function Navbar() {
     return (
         <nav className={styles.navbar}>
             <div className={styles.heading}>
-                <h6 onClick={() => router.push("/")}>SpaceOasis</h6>
+                <div>
+                    <h6 onClick={() => router.push("/")}>SpaceOasis</h6>
+                </div>
                 {showLinks ?
                     <div className={styles.menuIcon} onClick={() => changeShowLinks(false)}>
                         <Icon name="close" size={30} />

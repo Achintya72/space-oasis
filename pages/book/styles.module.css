@@ -144,6 +144,9 @@
   .cardGrid {
     grid-template-columns: 100%;
   }
+  .card {
+    transition-delay: 0ms !important;
+  }
 }
 .card:nth-child(2) {
   transition-delay: 100ms;
@@ -163,7 +166,7 @@
 
 .show,
 .hide {
-  transition: all 1s ease-out;
+  transition: all 500ms ease-out;
 }
 .show {
   transform: translateY(0);
@@ -171,6 +174,6 @@
 }
 
 .hide {
-  transform: translateY(40%);
+  transform: translateY(10%);
   opacity: 0;
 }
