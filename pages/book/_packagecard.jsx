@@ -2,9 +2,17 @@ import styles from "./styles.module.css"
 import Image from "next/image";
 import { useRouter } from "next/router";
 import getClasses from "../api/_getClasses";
+import useGetVisibility from "../api/_useGetVisibility";
 
-export default function PackageCard({ img, title, description, price, location, stars, changeCustom, show }) {
-    let router = useRouter()
+
+const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.3
+};
+export default function PackageCard({ img, title, description, price, location, stars, changeCustom }) {
+    const [show, ref] = useGetVisibility(options);
+    let router = useRouter();
 
     const redirect = () => {
         if (title == "Custom") {
@@ -28,7 +36,7 @@ export default function PackageCard({ img, title, description, price, location, 
     const starsList = getStars();
 
     return (
-        <div className={getClasses(styles.card, show ? styles.show : styles.hide)} onClick={redirect}>
+        <div className={getClasses(styles.card, show ? styles.show : styles.hide)} onClick={redirect} ref={ref}>
             <div className={styles.cardImg}>
                 <Image
                     src={img}

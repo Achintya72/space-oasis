@@ -5,7 +5,7 @@
   align-items: center;
   gap: 10%;
   overflow: hidden;
-  height: min(calc(90vh - 2.5rem), 922px);
+  height: calc(100vh - 2rem);
 }
 .heroText {
   flex: 2;
@@ -33,40 +33,16 @@
   opacity: 0;
   transform: translateY(-5%);
 }
-/* .waterMark {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  font-family: "Inter", sans-serif;
-  position: absolute;
-  color: #fff;
-  opacity: 0.05;
-  z-index: 0;
-  left: 0;
-  top: 600px;
-  user-select: none;
-  transform: translateY(-50%);
-  box-sizing: border-box;
-}
-
-.waterMark p {
-  font-size: max(400px, 27vw);
-  font-weight: 900;
-} */
-
 .img img {
   object-fit: cover;
 }
 .promotion {
   color: white;
-  height: min(100vh, 1024px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  height: max-content;
 }
-.promotion h1 {
-  margin-top: 1rem;
-}
+
 .promoHeader {
   display: flex;
   justify-content: space-between;
@@ -74,21 +50,25 @@
   margin-top: 5vh;
 }
 .cardGrid {
-  display: flex;
-  gap: 15px;
-  margin-top: 0.5rem;
-  justify-self: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 15px;
+  row-gap: 15px;
 }
-.promoBacking {
-  background-color: #d9d9d9;
-  opacity: 19%;
-  position: absolute;
-  top: min(100vh, 1024px);
-  left: 0;
-  width: 100%;
-  height: min(50vh, 512px);
+@media screen and (max-width: 975px) {
+  .cardGrid {
+    grid-template-columns: auto auto;
+  }
 }
 
+@media screen and (max-width: 640px) {
+  .cardGrid {
+    grid-template-columns: 100%;
+  }
+  .card {
+    transition-delay: 0ms !important;
+  }
+}
 .gallery {
   color: #fff;
 }
@@ -98,10 +78,33 @@
   column-gap: 1rem;
 }
 
+@media screen and (max-width: 840px) {
+  .galleryGrid {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .galleryGrid {
+    column-count: 1;
+  }
+}
+
 .galleryImg {
   display: inline-block;
   width: 100%;
   margin: 7.5px 0px;
   border-radius: 15px;
   overflow: hidden;
+  transition: all 500ms ease;
+}
+
+.showImg {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hideImg {
+  opacity: 0;
+  transform: translateY(10%);
 }

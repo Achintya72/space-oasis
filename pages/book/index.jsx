@@ -11,16 +11,10 @@ import ActivityCard from './_activitycard';
 import QuoteForm from './_quoteForm';
 import useGetVisibility from "../api/_useGetVisibility";
 
-const options = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.3
-};
 export default function Book() {
     const [custom, changeCustom] = useState(false);
     const [location, updateLocation] = useState("");
     const [activities, changeActivity] = useState([]);
-    const [visible, ref] = useGetVisibility(options);
 
     const goTo = (url) => {
         const element = document.getElementById(url);
@@ -45,7 +39,7 @@ export default function Book() {
                         <Button size="regular" onClick={() => goTo("customize")}>Or Customize</Button>
                     </div>
                     <div className={styles.bookBack} />
-                    <div className={styles.cardGrid} ref={ref}>
+                    <div className={styles.cardGrid}>
                         {data["packages"].map((value, index) => (
                             <PackageCard
                                 key={`package-${index}`}
@@ -56,7 +50,6 @@ export default function Book() {
                                 img={value.img}
                                 price={value.price}
                                 changeCustom={changeCustom}
-                                show={visible}
                             />
                         ))}
                     </div>
@@ -64,7 +57,7 @@ export default function Book() {
                 <section id='customize'>
                     <div className={styles.header}>
                         <h2>Customize</h2>
-                        <Button size="regular" onClick={() => goTo("existing")}>Or Pick An Existing Package</Button>
+                        <Button size="regular" onClick={() => goTo("existing")}>Existing Packages</Button>
                     </div>
                     <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
                         Select a Destination:

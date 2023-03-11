@@ -38,3 +38,9 @@
 .shipImg img {
   object-fit: cover;
 }
+
+@media screen and (max-width: 840px) {
+  .shipSection {
+    flex-direction: column-reverse;
+  }
+}

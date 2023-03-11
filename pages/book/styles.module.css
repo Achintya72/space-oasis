@@ -10,6 +10,7 @@
   width: 100%;
   margin-bottom: 10px;
   margin-top: 10px;
+  min-width: 210px;
 }
 
 .header {
@@ -50,7 +51,13 @@
 }
 .iconPairs {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.locationCard .iconPairs,
+.activeLocationCard .iconPairs {
+  background-color: var(--clr-background-s2);
+  padding: 10px;
+  border-radius: 10px;
 }
 .bookBack {
   position: absolute;
@@ -64,6 +71,8 @@
 }
 .pair {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 5px;
 }
 .pair p {
@@ -133,7 +142,7 @@
 .inactive {
   border-bottom: 4px solid var(--clr-background-s2);
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 975px) {
   .cardGrid {
     grid-template-columns: auto auto;
   }
@@ -142,6 +151,9 @@
 @media screen and (max-width: 640px) {
   .cardGrid {
     grid-template-columns: 100%;
+  }
+  .card {
+    transition-delay: 0ms !important;
   }
 }
 .card:nth-child(2) {
@@ -162,7 +174,7 @@
 
 .show,
 .hide {
-  transition: all 1s ease-out;
+  transition: all 500ms ease-out;
 }
 .show {
   transform: translateY(0);
@@ -170,6 +182,6 @@
 }
 
 .hide {
-  transform: translateY(40%);
+  transform: translateY(10%);
   opacity: 0;
 }

@@ -10,6 +10,8 @@ body {
   background-color: #121212;
   display: flex;
   flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #__next {
@@ -46,6 +48,7 @@ a {
 h1 {
   font-family: "DM Serif Display", serif;
   font-size: var(--font-size-h1);
+  font-weight: 400;
 }
 
 h2 {
@@ -80,4 +83,25 @@ p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: var(--font-size-p);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(0, 0, 0, 0.25) none;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 5px;
+  border: 1px solid none;
 }

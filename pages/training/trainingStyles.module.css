@@ -62,7 +62,7 @@
   border-radius: 15px;
   background-color: var(--clr-background-s1);
   overflow: hidden;
-  min-width: 33%;
+  min-width: 315px;
   margin: 0.5rem 0;
 }
 .stage video {
