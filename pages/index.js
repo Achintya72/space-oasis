@@ -9,58 +9,63 @@ import useGetVisibility from './api/_useGetVisibility';
 
 const promotions = [
   {
-    title: "Lunar Exploration",
-    img: "/static/HeroImg.jpg",
-    description: "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
-    price: 450,
-    location: "The moon",
+    title: "Low Earth Orbit",
+    img: "/static/packages/LowEarthOrbit.png",
+    description: "Experience zero gravity, enjoy the breath-taking views, & relax in space for 3 Days.",
+    price: 500,
+    location: "Orbit",
     stars: 4
   },
   {
     title: "Lunar Exploration",
-    img: "/static/HeroImg.jpg",
-    description: "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
-    price: 450,
-    location: "The moon",
+    img: "/static/packages/Moon.jpg",
+    description: "Take your next vacation to the moon, experience how Neil Armstrong felt when he took the giant leap for mankind.",
+    price: 1000,
+    location: "Moon",
     stars: 4
-  }, {
-    title: "Lunar Exploration",
-    img: "/static/HeroImg.jpg",
-    description: "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
-    price: 450,
-    location: "The moon",
-    stars: 4
+  }, 
+  {
+    title: "Mars Adventure",
+    img: "/static/packages/Mars.png",
+    description: "Our premium experience, a once in a lifetime chance to visit humanity's next home.",
+    price: 3000,
+    location: "Mars",
+    stars: 5
   },
 ];
 
 const gallery = [
   {
     src: "/static/Gallery/1.jpg",
-    alt: "An astronaut in mars"
+    alt: "An astronaut on the moon."
   },
   {
     src: "/static/Gallery/2.jpg",
-    alt: "An astronaut in mars"
-  }, {
+    alt: "An astronaut floating in the space."
+  }, 
+  {
     src: "/static/Gallery/3.jpg",
-    alt: "An astronaut in mars"
-  }, {
+    alt: "An astronaut on mars."
+  }, 
+  {
     src: "/static/Gallery/4.jpg",
-    alt: "An astronaut in mars"
+    alt: "A couple of astronauts on mars."
   },
   {
-    src: "/static/Gallery/1.jpg",
-    alt: "An astronaut in mars"
+    src: "/static/Gallery/5.jpg",
+    alt: "An astronaut taking a picture from low Earth orbit."
   },
   {
-    src: "/static/Gallery/2.jpg",
-    alt: "An astronaut in mars"
-  }, {
-    src: "/static/Gallery/3.jpg",
-    alt: "An astronaut in mars"
-  }, {
-    src: "/static/Gallery/4.jpg",
-    alt: "An astronaut in mars"
+    src: "/static/Gallery/6.jpg",
+    alt: "A rocket on the moon."
+  },
+  {
+    src: "/static/Gallery/7.jpg",
+    alt: "An astronaut on the surface of mars."
+  },
+  {
+    src: "/static/Gallery/8.jpg",
+    alt: "A picture of the moon and the Earth."
   }
 ]
 const options = {
