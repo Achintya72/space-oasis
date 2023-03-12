@@ -23,7 +23,7 @@ const promotions = [
     price: 1000,
     location: "Moon",
     stars: 4
-  }, 
+  },
   {
     title: "Mars Adventure",
     img: "/static/packages/Mars.png",
@@ -42,11 +42,11 @@ const gallery = [
   {
     src: "/static/Gallery/2.jpg",
     alt: "An astronaut floating in the space."
-  }, 
+  },
   {
     src: "/static/Gallery/3.jpg",
     alt: "An astronaut on mars."
-  }, 
+  },
   {
     src: "/static/Gallery/4.jpg",
     alt: "A couple of astronauts on mars."
@@ -101,7 +101,7 @@ export default function Home() {
           <Navbar />
           <div title='heading' className={getClasses(styles.heroText)} ref={heroRef} >
             <h1 title="title" className={heroVisible ? styles.show : styles.hide}>Space Oasis</h1>
-            <h5 title='subtitle' className={heroVisible ? styles.show : styles.hide}>Explore Beyond the Confines of Your Existence</h5>
+            <h2 title='subtitle' className={heroVisible ? styles.show : styles.hide}>Explore Beyond the Confines of Your Existence</h2>
           </div>
         </Wrapper>
       </section>
