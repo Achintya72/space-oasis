@@ -99,9 +99,9 @@ export default function Home() {
       <section id="hero" className={styles.hero}>
         <Wrapper>
           <Navbar />
-          <div className={getClasses(styles.heroText)} ref={heroRef} >
-            <h1 className={heroVisible ? styles.show : styles.hide}>Space Oasis</h1>
-            <h5 className={heroVisible ? styles.show : styles.hide}>Explore Beyond the Confines of Your Existence</h5>
+          <div title='heading' className={getClasses(styles.heroText)} ref={heroRef} >
+            <h1 title="title" className={heroVisible ? styles.show : styles.hide}>Space Oasis</h1>
+            <h5 title='subtitle' className={heroVisible ? styles.show : styles.hide}>Explore Beyond the Confines of Your Existence</h5>
           </div>
         </Wrapper>
       </section>
