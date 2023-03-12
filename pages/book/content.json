@@ -1,107 +1,86 @@
 {
     "packages": [
         {
+            "title": "Low Earth Orbit",
+            "img": "/static/packages/LowEarthOrbit.png",
+            "description": "Experience zero gravity, enjoy the breath-taking views, & relax in space for 3 Days.",
+            "price": 500,
+            "location": "Orbit",
+            "stars": 4
+          },
+          {
             "title": "Lunar Exploration",
-            "location": "The Moon",
-            "description": "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
-            "price": "450",
-            "stars": 4,
-            "img": "/static/HeroImg.jpg"
+            "img": "/static/packages/Moon.jpg",
+            "description": "Take your next vacation to the moon, experience how Neil Armstrong felt when he took the giant leap for mankind.",
+            "price": 1000,
+            "location": "Moon",
+            "stars": 5
+          }, 
+          {
+            "title": "Mars Adventure",
+            "img": "/static/packages/Mars.png",
+            "description": "Our premium experience, a once in a lifetime chance to visit humanity's next home.",
+            "price": 3000,
+            "location": "Mars",
+            "stars": 5
+          },
+        {
+            "title": "Moon Orbit",
+            "img": "/static/packages/MoonOrbit.jpg",
+            "location": "Moon",
+            "description": "Orbit the moon for 3 days, while enjoying spectacular food and a view of the cradle of humanity.",
+            "price": "800",
+            "stars": 4
         },
         {
-            "title": "Lunar Exploration",
-            "location": "The Moon",
-            "description": "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
-            "price": "450",
+            "title": "Mars Orbit",
+            "location": "Mars",
+            "description": "Enjoy striking views of the red planet as you dine with our 5 star chef Jignesh.",
+            "price": "2500",
             "stars": 4,
-            "img": "/static/HeroImg.jpg"
-        },
-        {
-            "title": "Lunar Exploration",
-            "location": "The Moon",
-            "description": "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
-            "price": "450",
-            "stars": 4,
-            "img": "/static/HeroImg.jpg"
-        },
-        {
-            "title": "Lunar Exploration",
-            "location": "The Moon",
-            "description": "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
-            "price": "450",
-            "stars": 4,
-            "img": "/static/HeroImg.jpg"
-        },
-        {
-            "title": "Lunar Exploration",
-            "location": "The Moon",
-            "description": "Lorem ipsum dolor sit amet consectetur. Lectus montes enim sem curabitur elit pretium commodo.",
-            "price": "450",
-            "stars": 4,
-            "img": "/static/HeroImg.jpg"
+            "img": "/static/packages/MarsOrbit.jpg"
         }
     ],
     "locations": [
         {
-            "img": "/static/HeroImg.jpg",
-            "price": "4000 - 5000",
-            "time": "3 MONTHS",
-            "title": "Orbit",
-            "description": "Lorem ipsum doler"
+            "img": "/static/packages/LowEarthOrbit.png",
+            "price": "500 - 1000",
+            "time": "5 DAYS",
+            "title": "Orbit"
         },
         {
-            "img": "/static/HeroImg.jpg",
-            "price": "4000 - 5000",
-            "time": "3 MONTHS",
-            "title": "Moon",
-            "description": "Lorem ipsum doler"
-        },
+            "img": "/static/packages/MoonOrbit.jpg",
+            "price": "1000 - 1500",
+            "time": "1 MONTH",
+            "title": "Moon"
+        }, 
         {
-            "img": "/static/HeroImg.jpg",
-            "price": "4000 - 5000",
-            "time": "3 MONTHS",
-            "title": "Mars",
-            "description": "Lorem ipsum doler"
+            "img": "/static/packages/Mars.png",
+            "price": "2500 - 3000",
+            "time": "12 MONTHS",
+            "title": "Mars"
         }
     ],
     "activities": {
         "": [],
         "Orbit": [
             {
-                "title": "ATV Ride",
-                "age": "18+",
+                "title": "Spacewalk",
+                "age": "12+",
                 "description": "Lorem ipsum doler",
                 "img": "/static/HeroImg.jpg",
                 "alt": "rocket",
-                "cost": 300,
+                "cost": 400,
                 "time": "2 HOURS"
             },
             {
-                "title": "ATV Ride",
-                "age": "18+",
+                "title": "Obstacle Course",
+                "age": "12+",
                 "description": "Lorem ipsum doler",
                 "img": "/static/HeroImg.jpg",
                 "alt": "rocket",
-                "cost": 300,
-                "time": "2 HOURS"
-            },
-            {
-                "title": "ATV Ride",
-                "age": "18+",
-                "description": "Lorem ipsum doler",
-                "img": "/static/HeroImg.jpg",
-                "alt": "rocket",
-                "cost": 300,
-                "time": "2 HOURS"
-            },
-            {
-                "title": "ATV Ride",
-                "age": "18+",
-                "description": "Lorem ipsum doler",
-                "img": "/static/HeroImg.jpg",
-                "alt": "rocket",
-                "cost": 300,
-                "time": "2 HOURS"
+                "cost": 100,
+                "time": "1 HOUR"
             }
         ],
         "Moon": [
