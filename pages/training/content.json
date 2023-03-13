@@ -1,55 +1,104 @@
 {
     "certificates": [
         {
-            "img": "/static/HeroImg.jpg",
+            "img": "/static/Journey/Launch.png",
             "alt": "The Hero Img",
-            "title": "Lunar Certificate",
-            "location": "Moon",
-            "description": "Lorem ipsum doler sit amet smth smth smth",
-            "instructions": "Figure it out"
+            "title": "Spaceraft Certification",
+            "location": "Orbit, Moon, Mars",
+            "description": "Certification that shows you understand how to operate the space-craft and know emergency procedures.",
+            "instructions": "To receive training for this certification, book any of our flights and show the booking confirmation to the front-desk advisor at any of SpaceX's Starbases or NASA's Jet Propulsion Laboratory to receive training lessons from them. Receive training lessons for 1 week."
         },
         {
-            "img": "/static/HeroImg.jpg",
+            "img": "/static/2guys.jpg",
             "alt": "The Hero Img",
-            "title": "Lunar Certificate",
-            "location": "Moon",
-            "description": "Lorem ipsum doler sit amet smth smth smth",
-            "instructions": "Figure it out"
+            "title": "Gravitational Adaptability Certification",
+            "location": "Orbit, Moon, Mars",
+            "description": "Certification that shows you can adapt to different gravitational pulls and handle high G-Forces.",
+            "instructions": "To receive training for this certification, Book any of our flights and show the booking confirmation to the front-desk advisor at any of SpaceX's Starbases or NASA's Jet Propulsion Laboratory to receive training lessons from them. Receive training lessons for 2 weeks."
         },
         {
-            "img": "/static/HeroImg.jpg",
+            "img": "/static/Training/ExtraTerrestrialTraining.jpg",
             "alt": "The Hero Img",
-            "title": "Lunar Certificate",
-            "location": "Moon",
-            "description": "Lorem ipsum doler sit amet smth smth smth",
-            "instructions": "Figure it out"
+            "title": "Extra-terrestrial Terrain Certification",
+            "location": "Moon, Mars",
+            "description": "Certification that shows you are aware of the dangers on the terrain of other planets and can successfully and safely navigate them.",
+            "instructions": "To receive training for this certification, Book a flight to the Moon or Mars and show the booking confirmation to the front-desk advisor at any of SpaceX's Starbases or NASA's Jet Propulsion Laboratory to receive training lessons from them. Receive training lessons for 3 days."
+        },
+        {
+            "img": "/static/Gallery/7.jpg",
+            "alt": "The Hero Img",
+            "title": "Deep Space Travel Certification",
+            "location": "Mars",
+            "description": "Certification that shows you know the risks of deep space travel, understand how cryosleep works, and how to enter and exit cryosleep.",
+            "instructions": "To receive training for this certification, Book a flight to Mars and show the booking confirmation to the front-desk advisor at any of SpaceX's Starbases or NASA's Jet Propulsion Laboratory to receive training lessons from them. Receive training lessons for 1 month."
+        },
+        {
+            "img": "/static/Gallery/2.jpg",
+            "alt": "The Hero Img",
+            "title": "Space Walk Certification",
+            "location": "Orbit, Moon, Mars",
+            "description": "Certification that shows you know how the procedure of a space walk, and how to safely perform one.",
+            "instructions": "To receive training for this certification, Book any of our flights and show the booking confirmation to the front-desk advisor at any of SpaceX's Starbases or NASA's Jet Propulsion Laboratory to receive training lessons from them. Receive training lessons for 2 weeks."
+        }
+    ],
+    "stages": [
+        {
+            "title": "Liftoff",
+            "description": "The rocket launches from the launchpad."
+        },
+        {
+            "title": "Max-Q",
+            "description": "The moment where the rocket experiences maximum dynamic pressure."
+        },
+        {
+            "title": "MECO",
+            "description": "The moment when the booster of the rocket cuts-off and separates."
+        },
+        {
+            "title": "Booster Re-entry",
+            "description": "The booster re-enters Earth's atmosphere."
+        },
+        {
+            "title": "Booster Catch",
+            "description": "The Booster slows down and is caught by the launch pad."
+        },
+        {
+            "title": "SECO",
+            "description": "The upper stage engine cuts off and the rocket is now in Earth Orbit"
+        },
+        {
+            "title": "Second Rocket Launch",
+            "description": "The second rocket launches from the launch pad and performs all the prior stages."
+        },
+        {
+            "title": "Refueling",
+            "description": "The two upper stages dock in orbit and the fuel from the second launched one goes to the first one."
+        },
+        {
+            "title": "Atmospheric Braking",
+            "description": "After entering the atmosphere of Mars, the rocket turns to aerodynamically brake."
+        },
+        {
+            "title": "Propulsive Braking",
+            "description": "The rocket turns on its engines to slow down."
+        },
+        {
+            "title": "Landing",
+            "description": "The rocket lands on the surface of Mars."
         }
     ],
     "videos": [
         {
-            "src": "/static/IMG_1962.mp4",
-            "title": "Separatists",
-            "description": "Are not the best people I think"
+            "embedId": "-Oox2w5sMcA",
+            "title": "Starship Animation"
         },
         {
-            "src": "/static/IMG_1962.mp4",
-            "title": "Separatists",
-            "description": "Are not the best people I think"
+            "embedId": "BAkApUbevaA",
+            "title": "Starlink Mission"
         },
         {
-            "src": "/static/IMG_1962.mp4",
-            "title": "Separatists",
-            "description": "Are not the best people I think"
-        },
-        {
-            "src": "/static/IMG_1962.mp4",
-            "title": "Separatists",
-            "description": "Are not the best people I think"
-        },
-        {
-            "src": "/static/IMG_1962.mp4",
-            "title": "Separatists",
-            "description": "Are not the best people I think"
+            "embedId": "EY8nbSwjtEY",
+            "title": "How Stoke Space's Unique Rocket Works // Exclusive Tour & Interview"
         }
     ]
 }

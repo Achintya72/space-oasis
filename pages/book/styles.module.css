@@ -11,6 +11,12 @@
   margin-bottom: 10px;
   margin-top: 10px;
   min-width: 210px;
+  padding-bottom: 1rem;
+  border-radius: 15px;
+}
+.card:hover,
+.card:focus {
+  background-color: var(--clr-background-s1);
 }
 
 .header {
@@ -125,7 +131,9 @@
   padding: 25px 25px 20px 25px;
   box-sizing: border-box;
   border-radius: 15px;
-  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .activityCard .iconPairs {
   padding: 10px;
