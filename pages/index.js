@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from './home.module.css';
-import { Navbar, Button } from "../components";
+import { Navbar, Button, Icon } from "../components";
 import Wrapper from "../components/Wrapper/index";
-import PackageCard from "./book/_packagecard";
+import PackageCard from "./packages/_packagecard";
 import getClasses from './api/_getClasses';
 import useGetVisibility from './api/_useGetVisibility';
-import data from "./book/content.json";
+import data from "./packages/content.json";
+import { useRouter } from 'next/router';
 const gallery = [
   {
     src: "/static/Gallery/1.jpg",
@@ -47,6 +48,7 @@ const options = {
   threshold: 0.7
 };
 export default function Home() {
+  const router = useRouter();
   const [heroVisible, heroRef] = useGetVisibility(options);
   const promotions = [data["packages"][0], data["packages"][1], data["packages"][2]] ?? [];
   const renderPromo = promotions.map((promotion, i) => (
@@ -84,7 +86,10 @@ export default function Home() {
           <h1>Find a Venture</h1>
           <div className={styles.promoHeader}>
             <h2>Top Picks</h2>
-            <p>See All</p>
+            <div onClick={() => router.push("/packages")} style={{ display: "flex", gap: "5px", alignItems: "center" }}>
+              <p>See All</p>
+              <Icon name="right" size={16} />
+            </div>
           </div>
           <div className={styles.cardGrid} >
             {renderPromo}

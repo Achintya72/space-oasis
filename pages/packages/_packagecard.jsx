@@ -15,11 +15,7 @@ export default function PackageCard({ img, title, description, price, location, 
     let router = useRouter();
 
     const redirect = () => {
-        if (title == "Custom") {
-            changeCustom(true);
-            return;
-        }
-        router.push(`/book/${title}`)
+        router.push(`/packages/${title}`)
     }
 
     const getStars = () => {

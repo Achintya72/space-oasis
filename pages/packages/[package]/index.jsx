@@ -23,8 +23,8 @@ export default function ProductDetail() {
                 <Wrapper>
                     <Navbar />
                     <h4>404 Error: The page you were looking for doesn&apos;t exist </h4>
-                    <Link style={{ color: "#FFFFFF" }} href="/book">
-                        Back to Book
+                    <Link style={{ color: "#FFFFFF" }} href="/packages">
+                        Back to Packages
                     </Link>
                 </Wrapper>
             </>

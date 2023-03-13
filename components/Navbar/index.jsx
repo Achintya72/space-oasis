@@ -25,7 +25,7 @@ export default function Navbar() {
                 }
             </div>
             <div className={getClasses(styles.navLinks, showLinks ? styles.navLinksShow : styles.navLinksHide)}>
-                <Link href="/book">Book</Link>
+                <Link href="/packages">Packages</Link>
                 <Link href="/safety">Safety</Link>
                 <Link href="/training">Training</Link>
                 <Link href="/sources">Sources</Link>
