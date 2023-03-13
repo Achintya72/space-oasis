@@ -51,7 +51,7 @@ export default function PackageCard({ img, title, description, price, location, 
                         <div style={{ color: "#959595" }}>{location}</div>
                     </div>
                     <h3 className={styles.price}>
-                        ~${price.toLocaleString()}*
+                        ~${price != undefined && price.toLocaleString()}*
                     </h3>
                 </div>
 
