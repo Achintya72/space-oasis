@@ -3,26 +3,34 @@
         {
             "img": "/static/HeroImg.jpg",
             "alt": "The Hero Img",
-            "title": "Lunar Certificate",
-            "location": "Moon",
-            "description": "Lorem ipsum doler sit amet smth smth smth",
-            "instructions": "Figure it out"
+            "title": "Spaceraft Certification",
+            "location": "Orbit, Moon, Mars",
+            "description": "Certification that shows you understand how to operate the space-craft and know emergency procedures.",
+            "instructions": "To receive training for this certification, book any of our flights and show the booking confirmation to the front-desk advisor at any of SpaceX's Starbases or NASA's Jet Propulsion Laboratory to receive training lessons from them. Receive training lessons for 1 week."
         },
         {
             "img": "/static/HeroImg.jpg",
             "alt": "The Hero Img",
-            "title": "Lunar Certificate",
-            "location": "Moon",
-            "description": "Lorem ipsum doler sit amet smth smth smth",
-            "instructions": "Figure it out"
+            "title": "Gravitational Adaptability Certification",
+            "location": "Orbit, Moon, Mars",
+            "description": "Certification that shows you can adapt to different gravitational pulls and handle high G-Forces.",
+            "instructions": "To receive training for this certification, Book any of our flights and show the booking confirmation to the front-desk advisor at any of SpaceX's Starbases or NASA's Jet Propulsion Laboratory to receive training lessons from them. Receive training lessons for 2 weeks."
         },
         {
             "img": "/static/HeroImg.jpg",
             "alt": "The Hero Img",
-            "title": "Lunar Certificate",
-            "location": "Moon",
-            "description": "Lorem ipsum doler sit amet smth smth smth",
-            "instructions": "Figure it out"
+            "title": "Extra-terrestrial Terrain Certification",
+            "location": "Moon, Mars",
+            "description": "Certification that shows you are aware of the dangers on the terrain of other planets and can successfully and safely navigate them.",
+            "instructions": "To receive training for this certification, Book a flight to the Moon or Mars and show the booking confirmation to the front-desk advisor at any of SpaceX's Starbases or NASA's Jet Propulsion Laboratory to receive training lessons from them. Receive training lessons for 3 days."
+        },
+        {
+            "img": "/static/HeroImg.jpg",
+            "alt": "The Hero Img",
+            "title": "Deep Space Travel Certification",
+            "location": "Mars",
+            "description": "Certification that shows you know the risks of deep space travel, understand how cryosleep works, and how to enter and exit cryosleep.",
+            "instructions": "To receive training for this certification, Book a flight to Mars and show the booking confirmation to the front-desk advisor at any of SpaceX's Starbases or NASA's Jet Propulsion Laboratory to receive training lessons from them. Receive training lessons for 1 month."
         }
     ],
     "videos": [

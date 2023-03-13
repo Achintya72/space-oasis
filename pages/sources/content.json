@@ -12,19 +12,56 @@
     "Book": {
         "citations": [
             {
-                "title": "Astronaut Photo",
-                "page": "Book Page",
                 "citation": "NASA. “Astronaut in Spacesuit Floating in Space.” Unsplash, 6 Feb. 2016, https://unsplash.com/photos/Yj1M5riCKk4. Accessed 18 Jan. 2023."
             },
             {
-                "title": "Moon Photo",
-                "page": "Book Page",
                 "citation": "NASA. “Photo of Moon Surface Photo.” Unsplash, 13 Nov. 2015, https://unsplash.com/photos/jlV2k_Fx0fc. Accessed 18 Jan. 2023."
             },
             {
-                "title": "Mars Photo",
-                "page": "Book Page",
                 "citation": "Colucci, Daniele. “Brown Sand under Blue Sky during Night Time.” Unsplash, 9 Feb. 2021, https://unsplash.com/photos/OtXJhYjbKeg. Accessed 18 Jan. 2023."
+            },
+            {
+                "citation": "NASA - Advanced Space Transportation Program fact sheet. (2010). Nasa.gov. https://www.nasa.gov/centers/marshall/news/background/facts/astp.html"
+            },
+            {
+                "citation": "Sudin, M. (2020, June 3). Going to space will cost only $2,000. Warp News. https://www.warpnews.org/essays/wip-going-to-space-will-cost-only-2-000/"
+            },
+            {
+                "citation": "Hehir, J. (2021, August 6). Watch Countdown: Inspiration4 Mission to Space | Netflix Official Site. Www.netflix.com; Netflix. https://www.netflix.com/title/81441273"
+            },
+            {
+                "citation": "g-force. Oxford Reference. Retrieved 12 Mar. 2023, from https://www.oxfordreference.com/view/10.1093/oi/authority.20110803095850382. "
+            },
+            {
+                "citation": "Ask an Astronomer. (n.d.). Cool Cosmos. https://coolcosmos.ipac.caltech.edu/ask/174-How-long-does-it-take-to-travel-to-the-Moon-"
+            }
+        ],
+        "icon": "menu"
+    },
+    "Lunar Exploration": {
+        "citations": [
+            {
+                "citation": "NASA. (2019). log. Nasa.gov. https://history.nasa.gov/ap11ann/apollo11_log/log.htm"
+            },
+            {
+                "citation": "SpaceX. (2019). Render of SpaceX Starship [Online Image.]. In SpaceNews. https://spacenews.com/spacex-targets-2021-commercial-starship-launch/"
+            },
+            {
+                "ciation": "Blue Origin. (2018). Rendering of the New Glenn spaceship [Online image.]. In autoevolution. https://s1.cdn.autoevolution.com/images/news/gallery/jeff-bezos-new-shepard-climbs-to-the-edge-of-space_1.jpg"
+            }
+        ],
+        "icon": "menu"
+    },
+    "Safety": {
+        "citations": [
+            {
+                "citation": "Mars, K. (2018, March 27). 5 hazards of human spaceflight. NASA. Retrieved March 12, 2023, from https://www.nasa.gov/hrp/5-hazards-of-human-spaceflight "
+            },
+            {
+                "citation": "Carr, M. (2022, August 5). Struck by lightning: What are the odds? NewsNation. Retrieved March 12, 2023, from https://www.newsnationnow.com/weather/struck-by-lightning-odds/"
+            },
+            {
+                "citation": "Pultarova, T. (2021, September 27). Do space tourists really understand the risk they're taking? Space.com. Retrieved March 12, 2023, from https://www.space.com/space-tourism-risk-safety-regulations"
             }
         ],
         "icon": "menu"

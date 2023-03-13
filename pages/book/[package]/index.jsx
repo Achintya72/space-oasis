@@ -106,9 +106,9 @@ export default function ProductDetail() {
                 <Tabs
                     tab={tab}
                     changeTab={changeTab}
-                    options={["Details", "Journey", "Vehicle & Safety"]}
+                    options={["Details", "Journey", "Vehicles"]}
                 />
-                {tab == "Vehicle & Safety" && (
+                {tab == "Vehicles" && (
                     <div className={styles.vehicleInfo}>
                         {data["vehicles"].map((value, index) => (
                             <VehicleDetails
@@ -123,7 +123,7 @@ export default function ProductDetail() {
                     </div>
                 )}
                 {tab == "Details" && <Details />}
-                {tab == "Journey" && <Journey />}
+                {tab == "Journey" && <Journey packageName={packageName} />}
                 <QuoteForm />
             </Wrapper>
         </>
