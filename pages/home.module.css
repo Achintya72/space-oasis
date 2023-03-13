@@ -74,6 +74,16 @@
   align-items: center;
   margin-top: 5vh;
 }
+.promoHeader div {
+  transition: all 200ms ease;
+}
+.promoHeader div {
+  border: 0px solid #fff;
+}
+.promoHeader div:hover,
+.promoHeader div:focus {
+  border-bottom: 1px solid #fff;
+}
 .cardGrid {
   display: grid;
   grid-template-columns: auto auto auto;

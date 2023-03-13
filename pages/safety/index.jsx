@@ -4,7 +4,7 @@ import getClasses from "../api/_getClasses";
 import data from "./content.json";
 import styles from "./safetyStyles.module.css";
 import { useState } from "react";
-import Tabs from "../book/[package]/_tabs";
+import Tabs from "../packages/[package]/_tabs";
 import ShipSection from "./_shipSection";
 import Statistic from "./_statistic";
 
