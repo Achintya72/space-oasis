@@ -7,7 +7,7 @@
   display: flex;
   gap: 15px;
   padding-bottom: 0.5rem;
-  overflow-x: auto;
+  overflow-x: scroll;
 }
 
 .galleryImg {
@@ -17,7 +17,7 @@
   aspect-ratio: 16/9;
   z-index: 5;
   position: relative;
-  min-width: 350px;
+  min-width: 300px;
 }
 
 .galleryImg img {

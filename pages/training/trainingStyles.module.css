@@ -59,7 +59,6 @@
 }
 
 .stage {
-  padding: 15px;
   border-radius: 15px;
   background-color: var(--clr-background-s1);
   overflow: hidden;
@@ -73,23 +72,4 @@
 
 .stageText {
   padding: 15px;
-}
-
-.video {
-  overflow: hidden;
-  aspect-ratio: 16 / 9;
-  position: relative;
-  width: 100%;
-  min-width: 315px;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.video iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  border: 0;
 }

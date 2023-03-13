@@ -53,7 +53,6 @@ export default function Book() {
                             />
                         ))}
                     </div>
-                    <p>*Cost approximations based on 2150 projections</p>
                 </section>
                 <section id='customize'>
                     <div className={styles.header}>

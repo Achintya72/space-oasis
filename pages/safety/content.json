@@ -3,127 +3,126 @@
         {
             "icon": "close",
             "title": "Radiation",
-            "description": "When outside Earth's magnetic field, astronauts are exposed to higher levels of radiation. This can increase cancer risk, damage the central nervous system, and reduce motor function",
-            "solution": "Our deep space vehicles have additional radiation shielding and monitoring equipment. Additionally, we make sure to monitor our voyagers and provide them with appropriate medication to reduce the effects of radiation and defend against it"
+            "description": "lorem ipsum doler sit etum smth smth smth",
+            "solution": "smth we'll figure it out later"
         },
         {
             "icon": "close",
-            "title": "Isolation",
-            "description": "Our spacecraft offer limited space for passengers to move around, unlike their homes and facilities on Earth, causing changes in behavior such as sleep cycle disturbances and feelings of isolation without personal device Internet access.",
-            "solution": "All of our sleep cabins use light therapy to maintain circadian rhythms, and provide numerous activties on-board, allowing passengers to socialize and stay active."
+            "title": "Radiation",
+            "description": "lorem ipsum doler sit etum smth smth smth",
+            "solution": "smth we'll figure it out later"
         },
         {
             "icon": "close",
-            "title": "Distance From Earth",
-            "description": "Because Mars is around 140 million miles away from us, all flight emergencies have to be dealt with on the flight, as support will not reach in time. Additionally, with a communication delay of around 20 minutes between Earth, all immediate emergencies must be dealt with on board.",
-            "solution": "All of our passengers must qualify certain health screenings to board the flight, minimizing medical emergencies. Additionally, our spacecraft are equipped with a medical lab, with trained physicians to deal with any health risks."
+            "title": "Radiation",
+            "description": "lorem ipsum doler sit etum smth smth smth",
+            "solution": "smth we'll figure it out later"
         },
         {
             "icon": "close",
-            "title": "Gravity Changes",
-            "description": "Changes in gravity from Earth, to space, to on Mars can have various effects on astronauts' bodies. Additionally, readjusting to Earth's gravity on return can be an extensive process",
-            "solution": "To keep passengers' bones and muscles strong, even in low gravity situations, we have state-of-the-art exercise machines that all passengers must use. Additionally, we provide passengers with FDA-approved osteoporosis medicine to keep thier bones healthy"
-        },
-        {
-            "icon": "close",
-            "title": "Hostile Environments",
-            "description": "The ecosystem on-board the craft makes a huge impact on the quality of the trip for our passengers. Factors like temperature, humidity, and space can make or break an experience.",
-            "solution": "We make sure to conduct urine and blood tests on our passengers to maintain their health. We also control environmental factors extensively, and ensure recycled air and waste are completely safe for passengers."
+            "title": "Radiation",
+            "description": "lorem ipsum doler sit etum smth smth smth",
+            "solution": "smth we'll figure it out later"
         }
     ],
     "vehicles": {
-        "Starship": {
+        "Space-X Starship": {
             "features": [
                 {
                     "icon": "menu",
-                    "title": "Propulsion Redundancy",
-                    "description": "Starship's booster can lose up to 6 of it's 33 engines and still function flawlessly."
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
                 },
                 {
                     "icon": "menu",
-                    "title": "Landing Systems",
-                    "description": "Starship is designed to be able to land on any surface, it employs both propuslive and aerodynamic landing to make one of the most safe landing systems."
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
                 },
                 {
                     "icon": "menu",
-                    "title": "Launch Escape System",
-                    "description": "Starship has the ability to fly away from it's booster stage in case of a booster malfunction, and then safely land back on Earth."
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
                 },
                 {
                     "icon": "menu",
-                    "title": "State-of-the-Art Heat Shielding",
-                    "description": "Starship has industry leading heat shields gauranteeing that you will feel no different during your atmospheric entry."
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
                 }
             ],
-            "img": "/static/Rockets/Starship.png",
+            "img": "/static/Gallery/4.jpg",
             "alt": "Picture of Space-X Starship"
         },
-        "Falcon 9": {
+        "Falcon X": {
             "features": [
                 {
                     "icon": "menu",
-                    "title": "Propulsion Redundancy",
-                    "description": "Falcon 9 can lose multiple engines or have a fuel tank blocked and wouldn't lose the ability to go to space."
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
                 },
                 {
                     "icon": "menu",
-                    "title": "Dragon Capsule",
-                    "description": "Passengers will be inside the Dragon capsule which is stocked with life support systems, environmental control systems, and other features to ensure your safety and comfort."
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
                 },
                 {
                     "icon": "menu",
-                    "title": "Water Landing",
-                    "description": "The Dragon Capsule will be able to land on any body of water in the world using Falcon 9's advanced pathfinding and landing systems."
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
                 },
                 {
                     "icon": "menu",
-                    "title": "Launch Escape System",
-                    "description": "The Dragon Capsule can rapidly boost away from the Falcon 9 in the unlikely event of an emergency, protecting all passengers on board."
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
                 }
             ],
-            "img": "/static/Rockets/Falcon.png",
-            "alt": "Picture of the Falcon-9 Rocket"
+            "img": "/static/Gallery/3.jpg",
+            "alt": "Picture of Space-X Starship"
         },
-        "New Glenn": {
+        "Hiroshima X": {
             "features": [
                 {
                     "icon": "menu",
-                    "title": "Propulsion Redundancy",
-                    "description": "New Glenn's first stage can lose 1 of it's 7 engines and still function flawlessly."
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
                 },
                 {
                     "icon": "menu",
-                    "title": "Weather Compatibility",
-                    "description": "New Glenn can fly in 95% of weather conditions, rain or shine you're going to space!"
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
                 },
                 {
                     "icon": "menu",
-                    "title": "Launch Escape System",
-                    "description": "New Glenn's second stage can propulsively boost away from the first-stage in the unlikely event of a malfunction."
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
+                },
+                {
+                    "icon": "menu",
+                    "title": "Eject Button",
+                    "description": "lorem ipsum doler sit etum smth smth smth"
                 }
             ],
-            "img": "/static/Rockets/NewGlenn.png",
+            "img": "/static/Gallery/2.jpg",
             "alt": "Picture of Space-X Starship"
         }
     },
     "statistics": [
         {
-            "number": "0.0004%",
-            "ndesc": "Chance",
+            "number": "99%",
+            "ndesc": "of a family",
             "icon": "close",
-            "description": "Those are the odds of a passenger on any of our flights experiencing death due to issues with space travel. You are 16 times more likely to get struck by lightning."
+            "description": "lorem ipsum doler sit etum smth smth smth"
         },
         {
-            "number": "0",
-            "ndesc": "people",
+            "number": "99%",
+            "ndesc": "of a family",
             "icon": "close",
-            "description": "No one has sustained injury in our Falcon 9 rockets."
+            "description": "lorem ipsum doler sit etum smth smth smth"
         },
         {
-            "number": "0",
-            "ndesc": "people",
+            "number": "99%",
+            "ndesc": "of a family",
             "icon": "close",
-            "description": "No one has sustained an injury in prolonged stay in space."
+            "description": "lorem ipsum doler sit etum smth smth smth"
         }
     ]
 }
