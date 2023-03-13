@@ -4,39 +4,39 @@
             "title": "Low Earth Orbit",
             "img": "/static/packages/LowEarthOrbit.png",
             "description": "Experience zero gravity, enjoy the breath-taking views, & relax in space for 3 Days.",
-            "price": 500,
+            "price": 1250,
             "location": "Orbit",
             "stars": 4
-          },
-          {
+        },
+        {
             "title": "Lunar Exploration",
             "img": "/static/packages/Moon.jpg",
             "description": "Take your next vacation to the moon, experience how Neil Armstrong felt when he took the giant leap for mankind.",
-            "price": 1000,
+            "price": 2000,
             "location": "Moon",
             "stars": 5
-          }, 
-          {
+        },
+        {
             "title": "Mars Adventure",
             "img": "/static/packages/Mars.png",
             "description": "Our premium experience, a once in a lifetime chance to visit humanity's next home.",
-            "price": 3000,
+            "price": 35700,
             "location": "Mars",
             "stars": 5
-          },
+        },
         {
             "title": "Moon Orbit",
             "img": "/static/packages/MoonOrbit.jpg",
             "location": "Moon",
             "description": "Orbit the moon for 3 days, while enjoying spectacular food and a view of the cradle of humanity.",
-            "price": "800",
+            "price": 1750,
             "stars": 4
         },
         {
             "title": "Mars Orbit",
             "location": "Mars",
             "description": "Enjoy striking views of the red planet as you dine with our 5 star chef Jignesh.",
-            "price": "2500",
+            "price": 28000,
             "stars": 4,
             "img": "/static/packages/MarsOrbit.jpg"
         }
@@ -51,13 +51,13 @@
         {
             "img": "/static/packages/MoonOrbit.jpg",
             "price": "1000 - 1500",
-            "time": "1 MONTH",
+            "time": "5 DAYS",
             "title": "Moon"
-        }, 
+        },
         {
             "img": "/static/packages/Mars.png",
-            "price": "2500 - 3000",
-            "time": "12 MONTHS",
+            "price": "25000 - 30000",
+            "time": "1 YEAR",
             "title": "Mars"
         }
     ],
@@ -67,8 +67,8 @@
             {
                 "title": "Spacewalk",
                 "age": "12+",
-                "description": "Lorem ipsum doler",
-                "img": "/static/HeroImg.jpg",
+                "description": "Take an anti-gravity stroll, while tethered to the ship. Perform mock maintainence tasks around the ship, much like real astronauts.",
+                "img": "/static/Activities/Spacewalk.jpg",
                 "alt": "rocket",
                 "cost": 400,
                 "time": "2 HOURS"
@@ -76,8 +76,8 @@
             {
                 "title": "Obstacle Course",
                 "age": "12+",
-                "description": "Lorem ipsum doler",
-                "img": "/static/HeroImg.jpg",
+                "description": "An anti-gravity obstacle course in space with challenges that will test your agility, endurance, and problem-solving skills.",
+                "img": "/static/Activities/ObstacleCourse.webp",
                 "alt": "rocket",
                 "cost": 100,
                 "time": "1 HOUR"
@@ -87,37 +87,37 @@
             {
                 "title": "ATV Ride",
                 "age": "18+",
-                "description": "Lorem ipsum doler",
-                "img": "/static/HeroImg.jpg",
+                "description": "Explore the tough terrains and craters of the moon on your own ATV's",
+                "img": "/static/Activities/ATV.jpg",
                 "alt": "rocket",
                 "cost": 300,
                 "time": "2 HOURS"
             },
             {
-                "title": "ATV Ride",
+                "title": "Lunarball",
                 "age": "18+",
-                "description": "Lorem ipsum doler",
-                "img": "/static/HeroImg.jpg",
+                "description": "Play basketball in low gravity, jumping tall and high, dunking hard and gloriously",
+                "img": "/static/Activities/Lunarball.jpg",
                 "alt": "rocket",
                 "cost": 300,
                 "time": "2 HOURS"
             },
             {
-                "title": "ATV Ride",
-                "age": "18+",
-                "description": "Lorem ipsum doler",
-                "img": "/static/HeroImg.jpg",
+                "title": "Apollo Mission Site Tour",
+                "age": "5-60",
+                "description": "Get your own personal tour guide to visit the famous bootprint and U.S. flag, and eat some specialty space food",
+                "img": "/static/Activities/Tour.jpg",
                 "alt": "rocket",
                 "cost": 300,
                 "time": "2 HOURS"
             },
             {
-                "title": "ATV Ride",
-                "age": "18+",
-                "description": "Lorem ipsum doler",
-                "img": "/static/HeroImg.jpg",
+                "title": "Stargazing",
+                "age": "5-60",
+                "description": "Climb Mons Pico, and watch the skies with a glass of champagne (ID needed)",
+                "img": "/static/Activities/Stargazing.jpg",
                 "alt": "rocket",
-                "cost": 300,
+                "cost": 50,
                 "time": "2 HOURS"
             }
         ],
@@ -125,35 +125,35 @@
             {
                 "title": "ATV Ride",
                 "age": "18+",
-                "description": "Lorem ipsum doler",
-                "img": "/static/HeroImg.jpg",
+                "description": "Explore the tough terrains and craters of mars on your own ATV's",
+                "img": "/static/Activities/ATV.jpg",
                 "alt": "rocket",
                 "cost": 300,
                 "time": "2 HOURS"
             },
             {
-                "title": "ATV Ride",
-                "age": "18+",
-                "description": "Lorem ipsum doler",
-                "img": "/static/HeroImg.jpg",
+                "title": "Mars Hike",
+                "age": "15+",
+                "description": "Explore the Martian terrain and landscapes on a rover or by foot, visit and study geological features such as canyons, mountains, and valleys.",
+                "img": "/static/Activities/MarsHike.png",
                 "alt": "rocket",
                 "cost": 300,
                 "time": "2 HOURS"
             },
             {
-                "title": "ATV Ride",
+                "title": "Dust Surfing",
                 "age": "18+",
-                "description": "Lorem ipsum doler",
-                "img": "/static/HeroImg.jpg",
+                "description": "Take an exhilarating ride over the powerful winds and currents of Martian dust.",
+                "img": "/static/Activities/DustSurfing.jpg",
                 "alt": "rocket",
                 "cost": 300,
                 "time": "2 HOURS"
             },
             {
-                "title": "ATV Ride",
-                "age": "18+",
-                "description": "Lorem ipsum doler",
-                "img": "/static/HeroImg.jpg",
+                "title": "Cave Exploration",
+                "age": "15+",
+                "description": "Experience a thrilling adventure that reveals the secrets of what lies under the surface of the Red Planet.",
+                "img": "/static/Activities/CaveExploration.png",
                 "alt": "rocket",
                 "cost": 300,
                 "time": "2 HOURS"

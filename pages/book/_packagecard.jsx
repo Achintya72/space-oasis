@@ -51,7 +51,7 @@ export default function PackageCard({ img, title, description, price, location, 
                         <div style={{ color: "#959595" }}>{location}</div>
                     </div>
                     <h3 className={styles.price}>
-                        ~${price != undefined && price.toLocaleString()}*
+                        ~${price.toLocaleString()}*
                     </h3>
                 </div>
 
@@ -61,15 +61,6 @@ export default function PackageCard({ img, title, description, price, location, 
                         <Image key={`star${index}`} className={styles.star} src={value} width={25} height={25} alt="A colored star" />
                     ))}
                 </div>
-                <h3 className={styles.price}>
-                    ${price}
-                </h3>
-            </div>
-            {description}
-            <div style={{ display: "flex", gap: "10px" }}>
-                {starsList.map((value, index) => (
-                    <Image key={`star${index}`} className={styles.star} src={value} width={25} height={25} alt="A colored star" />
-                ))}
             </div>
         </div>
     )
