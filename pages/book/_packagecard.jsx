@@ -44,10 +44,22 @@ export default function PackageCard({ img, title, description, price, location, 
                     alt={description}
                 />
             </div>
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <div>
-                    <strong>{title}</strong> <br />
-                    <div style={{ color: "#959595" }}>{location}</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px", padding: "15px" }}>
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                    <div>
+                        <strong>{title}</strong> <br />
+                        <div style={{ color: "#959595" }}>{location}</div>
+                    </div>
+                    <h3 className={styles.price}>
+                        ~${price != undefined && price.toLocaleString()}*
+                    </h3>
+                </div>
+
+                {description}
+                <div style={{ display: "flex", gap: "10px" }}>
+                    {starsList.map((value, index) => (
+                        <Image key={`star${index}`} className={styles.star} src={value} width={25} height={25} alt="A colored star" />
+                    ))}
                 </div>
                 <h3 className={styles.price}>
                     ${price}
