@@ -135,7 +135,7 @@
                 "title": "Mars Hike",
                 "age": "15+",
                 "description": "Explore the Martian terrain and landscapes on a rover or by foot, visit and study geological features such as canyons, mountains, and valleys.",
-                "img": "/static/HeroImg.jpg",
+                "img": "/static/Activities/MarsHike.png",
                 "alt": "rocket",
                 "cost": 300,
                 "time": "2 HOURS"
@@ -153,7 +153,7 @@
                 "title": "Cave Exploration",
                 "age": "15+",
                 "description": "Experience a thrilling adventure that reveals the secrets of what lies under the surface of the Red Planet.",
-                "img": "/static/HeroImg.jpg",
+                "img": "/static/Activities/CaveExploration.png",
                 "alt": "rocket",
                 "cost": 300,
                 "time": "2 HOURS"

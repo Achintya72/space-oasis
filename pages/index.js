@@ -12,7 +12,7 @@ const promotions = [
     title: "Low Earth Orbit",
     img: "/static/packages/LowEarthOrbit.png",
     description: "Experience zero gravity, enjoy the breath-taking views, & relax in space for 3 Days.",
-    price: 500,
+    price: 1250,
     location: "Orbit",
     stars: 4
   },
@@ -20,7 +20,7 @@ const promotions = [
     title: "Lunar Exploration",
     img: "/static/packages/Moon.jpg",
     description: "Take your next vacation to the moon, experience how Neil Armstrong felt when he took the giant leap for mankind.",
-    price: 1000,
+    price: 2000,
     location: "Moon",
     stars: 4
   },
@@ -28,7 +28,7 @@ const promotions = [
     title: "Mars Adventure",
     img: "/static/packages/Mars.png",
     description: "Our premium experience, a once in a lifetime chance to visit humanity's next home.",
-    price: 3000,
+    price: 30000,
     location: "Mars",
     stars: 5
   },
