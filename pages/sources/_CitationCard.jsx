@@ -16,7 +16,7 @@ export default function Citations({ page }) {
             </div>
 
             {citations != undefined && citations.map((citation, i) => (
-                <p key={`citation-${i}`} className={styles.citation}>{citation}</p>
+                <p key={`citation-${i}`} className={styles.citation}>{citation.citation}</p>
             ))}
         </div>
     );

@@ -2,901 +2,136 @@
     "Lunar Exploration": {
         "gallery": [
             {
-                "src": "/static/Gallery/Moon1.png",
-                "alt": "An astronaut on the moon."
+                "src": "/static/Gallery/1.jpg",
+                "alt": "An astronaut in mars"
             },
             {
-                "src": "/static/Gallery/Moon2.png",
-                "alt": "An astronaut on the moon near the spaceship."
+                "src": "/static/Gallery/2.jpg",
+                "alt": "An astronaut in mars"
             },
             {
-                "src": "/static/Gallery/Moon3.png",
-                "alt": "An astronaut getting on a rover."
+                "src": "/static/Gallery/3.jpg",
+                "alt": "An astronaut in mars"
             },
             {
-                "src": "/static/Gallery/Moon4.png",
-                "alt": "An astronaut getting on a rover."
-            },
-            {
-                "src": "/static/Gallery/Moon5.png",
-                "alt": "An astronaut getting on a rover."
-            },
-            {
-                "src": "/static/Gallery/Moon6.png",
-                "alt": "An astronaut getting on a rover."
+                "src": "/static/Gallery/4.jpg",
+                "alt": "An astronaut in mars"
             }
         ],
-        "location": "The Sea of Tranquility",
+        "location": "The Moon",
         "includes": [
             "Round trip to the moon",
-            "Training",
-            "Food",
             "Moon rock souvenir",
             "ATV Ride",
             "Star Gazing",
-            "Apollo Mission Site Tour",
-            "Lunarball"
+            "Asteroid Watching"
         ],
         "costs": [
             {
                 "name": "Flight Tickets",
-                "price": 1000
+                "price": 100000
             },
             {
-                "name": "Hotel Stay",
-                "price": 750
+                "name": "Flight Tickets",
+                "price": 100000
             },
             {
-                "name": "Activities",
-                "price": 250
+                "name": "Flight Tickets",
+                "price": 100000
             }
         ],
         "vehicles": [
             {
-                "title": "New Glenn",
+                "title": "Space-X Starship",
                 "numbers": [
                     {
                         "name": "Height",
-                        "number": "98 m."
-                    },
-                    {
-                        "name": "Diameter",
-                        "number": "7 m."
-                    },
-                    {
-                        "name": "Mass",
                         "number": "A lot"
                     },
                     {
-                        "name": "Payload to Moon",
-                        "number": "13,600 kg"
-                    }
-                ],
-                "description": "New Glenn is a two-stage rocket with a diameter of 7 m (23 ft). Its first stage will be powered by seven BE-4 engines that use liquid methane / liquid oxygen as propellants and is designed to be reusable for up to 25 missions. New Glenn is capable of carrying people and payloads to Earth orbit and beyond.",
-                "img": "/static/Rockets/NewGlenn.png"
-            },
-            {
-                "title": "Space-X Starship",
-                "numbers": [
-                    {
                         "name": "Height",
-                        "number": "120 m."
-                    },
-                    {
-                        "name": "Width",
-                        "number": "9 m."
-                    },
-                    {
-                        "name": "Mass",
-                        "number": "5,000 tons"
-                    },
-                    {
-                        "name": "Payload to Moon",
-                        "number": "105,000 kg"
-                    },
-                    {
-                        "name": "Passengers",
-                        "number": "100"
-                    }
-                ],
-                "description": "The Starship spacecraft and Super Heavy rocket, which are collectively known as Starship, form a reusable transport system created by SpaceX that can transport both crew and cargo to Earth's orbit, the Moon, Mars, and other destinations. Starship is anticipated to be the most potent launch vehicle ever designed, capable of transporting up to 150 metric tonnes of reusable cargo to Earth's orbit and up to 250 metric tonnes of expendable cargo.",
-                "img": "/static/Rockets/Starship.png"
-            }
-        ],
-        "details": [
-            {
-                "title": "Astronaut training",
-                "description": "Before embarking, fliers will have to undergo extensive training. We will provide the necessary training, including zero-gravity simulations, G-force training, lunar surface training, and spacewalk training.",
-                "icon": "I"
-            },
-            {
-                "title": "Luxury accommodation",
-                "description": "While in space, fliers need a place to stay. We will provide comfortable, luxurious accommodations that are equipped with everything fliers need to feel at home.",
-                "icon": "I"
-            },
-            {
-                "title": "Spacewalks",
-                "description": "We offer the chance for fliers to go on spacewalks, allowing them to experience the thrill of floating in space and seeing the Earth from above.",
-                "icon": "I"
-            },
-            {
-                "title": "Personalized meals",
-                "description": "We offer personalized meal plans that cater to the individual needs and preferences of each flier.",
-                "icon": "I"
-            },
-            {
-                "title": "Low-gravity sports",
-                "description": "Fliers can participate in zero-gravity sports, such as zero-gravity basketball or soccer; a fun and unique way to pass the time while in space.",
-                "icon": "I"
-            },
-            {
-                "title": "Entertainment",
-                "description": "We provide in-flight entertainment options for fliers, including movies, books, and games.",
-                "icon": "I"
-            },
-            {
-                "title": "Souvenirs",
-                "description": "Fliers can purchase unique souvenirs, such as personalized space suits, mission patches, or space rocks.",
-                "icon": "I"
-            },
-            {
-                "title": "Post-flight experiences",
-                "description": "We also provide post-flight experiences, such as debriefings and meetings with space experts, to help fliers process their experiences and make the most of their journey.",
-                "icon": "I"
-            },
-            {
-                "title": "Personalized mementos",
-                "description": "To commemorate the experience, We also provide personalized mementos, such as photos, videos, and certificates of participation, available for purchase",
-                "icon": "I"
-            }
-        ],
-        "journey": [
-            {
-                "title": "Training",
-                "description": "Fliers must undergo Spacecraft training, Zero G training, Low G training, Psychological training and G-Force training",
-                "img": "/static/Journey/Training.png",
-                "alt": "A woman recieiving a space training lesson."
-            },
-            {
-                "title": "Launch",
-                "description": "Take off from Earth, experiencing 3 Gs of force. This takes around 8-9 minutes, accelerating from 0 to 7,500 m/s. ",
-                "img": "/static/Journey/Launch.png",
-                "alt": "A rocket taking off from Earth."
-            },
-            {
-                "title": "Orbit Alignment",
-                "description": "Having taken off, the ship will undergo orbital alignment, experiencing slight G-force shifts as the ship moves and orients itself towards the moon. This takes approximately 2 days",
-                "img": "/static/Journey/OrbitAlignment.png",
-                "alt": "A diagram about orbit alignment."
-            },
-            {
-                "title": "Travel",
-                "description": "Once oriented, begin moving towards Moon, taking only 1 day",
-                "img": "/static/Journey/Travel.png",
-                "alt": "A rocket with its boosters detaching."
-            },
-            {
-                "title": "Landing",
-                "description": "Once the ship approaches the moon, it will begin decelerating. This process lasts around 13 minutes.",
-                "img": "/static/Journey/LandingMoon.png",
-                "alt": "The moon lander as it touches down."
-            },
-            {
-                "title": "Return",
-                "description": "A 3 day journey from the Moon. This includes a Moon exit burn, Earth atmosphere re-entry, and Earth landing. Passengers will experience a maximum of 6 Gs of force during Earth landing.",
-                "img": "/static/Journey/Return.png",
-                "alt": "A Space-X Starship going through re-entry."
-            }
-        ]
-    },
-    "Low Earth Orbit": {
-        "gallery": [
-            {
-                "src": "/static/Gallery/LowEarth1.png",
-                "alt": "An astronaut in mars"
-            },
-            {
-                "src": "/static/Gallery/LowEarth2.png",
-                "alt": "An astronaut in mars"
-            },
-            {
-                "src": "/static/Gallery/LowEarth3.png",
-                "alt": "An astronaut in mars"
-            },
-            {
-                "src": "/static/Gallery/LowEarth4.png",
-                "alt": "An astronaut in mars"
-            },
-            {
-                "src": "/static/Gallery/LowEarth5.png",
-                "alt": "An astronaut in mars"
-            },
-            {
-                "src": "/static/Gallery/LowEarth6.png",
-                "alt": "An astronaut in mars"
-            }
-        ],
-        "location": "585 km. above sea level",
-        "includes": [
-            "Flight to and from Low Earth Orbit",
-            "Spacewalk",
-            "Space Obstacle Course",
-            "Meals and Beverages",
-            "Training"
-        ],
-        "costs": [
-            {
-                "name": "Flight Tickets",
-                "price": 500
-            },
-            {
-                "name": "Aircraft Stay and Amenities",
-                "price": 250
-            },
-            {
-                "name": "Activities",
-                "price": 500
-            }
-        ],
-        "vehicles": [
-            {
-                "title": "Falcon 9",
-                "numbers": [
-                    {
-                        "name": "Height",
-                        "number": "70 m."
-                    },
-                    {
-                        "name": "Diameter",
-                        "number": "3.7 m."
-                    },
-                    {
-                        "name": "Mass",
-                        "number": "550 tons"
-                    },
-                    {
-                        "name": "Payload to Orbit",
-                        "number": "22,800 kg"
-                    },
-                    {
-                        "name": "Passengers",
-                        "number": "4"
-                    }
-                ],
-                "description": "The Falcon 9 rocket, created and produced by SpaceX, is a two-stage vehicle that is intended to transport individuals into Earth's orbit and beyond in a dependable and secure manner. This rocket is the first reusable rocket in the world capable of orbiting the Earth. The reuse of the Falcon 9 rocket's most costly components helps to reduce the cost of space access.",
-                "img": "/static/Rockets/Falcon.png"
-            },
-            {
-                "title": "Soyuz MS",
-                "description": "The Soyuz MS is a spacecraft designed for crewed spaceflight operations and cargo transport to the International Space Station. It is a modernized version of the Soyuz family of spacecraft and features upgrades and improvements, such as the ability to carry up to three crew members and remain in space for up to 200 days. The Soyuz MS consists of three modules and is launched from the Baikonur Cosmodrome in Kazakhstan. Its reliability and safety have made it one of the most widely used spacecraft in spaceflight history.",
-                "img": "/static/Rockets/Soyuz.png",
-                "numbers": [
-                    {
-                        "name": "Height",
-                        "number": "46 m."
-                    },
-                    {
-                        "name": "Diameter",
-                        "number": "2.95 m."
-                    },
-                    {
-                        "name": "Mass",
-                        "number": "312 tons"
-                    },
-                    {
-                        "name": "Payload to Orbit",
-                        "number": "6,600 - 7,400 kg"
-                    },
-                    {
-                        "name": "Passengers",
-                        "number": "3"
-                    }
-                ]
-            }
-        ],
-        "journey": [
-            {
-                "title": "Training",
-                "description": "Fliers must undergo Spacecraft training, Zero G training and G-Force training",
-                "img": "/static/Journey/Training.png",
-                "alt": "A woman recieiving a space training lesson."
-            },
-            {
-                "title": "Launch",
-                "description": "Take off from Earth, experiencing 3 Gs of force. This takes around 8-9 minutes, accelerating from 0 to 7,500 m/s. ",
-                "img": "/static/Journey/Launch.png",
-                "alt": "A rocket taking off from Earth."
-            },
-            {
-                "title": "Orbit",
-                "description": "Spend 3 days being 585 km above Earth while enjoying the activities and anemities Space Oasis provides.",
-                "img": "/static/packages/LowEarthOrbit.png",
-                "alt": "An image of the Earth from Low Earth Orbit."
-            },
-            {
-                "title": "Return",
-                "description": "The capsule performs a 15 minute de-orbit burn, and then starts atmospheric re-entry after 35-40 minutes. It takes 3 minutse to complete re-entry before splashing down in the Pacific Ocean.",
-                "img": "/static/Journey/EarthReturn.png",
-                "alt": "A capsule going through re-entry."
-            }
-        ],
-        "details": [
-            {
-                "title": "Astronaut training",
-                "description": "Before embarking, fliers will have to undergo extensive training. We will provide the necessary training, including zero-gravity simulations, G-force training, and spacewalk training.",
-                "icon": "I"
-            },
-            {
-                "title": "Luxury accommodation",
-                "description": "While in space, fliers need a place to stay. We will provide comfortable, luxurious accommodations that are equipped with everything fliers need to feel at home.",
-                "icon": "I"
-            },
-            {
-                "title": "Spacewalks",
-                "description": "We offer the chance for fliers to go on spacewalks, allowing them to experience the thrill of floating in space and seeing the Earth from above.",
-                "icon": "I"
-            },
-            {
-                "title": "Personalized meals",
-                "description": "We offer personalized meal plans that cater to the individual needs and preferences of each flier.",
-                "icon": "I"
-            },
-            {
-                "title": "Entertainment",
-                "description": "We provide in-flight entertainment options for fliers, including movies, books, and games.",
-                "icon": "I"
-            },
-            {
-                "title": "Souvenirs",
-                "description": "Fliers can purchase unique souvenirs, such as personalized space suits, mission patches, or space rocks.",
-                "icon": "I"
-            },
-            {
-                "title": "Post-flight experiences",
-                "description": "We also provide post-flight experiences, such as debriefings and meetings with space experts, to help fliers process their experiences and make the most of their journey.",
-                "icon": "I"
-            },
-            {
-                "title": "Personalized mementos",
-                "description": "To commemorate the experience, We also provide personalized mementos, such as photos, videos, and certificates of participation, available for purchase",
-                "icon": "I"
-            }
-        ]
-    },
-    "Mars Adventure": {
-        "gallery": [
-            {
-                "src": "/static/Gallery/Mars1.webp",
-                "alt": "An astronaut in mars"
-            },
-            {
-                "src": "/static/Gallery/UtopiaPlanitia.png",
-                "alt": "An astronaut in mars"
-            },
-            {
-                "src": "/static/Gallery/3.jpg",
-                "alt": "An astronaut in mars"
-            }
-        ],
-        "location": "Utopia Planitia",
-        "includes": [
-            "Round trip to Mars",
-            "Spacewalk",
-            "Space Obstacle Course",
-            "Cryosleep Chambers",
-            "Meals and Beverages",
-            "Training",
-            "Mars Resort Stay",
-            "ATV Ride",
-            "Mars Hike",
-            "Dust Surfing",
-            "Cave Exploration Tour",
-            "Health and Wellness Monitoring and Facilities"
-        ],
-        "costs": [
-            {
-                "name": "Flight Tickets",
-                "price": 25000
-            },
-            {
-                "name": "Aircraft Stay and Amenities",
-                "price": 2500
-            },
-            {
-                "name": "Activities",
-                "price": 1200
-            },
-            {
-                "name": "Resort Stay",
-                "price": 7000
-            }
-        ],
-        "vehicles": [
-            {
-                "title": "Space-X Starship",
-                "numbers": [
-                    {
-                        "name": "Height",
-                        "number": "120 m."
-                    },
-                    {
-                        "name": "Width",
-                        "number": "9 m."
-                    },
-                    {
-                        "name": "Mass",
-                        "number": "5,000 tons"
-                    },
-                    {
-                        "name": "Payload to Moon",
-                        "number": "105,000 kg"
-                    },
-                    {
-                        "name": "Passengers",
-                        "number": "100"
-                    }
-                ],
-                "description": "The Starship spacecraft and Super Heavy rocket, which are collectively known as Starship, form a reusable transport system created by SpaceX that can transport both crew and cargo to Earth's orbit, the Moon, Mars, and other destinations. Starship is anticipated to be the most potent launch vehicle ever designed, capable of transporting up to 150 metric tonnes of reusable cargo to Earth's orbit and up to 250 metric tonnes of expendable cargo.",
-                "img": "/static/Rockets/Starship.png"
-            }
-        ],
-        "journey": [
-            {
-                "title": "Training",
-                "description": "Fliers must undergo Spacecraft training, Zero G training and G-Force training, Martian Terrain Training, Low Gravity Training, Cryosleep training.",
-                "img": "/static/Journey/Launch.png",
-                "alt": "A woman recieiving a space training lesson."
-            },
-            {
-                "title": "Launch",
-                "description": "Take off from Earth, experiencing 3 Gs of force. This takes around 8-9 minutes, accelerating from 0 to 7,500 m/s. ",
-                "img": "/static/Journey/Launch.png",
-                "alt": "A rocket taking off from Earth."
-            },
-            {
-                "title": "Refueling",
-                "description": "To sustain the aircraft for the journey to mars, another Starship will launch and meet the ship, depositing all of its fuel.",
-                "img": "/static/Journey/StarshipRefueling.png",
-                "alt": "One Starship supplying fuel to another Starship."
-            },
-            {
-                "title": "Orbit Alignment",
-                "description": "Having taken off, the ship will undergo orbital alignment, experiencing slight G-force shifts as the ship moves and orients itself towards Mars. This process will continue throughout the flight.",
-                "img": "/static/Journey/OrbitAlignment.png",
-                "alt": "A diagram about orbit alignment."
-            },
-            {
-                "title": "Travel",
-                "description": "Once en route to Mars, passengers can choose to spend the 3 months on-flight in cryosleep, or awake while enjoying the activities and features Starship has to offer",
-                "img": "/static/Journey/Travel.png",
-                "alt": "A rocket with its boosters detaching."
-            },
-            {
-                "title": "Landing",
-                "description": "Starship will enter Mar's atmosphere and perform aerodynamic braking. After reaching an altitude of 2 km, the ship will rotate to propulsively brake and land vertically on the surface of Mars.",
-                "img": "/static/packages/Mars.png",
-                "alt": "A futuristic base where Starships would land on Mars."
-            },
-            {
-                "title": "Return",
-                "description": "Fliers will have the opportunity to experience the same in-flight amenities as before, and swiftly reach Earth",
-                "img": "/static/Journey/Return.png",
-                "alt": "A Space-X Starship going through re-entry."
-            },
-            {
-                "title": "Post-Flight Rehabilitation",
-                "description": "After returning to Earth, fliers will undergo physical training and monitoring to get their bodies readjusted to Earth's gravity and climate",
-                "img": "/static/Journey/Rehab.png",
-                "alt": "A woman exiting the capsule."
-            }
-        ],
-        "details": [
-            {
-                "title": "Astronaut training",
-                "description": "Before embarking, fliers will have to undergo extensive training. We will provide the necessary training, including zero-gravity simulations, G-force training, low-gravity training, cryosleep training, martian surface training, and spacewalk training.",
-                "icon": "I"
-            },
-            {
-                "title": "Luxury accommodation",
-                "description": "While in space, or on Mars, fliers need a place to stay. We will provide comfortable, luxurious accommodations that are equipped with everything fliers need to feel at home.",
-                "icon": "I"
-            },
-            {
-                "title": "Spacewalks",
-                "description": "We offer the chance for fliers to go on spacewalks, allowing them to experience the thrill of floating in space and seeing the Earth from above.",
-                "icon": "I"
-            },
-            {
-                "title": "Personalized meals",
-                "description": "We offer personalized meal plans that cater to the individual needs and preferences of each flier.",
-                "icon": "I"
-            },
-            {
-                "title": "Entertainment",
-                "description": "We provide in-flight entertainment options for fliers, including movies, books, and games.",
-                "icon": "I"
-            },
-            {
-                "title": "Souvenirs",
-                "description": "Fliers can purchase unique souvenirs, such as personalized space suits, mission patches, or space rocks.",
-                "icon": "I"
-            },
-            {
-                "title": "Post-flight experiences",
-                "description": "We also provide post-flight experiences, such as debriefings and meetings with space experts, to help fliers process their experiences and make the most of their journey.",
-                "icon": "I"
-            },
-            {
-                "title": "Personalized mementos",
-                "description": "To commemorate the experience, We also provide personalized mementos, such as photos, videos, and certificates of participation, available for purchase",
-                "icon": "I"
-            },
-            {
-                "title": "Dust Surfing",
-                "description": "Take an exhilarating ride over the powerful winds and currents of Martian dust.",
-                "icon": "I"
-            },
-            {
-                "title": "Mars Hike",
-                "description": "Explore the Martian terrain and landscapes on a rover or by foot, visit and study geological features such as canyons, mountains, and valleys.",
-                "icon": ""
-            },
-            {
-                "title": "Cave Exploration",
-                "description": "Experience a thrilling adventure that reveals the secrets of what lies under the surface of the Red Planet.",
-                "icon": "I"
-            },
-            {
-                "title": "ATV Ride",
-                "description": "Explore the tough terrains and craters of mars on your own ATV's",
-                "icon": "I"
-            },
-            {
-                "title": "Cryosleep",
-                "description": "NASA's Torpor Inducing Transfer Habitat For Human Stasis works by putting passengers to sleep for extended periods of time, lowering metabolic rates extensively, preserving their body for the journey",
-                "icon": "I"
-            }
-        ]
-    },
-    "Moon Orbit": {
-        "gallery": [
-            {
-                "src": "/static/Gallery/1.jpg",
-                "alt": "An astronaut in mars"
-            },
-            {
-                "src": "/static/Gallery/2.jpg",
-                "alt": "An astronaut in mars"
-            },
-            {
-                "src": "/static/Gallery/3.jpg",
-                "alt": "An astronaut in mars"
-            },
-            {
-                "src": "/static/Gallery/4.jpg",
-                "alt": "An astronaut in mars"
-            }
-        ],
-        "location": "200 km. above Moon Surface",
-        "includes": [
-            "Flight to and from Moon Orbit",
-            "Spacewalk",
-            "Space Obstacle Course",
-            "Meals and Beverages",
-            "Training"
-        ],
-        "costs": [
-            {
-                "name": "Flight Tickets",
-                "price": 1000
-            },
-            {
-                "name": "Aircraft Stay and Amenities",
-                "price": 250
-            },
-            {
-                "name": "Activities",
-                "price": 500
-            }
-        ],
-        "vehicles": [
-            {
-                "title": "New Glenn",
-                "numbers": [
-                    {
-                        "name": "Height",
-                        "number": "98 m."
-                    },
-                    {
-                        "name": "Diameter",
-                        "number": "7 m."
-                    },
-                    {
-                        "name": "Mass",
                         "number": "A lot"
                     },
                     {
-                        "name": "Payload to Moon",
-                        "number": "13,600 kg"
+                        "name": "Height",
+                        "number": "A lot"
+                    },
+                    {
+                        "name": "Height",
+                        "number": "A lot"
                     }
                 ],
-                "description": "New Glenn is a two-stage rocket with a diameter of 7 m (23 ft). Its first stage will be powered by seven BE-4 engines that use liquid methane / liquid oxygen as propellants and is designed to be reusable for up to 25 missions. New Glenn is capable of carrying people and payloads to Earth orbit and beyond.",
-                "img": "/static/Rockets/NewGlenn.png"
+                "description": "Lorem ipsum dolor sit amet consectetur. Risus eu aliquet habitant ultrices dictumst quis lacus ultricies platea. Nulla neque egestas quis mattis sed tellus. Dui pellentesque cursus sed egestas magnis nisi blandit. Adipiscing nam lacus tincidunt nulla scelerisque ullamcorper nibh tortor. Enim sit pellentesque enim pulvinar at. Nisl vitae facilisi euismod tincidunt placerat quisque lorem. Eu nulla sed nisl tristique nunc velit dignissim lectus.",
+                "img": "/static/Gallery/4.jpg"
             },
             {
                 "title": "Space-X Starship",
                 "numbers": [
                     {
                         "name": "Height",
-                        "number": "120 m."
+                        "number": "A lot"
                     },
-                    {
-                        "name": "Width",
-                        "number": "9 m."
-                    },
-                    {
-                        "name": "Mass",
-                        "number": "5,000 tons"
-                    },
-                    {
-                        "name": "Payload to Moon",
-                        "number": "105,000 kg"
-                    },
-                    {
-                        "name": "Passengers",
-                        "number": "100"
-                    }
-                ],
-                "description": "The Starship spacecraft and Super Heavy rocket, which are collectively known as Starship, form a reusable transport system created by SpaceX that can transport both crew and cargo to Earth's orbit, the Moon, Mars, and other destinations. Starship is anticipated to be the most potent launch vehicle ever designed, capable of transporting up to 150 metric tonnes of reusable cargo to Earth's orbit and up to 250 metric tonnes of expendable cargo.",
-                "img": "/static/Rockets/Starship.png"
-            }
-        ],
-        "journey": [
-            {
-                "title": "Training",
-                "description": "Fliers must undergo Spacecraft training, Zero G training, Psychological training and G-Force training",
-                "img": "/static/Journey/Training.png",
-                "alt": "A woman recieiving a space training lesson."
-            },
-            {
-                "title": "Launch",
-                "description": "Take off from Earth, experiencing 3 Gs of force. This takes around 8-9 minutes, accelerating from 0 to 7,500 m/s. ",
-                "img": "/static/Journey/Launch.png",
-                "alt": "A rocket taking off from Earth."
-            },
-            {
-                "title": "Orbit Alignment",
-                "description": "Having taken off, the ship will undergo orbital alignment, experiencing slight G-force shifts as the ship moves and orients itself towards the moon. This takes approximately 2 days",
-                "img": "/static/Journey/OrbitAlignment.png",
-                "alt": "A diagram about orbit alignment."
-            },
-            {
-                "title": "Travel",
-                "description": "Once oriented, begin moving towards Moon, taking only 1 day",
-                "img": "/static/Journey/Travel.png",
-                "alt": "A Space-X Starship going through re-entry."
-            },
-            {
-                "title": "Orbit",
-                "description": "Spend 3 days being 200 km above the Moon while enjoying the activities and anemities Space Oasis provides.",
-                "img": "/static/packages/MoonOrbit.jpg",
-                "alt": "First Pic"
-            },
-            {
-                "title": "Return",
-                "description": "A 3 day journey from the Moon. This includes a Moon exit burn, Earth atmosphere re-entry, and Earth landing. Passengers will experience a maximum of 6 Gs of force during Earth landing.",
-                "img": "/static/Journey/Return.png",
-                "alt": "First Pic"
-            }
-        ],
-        "details": [
-            {
-                "title": "Astronaut training",
-                "description": "Before embarking, fliers will have to undergo extensive training. We will provide the necessary training, including zero-gravity simulations, G-force training, and spacewalk training.",
-                "icon": "I"
-            },
-            {
-                "title": "Luxury accommodation",
-                "description": "While in space, fliers need a place to stay. We will provide comfortable, luxurious accommodations that are equipped with everything fliers need to feel at home.",
-                "icon": "I"
-            },
-            {
-                "title": "Spacewalks",
-                "description": "We offer the chance for fliers to go on spacewalks, allowing them to experience the thrill of floating in space and seeing the Earth from above.",
-                "icon": "I"
-            },
-            {
-                "title": "Space Obstacle Course",
-                "description": "The space obstacle course provides space tourists with a unique and exciting opportunity to experience the challenges and thrills of navigating through various obstacles in a zero-gravity environment.",
-                "icon": "I"
-            },
-            {
-                "title": "Personalized meals",
-                "description": "We offer personalized meal plans that cater to the individual needs and preferences of each flier.",
-                "icon": "I"
-            },
-            {
-                "title": "Entertainment",
-                "description": "We provide in-flight entertainment options for fliers, including movies, books, and games.",
-                "icon": "I"
-            },
-            {
-                "title": "Souvenirs",
-                "description": "Fliers can purchase unique souvenirs, such as personalized space suits, mission patches, or space rocks.",
-                "icon": "I"
-            },
-            {
-                "title": "Post-flight experiences",
-                "description": "We also provide post-flight experiences, such as debriefings and meetings with space experts, to help fliers process their experiences and make the most of their journey.",
-                "icon": "I"
-            },
-            {
-                "title": "Personalized mementos",
-                "description": "To commemorate the experience, We also provide personalized mementos, such as photos, videos, and certificates of participation, available for purchase",
-                "icon": "I"
-            }
-        ]
-    },
-    "Mars Orbit": {
-        "gallery": [
-            {
-                "src": "/static/Gallery/1.jpg",
-                "alt": "An astronaut in mars"
-            },
-            {
-                "src": "/static/Gallery/2.jpg",
-                "alt": "An astronaut in mars"
-            },
-            {
-                "src": "/static/Gallery/3.jpg",
-                "alt": "An astronaut in mars"
-            },
-            {
-                "src": "/static/Gallery/4.jpg",
-                "alt": "An astronaut in mars"
-            }
-        ],
-        "location": "5,000 km above the surface of Mars",
-        "includes": [
-            "Round trip to Mars",
-            "Spacewalk",
-            "Space Obstacle Course",
-            "Cryosleep Chambers",
-            "Meals and Beverages",
-            "Training",
-            "Health and Wellness Monitoring and Facilities"
-        ],
-        "costs": [
-            {
-                "name": "Flight Tickets",
-                "price": 25000
-            },
-            {
-                "name": "Aircraft Stay and Amenities",
-                "price": 2500
-            },
-            {
-                "name": "Activities",
-                "price": 500
-            }
-        ],
-        "vehicles": [
-            {
-                "title": "Space-X Starship",
-                "numbers": [
                     {
                         "name": "Height",
-                        "number": "120 m."
+                        "number": "A lot"
                     },
                     {
-                        "name": "Width",
-                        "number": "9 m."
+                        "name": "Height",
+                        "number": "A lot"
                     },
                     {
-                        "name": "Mass",
-                        "number": "5,000 tons"
-                    },
-                    {
-                        "name": "Payload to Moon",
-                        "number": "105,000 kg"
-                    },
-                    {
-                        "name": "Passengers",
-                        "number": "100"
+                        "name": "Height",
+                        "number": "A lot"
                     }
                 ],
-                "description": "The Starship spacecraft and Super Heavy rocket, which are collectively known as Starship, form a reusable transport system created by SpaceX that can transport both crew and cargo to Earth's orbit, the Moon, Mars, and other destinations. Starship is anticipated to be the most potent launch vehicle ever designed, capable of transporting up to 150 metric tonnes of reusable cargo to Earth's orbit and up to 250 metric tonnes of expendable cargo.",
-                "img": "/static/Rockets/Starship.png"
-            }
-        ],
-        "journey": [
-            {
-                "title": "Training",
-                "description": "Fliers must undergo Spacecraft training, Zero G training and G-Force training, Cryosleep training.",
-                "img": "/static/Journey/Training.png",
-                "alt": "A woman recieiving a space training lesson."
-            },
-            {
-                "title": "Launch",
-                "description": "Take off from Earth, experiencing 3 Gs of force. This takes around 8-9 minutes, accelerating from 0 to 7,500 m/s. ",
-                "img": "/static/Journey/Launch.png",
-                "alt": "A rocket taking off from Earth."
-            },
-            {
-                "title": "Refueling",
-                "description": "To sustain the aircraft for the journey to mars, another Starship will launch and meet the ship, depositing all of its fuel.",
-                "img": "/static/Journey/StarshipRefueling.png",
-                "alt": "One Starship supplying fuel to another Starship."
-            },
-            {
-                "title": "Orbit Alignment",
-                "description": "Having taken off, the ship will undergo orbital alignment, experiencing slight G-force shifts as the ship moves and orients itself towards Mars. This process will continue throughout the flight.",
-                "img": "/static/Journey/OrbitAlignment.png",
-                "alt": "A diagram about orbit alignment."
-            },
-            {
-                "title": "Travel",
-                "description": "Once en route to Mars, passengers can choose to spend the 3 months on-flight in cryosleep, or awake while enjoying the activities and features Starship has to offer",
-                "img": "/static/Journey/Travel.png",
-                "alt": "A rocket with its boosters detaching."
-            },
-            {
-                "title": "Return",
-                "description": "Fliers will have the opportunity to experience the same in-flight amenities as before, and swiftly reach Earth",
-                "img": "/static/Journey/Return.png",
-                "alt": "A Space-X Starship going through re-entry."
-            },
-            {
-                "title": "Post-Flight Rehabilitation",
-                "description": "After returning to Earth, fliers will undergo physical training and monitoring to get their bodies readjusted to Earth's gravity and climate",
-                "img": "/static/Journey/Rehab.png",
-                "alt": "A woman exiting the capsule."
+                "description": "Lorem ipsum dolor sit amet consectetur. Risus eu aliquet habitant ultrices dictumst quis lacus ultricies platea. Nulla neque egestas quis mattis sed tellus. Dui pellentesque cursus sed egestas magnis nisi blandit. Adipiscing nam lacus tincidunt nulla scelerisque ullamcorper nibh tortor. Enim sit pellentesque enim pulvinar at. Nisl vitae facilisi euismod tincidunt placerat quisque lorem. Eu nulla sed nisl tristique nunc velit dignissim lectus.",
+                "img": "/static/Gallery/4.jpg"
             }
         ],
         "details": [
             {
-                "title": "Astronaut training",
-                "description": "Before embarking, fliers will have to undergo extensive training. We will provide the necessary training, including zero-gravity simulations, G-force training, low-gravity training, cryosleep training, martian surface training, and spacewalk training.",
+                "title": "Guided Tours",
+                "description": "Lorem ipsum dolor sit amet consectetur. Id id risus commodo turpis vulputate eget duis suspendisse faucibus. Eget urna quam ut nunc sed. Sed nunc egestas amet ante et. Cras elit arcu sit nibh. Ornare egestas tempor consequat etiam imperdiet quis hac tortor ac. Sed elit porttitor et in.",
                 "icon": "I"
             },
             {
-                "title": "Luxury accommodation",
-                "description": "While in space, or on Mars, fliers need a place to stay. We will provide comfortable, luxurious accommodations that are equipped with everything fliers need to feel at home.",
+                "title": "In-house dining",
+                "description": "Lorem ipsum dolor sit amet consectetur. Quisque ultricies faucibus amet purus maecenas tempor est aliquam pellentesque. Cras risus maecenas in quam ultrices massa in velit nunc. Dui tortor aenean metus ultricies viverra non ac pretium nunc. Urna malesuada lobortis aliquam pulvinar.",
+                "icon": "food"
+            },
+            {
+                "title": "In-house dining",
+                "description": "3 meals a day, plus wine tastings and complimentary in-flight meals. We support a variety of dietary restrictions, from Vegetarian to Halal to non-allergenic foods.",
+                "icon": "food"
+            },
+            {
+                "title": "In-house dining",
+                "description": "3 meals a day, plus wine tastings and complimentary in-flight meals. We support a variety of dietary restrictions, from Vegetarian to Halal to non-allergenic foods.",
+                "icon": "food"
+            },
+            {
+                "title": "Guided Tours",
+                "description": "Lorem ipsum dolor sit amet consectetur. Id id risus commodo turpis vulputate eget duis suspendisse faucibus. Eget urna quam ut nunc sed. Sed nunc egestas amet ante et. Cras elit arcu sit nibh. Ornare egestas tempor consequat etiam imperdiet quis hac tortor ac. Sed elit porttitor et in.",
                 "icon": "I"
             },
             {
-                "title": "Spacewalks",
-                "description": "We offer the chance for fliers to go on spacewalks, allowing them to experience the thrill of floating in space and seeing the Earth from above.",
+                "title": "In-house dining",
+                "description": "Lorem ipsum dolor sit amet consectetur. Quisque ultricies faucibus amet purus maecenas tempor est aliquam pellentesque. Cras risus maecenas in quam ultrices massa in velit nunc. Dui tortor aenean metus ultricies viverra non ac pretium nunc. Urna malesuada lobortis aliquam pulvinar.",
                 "icon": "I"
             },
             {
-                "title": "Personalized meals",
-                "description": "We offer personalized meal plans that cater to the individual needs and preferences of each flier.",
+                "title": "In-house dining",
+                "description": "3 meals a day, plus wine tastings and complimentary in-flight meals. We support a variety of dietary restrictions, from Vegetarian to Halal to non-allergenic foods.",
                 "icon": "I"
             },
             {
-                "title": "Entertainment",
-                "description": "We provide in-flight entertainment options for fliers, including movies, books, and games.",
+                "title": "Guided Tours",
+                "description": "Lorem ipsum dolor sit amet consectetur. Id id risus commodo turpis vulputate eget duis suspendisse faucibus. Eget urna quam ut nunc sed. Sed nunc egestas amet ante et. Cras elit arcu sit nibh. Ornare egestas tempor consequat etiam imperdiet quis hac tortor ac. Sed elit porttitor et in.",
                 "icon": "I"
             },
             {
-                "title": "Souvenirs",
-                "description": "Fliers can purchase unique souvenirs, such as personalized space suits, mission patches, or space rocks.",
-                "icon": "I"
-            },
-            {
-                "title": "Post-flight experiences",
-                "description": "We also provide post-flight experiences, such as debriefings and meetings with space experts, to help fliers process their experiences and make the most of their journey.",
-                "icon": "I"
-            },
-            {
-                "title": "Personalized mementos",
-                "description": "To commemorate the experience, We also provide personalized mementos, such as photos, videos, and certificates of participation, available for purchase",
-                "icon": "I"
-            },
-            {
-                "title": "Cryosleep",
-                "description": "NASA's Torpor Inducing Transfer Habitat For Human Stasis works by putting passengers to sleep for extended periods of time, lowering metabolic rates extensively, preserving their body for the journey",
+                "title": "In-house dining",
+                "description": "Lorem ipsum dolor sit amet consectetur. Quisque ultricies faucibus amet purus maecenas tempor est aliquam pellentesque. Cras risus maecenas in quam ultrices massa in velit nunc. Dui tortor aenean metus ultricies viverra non ac pretium nunc. Urna malesuada lobortis aliquam pulvinar.",
                 "icon": "I"
             }
         ]

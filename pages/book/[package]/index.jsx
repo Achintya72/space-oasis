@@ -34,7 +34,7 @@ export default function ProductDetail() {
     const data = dataset[packageName];
     const gallery = data["gallery"];
 
-    const renderGallery = gallery.map((img, i) => (
+    const renderGallery = [gallery[0], gallery[1], gallery[2]].map((img, i) => (
         <div key={"Gallery" + i} className={styles.galleryImg}>
             <Image src={img.src} fill alt={img.alt} key={"Gallery" + i} />
         </div>
@@ -106,9 +106,9 @@ export default function ProductDetail() {
                 <Tabs
                     tab={tab}
                     changeTab={changeTab}
-                    options={["Details", "Journey", "Vehicles"]}
+                    options={["Details", "Journey", "Vehicle & Safety"]}
                 />
-                {tab == "Vehicles" && (
+                {tab == "Vehicle & Safety" && (
                     <div className={styles.vehicleInfo}>
                         {data["vehicles"].map((value, index) => (
                             <VehicleDetails
@@ -123,7 +123,7 @@ export default function ProductDetail() {
                     </div>
                 )}
                 {tab == "Details" && <Details />}
-                {tab == "Journey" && <Journey packageName={packageName} />}
+                {tab == "Journey" && <Journey />}
                 <QuoteForm />
             </Wrapper>
         </>

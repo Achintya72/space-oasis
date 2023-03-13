@@ -3,7 +3,6 @@ import Wrapper from "../../components/Wrapper"
 import styles from "./trainingStyles.module.css";
 import Image from "next/image";
 import data from "./content.json";
-import YoutubeEmbed from "./YoutubeEmbed";
 
 export default function Training(props) {
     return (
@@ -18,16 +17,9 @@ export default function Training(props) {
             </div>
             <h2>Spaceflight Stages</h2>
             <div className={styles.stages}>
-                {data['stages'] != undefined && data['stages'].map((value, index) => (
-                    <Stage {...value} num={index + 1} key={`stage-${index}`} />
-                ))}
-            </div>
-            <h2>Spaceflight Videos</h2>
-            <div className={styles.stages}>
                 {data['videos'] != undefined && data['videos'].map((value, index) => (
-                    <YoutubeEmbed {...value} key={`video-${index}`} />
-                ))
-                }
+                    <Video {...value} key={`video-${index}`} />
+                ))}
             </div>
         </Wrapper>
     )
@@ -60,9 +52,20 @@ function Certificate(props) {
     )
 }
 
-const Stage = (props) => (
-    <div className={styles.stage}>
-        <h4>{props.num}. {props.title}</h4>
-        <p>{props.description}</p>
-    </div>
-)
+function Video(props) {
+    const {
+        src,
+        title,
+        description
+    } = props;
+
+    return (
+        <div className={styles.stage}>
+            <video className={styles.video} src={src} type="video/mp4" controls={true} />
+            <div className={styles.stageText}>
+                <h4>{title}</h4>
+                <p>{description}</p>
+            </div>
+        </div>
+    )
+}
