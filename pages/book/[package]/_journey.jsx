@@ -7,11 +7,11 @@ import data from "./content.json";
 
 export default function Journey({ packageName }) {
     const [currentStop, changeCurrentStop] = useState(0);
-    const steps = data[packageName]["journey"];
+    const steps = (data?.[packageName]?.["journey"]) ?? undefined;
     return (
         <div className={styles.journeyContainer}>
             <div className={styles.journeySteps} id="steps">
-                {steps.map((step, i) => {
+                {steps !== undefined && steps.map((step, i) => {
                     const stateStyle = i == currentStop ? styles.activeStep : styles.inactiveStep;
                     return (
                         <Step
@@ -25,11 +25,13 @@ export default function Journey({ packageName }) {
                 })}
             </div>
             <div className={styles.journeyImg}>
-                <Image
-                    src={steps[currentStop].img}
-                    alt={steps[currentStop].alt}
-                    fill
-                />
+                {steps !== undefined &&
+                    <Image
+                        src={steps[currentStop].img}
+                        alt={steps[currentStop].alt}
+                        fill
+                    />
+                }
             </div>
         </div>
     )
