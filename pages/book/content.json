@@ -68,7 +68,7 @@
                 "title": "Spacewalk",
                 "age": "12+",
                 "description": "Take an anti-gravity stroll, while tethered to the ship. Perform mock maintainence tasks around the ship, much like real astronauts.",
-                "img": "/static/HeroImg.jpg",
+                "img": "/static/Activities/Spacewalk.jpg",
                 "alt": "rocket",
                 "cost": 400,
                 "time": "2 HOURS"
@@ -77,7 +77,7 @@
                 "title": "Obstacle Course",
                 "age": "12+",
                 "description": "An anti-gravity obstacle course in space with challenges that will test your agility, endurance, and problem-solving skills.",
-                "img": "/static/HeroImg.jpg",
+                "img": "/static/Activities/ObstacleCourse.webp",
                 "alt": "rocket",
                 "cost": 100,
                 "time": "1 HOUR"
@@ -88,7 +88,7 @@
                 "title": "ATV Ride",
                 "age": "18+",
                 "description": "Explore the tough terrains and craters of the moon on your own ATV's",
-                "img": "/static/HeroImg.jpg",
+                "img": "/static/Activities/ATV.jpg",
                 "alt": "rocket",
                 "cost": 300,
                 "time": "2 HOURS"
@@ -97,7 +97,7 @@
                 "title": "Lunarball",
                 "age": "18+",
                 "description": "Play basketball in low gravity, jumping tall and high, dunking hard and gloriously",
-                "img": "/static/HeroImg.jpg",
+                "img": "/static/Activities/Lunarball.jpg",
                 "alt": "rocket",
                 "cost": 300,
                 "time": "2 HOURS"
@@ -106,7 +106,7 @@
                 "title": "Apollo Mission Site Tour",
                 "age": "5-60",
                 "description": "Get your own personal tour guide to visit the famous bootprint and U.S. flag, and eat some specialty space food",
-                "img": "/static/HeroImg.jpg",
+                "img": "/static/Activities/Tour.jpg",
                 "alt": "rocket",
                 "cost": 300,
                 "time": "2 HOURS"
@@ -115,7 +115,7 @@
                 "title": "Stargazing",
                 "age": "5-60",
                 "description": "Climb Mons Pico, and watch the skies with a glass of champagne (ID needed)",
-                "img": "/static/HeroImg.jpg",
+                "img": "/static/Activities/Stargazing.jpg",
                 "alt": "rocket",
                 "cost": 50,
                 "time": "2 HOURS"
@@ -126,7 +126,7 @@
                 "title": "ATV Ride",
                 "age": "18+",
                 "description": "Explore the tough terrains and craters of mars on your own ATV's",
-                "img": "/static/HeroImg.jpg",
+                "img": "/static/Activities/ATV.jpg",
                 "alt": "rocket",
                 "cost": 300,
                 "time": "2 HOURS"
@@ -144,7 +144,7 @@
                 "title": "Dust Surfing",
                 "age": "18+",
                 "description": "Take an exhilarating ride over the powerful winds and currents of Martian dust.",
-                "img": "/static/HeroImg.jpg",
+                "img": "/static/Activities/DustSurfing.jpg",
                 "alt": "rocket",
                 "cost": 300,
                 "time": "2 HOURS"

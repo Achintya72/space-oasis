@@ -65,5 +65,25 @@
             }
         ],
         "icon": "menu"
+    },
+    "Training": {
+        "citations": [
+            {
+                "citation": "Apollo 11 training – interesting pictures of the astronauts practicing the Moon landing in 1969. Apollo 11 Training – Interesting Pictures of the Astronauts Practicing the Moon Landing in 1969 ~. (2016, April 24). Retrieved March 12, 2023, from https://www.vintag.es/2016/04/apollo-11-training-interesting-pictures.html"
+            },
+            {
+                "citation": "Encyclopædia Britannica, inc. (n.d.). Astronaut training. Encyclopædia Britannica. Retrieved March 12, 2023, from https://www.britannica.com/topic/astronaut/Astronaut-training"
+            },
+            {
+                "citation": "Howell, E. (2015, December 23). Don't panic: How space emergency astronaut training works. Universe Today. Retrieved March 12, 2023, from https://www.universetoday.com/104165/dont-panic-how-space-emergency-astronaut-training-works/"
+            },
+            {
+                "citation": "How are NASA astronauts trained? 2023. From Space With Love. (2020, September 13). Retrieved March 12, 2023, from https://www.fromspacewithlove.com/nasa-astronaut-training/ "
+            },
+            {
+                "citation": "Mars, K. (2015, September 29). Walk the line: Nasa studies physical performance after spaceflight. NASA. Retrieved March 12, 2023, from https://www.nasa.gov/content/walk-the-line-nasa-studies-physical-performance-after-spaceflight"
+            }
+        ],
+        "icon": "menu"
     }
 }

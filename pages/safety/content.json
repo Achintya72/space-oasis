@@ -55,7 +55,7 @@
                     "description": "Starship has industry leading heat shields gauranteeing that you will feel no different during your atmospheric entry."
                 }
             ],
-            "img": "/static/Gallery/4.jpg",
+            "img": "/static/Rockets/Starship.png",
             "alt": "Picture of Space-X Starship"
         },
         "Falcon 9": {
@@ -81,8 +81,8 @@
                     "description": "The Dragon Capsule can rapidly boost away from the Falcon 9 in the unlikely event of an emergency, protecting all passengers on board."
                 }
             ],
-            "img": "/static/Gallery/3.jpg",
-            "alt": "Picture of Space-X Starship"
+            "img": "/static/Rockets/Falcon.png",
+            "alt": "Picture of the Falcon-9 Rocket"
         },
         "New Glenn": {
             "features": [
@@ -102,7 +102,7 @@
                     "description": "New Glenn's second stage can propulsively boost away from the first-stage in the unlikely event of a malfunction."
                 }
             ],
-            "img": "/static/Gallery/2.jpg",
+            "img": "/static/Rockets/NewGlenn.png",
             "alt": "Picture of Space-X Starship"
         }
     },

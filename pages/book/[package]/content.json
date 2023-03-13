@@ -2,15 +2,27 @@
     "Lunar Exploration": {
         "gallery": [
             {
-                "src": "/static/LunarExploration/1.png",
+                "src": "/static/Gallery/Moon1.png",
                 "alt": "An astronaut on the moon."
             },
             {
-                "src": "/static/LunarExploration/2.png",
+                "src": "/static/Gallery/Moon2.png",
                 "alt": "An astronaut on the moon near the spaceship."
             },
             {
-                "src": "/static/LunarExploration/3.png",
+                "src": "/static/Gallery/Moon3.png",
+                "alt": "An astronaut getting on a rover."
+            },
+            {
+                "src": "/static/Gallery/Moon4.png",
+                "alt": "An astronaut getting on a rover."
+            },
+            {
+                "src": "/static/Gallery/Moon5.png",
+                "alt": "An astronaut getting on a rover."
+            },
+            {
+                "src": "/static/Gallery/Moon6.png",
                 "alt": "An astronaut getting on a rover."
             }
         ],
@@ -161,7 +173,7 @@
                 "title": "Travel",
                 "description": "Once oriented, begin moving towards Moon, taking only 1 day",
                 "img": "/static/Journey/Travel.png",
-                "alt": "A rocket with its booster detaching."
+                "alt": "A rocket with its boosters detaching."
             },
             {
                 "title": "Landing",
@@ -173,26 +185,34 @@
                 "title": "Return",
                 "description": "A 3 day journey from the Moon. This includes a Moon exit burn, Earth atmosphere re-entry, and Earth landing. Passengers will experience a maximum of 6 Gs of force during Earth landing.",
                 "img": "/static/Journey/Return.png",
-                "alt": "A capsule going through re-entry."
+                "alt": "A Space-X Starship going through re-entry."
             }
         ]
     },
     "Low Earth Orbit": {
         "gallery": [
             {
-                "src": "/static/Gallery/1.jpg",
+                "src": "/static/Gallery/LowEarth1.png",
                 "alt": "An astronaut in mars"
             },
             {
-                "src": "/static/Gallery/2.jpg",
+                "src": "/static/Gallery/LowEarth2.png",
                 "alt": "An astronaut in mars"
             },
             {
-                "src": "/static/Gallery/3.jpg",
+                "src": "/static/Gallery/LowEarth3.png",
                 "alt": "An astronaut in mars"
             },
             {
-                "src": "/static/Gallery/4.jpg",
+                "src": "/static/Gallery/LowEarth4.png",
+                "alt": "An astronaut in mars"
+            },
+            {
+                "src": "/static/Gallery/LowEarth5.png",
+                "alt": "An astronaut in mars"
+            },
+            {
+                "src": "/static/Gallery/LowEarth6.png",
                 "alt": "An astronaut in mars"
             }
         ],
@@ -244,12 +264,12 @@
                     }
                 ],
                 "description": "The Falcon 9 rocket, created and produced by SpaceX, is a two-stage vehicle that is intended to transport individuals into Earth's orbit and beyond in a dependable and secure manner. This rocket is the first reusable rocket in the world capable of orbiting the Earth. The reuse of the Falcon 9 rocket's most costly components helps to reduce the cost of space access.",
-                "img": "/static/Gallery/4.jpg"
+                "img": "/static/Rockets/Falcon.png"
             },
             {
                 "title": "Soyuz MS",
                 "description": "The Soyuz MS is a spacecraft designed for crewed spaceflight operations and cargo transport to the International Space Station. It is a modernized version of the Soyuz family of spacecraft and features upgrades and improvements, such as the ability to carry up to three crew members and remain in space for up to 200 days. The Soyuz MS consists of three modules and is launched from the Baikonur Cosmodrome in Kazakhstan. Its reliability and safety have made it one of the most widely used spacecraft in spaceflight history.",
-                "img": "/static/Gallery/1.jpg",
+                "img": "/static/Rockets/Soyuz.png",
                 "numbers": [
                     {
                         "name": "Height",
@@ -279,25 +299,25 @@
                 "title": "Training",
                 "description": "Fliers must undergo Spacecraft training, Zero G training and G-Force training",
                 "img": "/static/Journey/Training.png",
-                "alt": "First Pic"
+                "alt": "A woman recieiving a space training lesson."
             },
             {
                 "title": "Launch",
                 "description": "Take off from Earth, experiencing 3 Gs of force. This takes around 8-9 minutes, accelerating from 0 to 7,500 m/s. ",
                 "img": "/static/Journey/Launch.png",
-                "alt": "First Pic"
+                "alt": "A rocket taking off from Earth."
             },
             {
                 "title": "Orbit",
                 "description": "Spend 3 days being 585 km above Earth while enjoying the activities and anemities Space Oasis provides.",
-                "img": "/static/Journey/OrbitAlignment.png",
-                "alt": "First Pic"
+                "img": "/static/packages/LowEarthOrbit.png",
+                "alt": "An image of the Earth from Low Earth Orbit."
             },
             {
                 "title": "Return",
                 "description": "The capsule performs a 15 minute de-orbit burn, and then starts atmospheric re-entry after 35-40 minutes. It takes 3 minutse to complete re-entry before splashing down in the Pacific Ocean.",
-                "img": "/static/Journey/Return.png",
-                "alt": "First Pic"
+                "img": "/static/Journey/EarthReturn.png",
+                "alt": "A capsule going through re-entry."
             }
         ],
         "details": [
@@ -346,19 +366,15 @@
     "Mars Adventure": {
         "gallery": [
             {
-                "src": "/static/Gallery/1.jpg",
+                "src": "/static/Gallery/Mars1.webp",
                 "alt": "An astronaut in mars"
             },
             {
-                "src": "/static/Gallery/2.jpg",
+                "src": "/static/Gallery/UtopiaPlanitia.png",
                 "alt": "An astronaut in mars"
             },
             {
                 "src": "/static/Gallery/3.jpg",
-                "alt": "An astronaut in mars"
-            },
-            {
-                "src": "/static/Gallery/4.jpg",
                 "alt": "An astronaut in mars"
             }
         ],
@@ -428,48 +444,50 @@
             {
                 "title": "Training",
                 "description": "Fliers must undergo Spacecraft training, Zero G training and G-Force training, Martian Terrain Training, Low Gravity Training, Cryosleep training.",
-                "img": "/static/Gallery/1.jpg",
-                "alt": "First Pic"
+                "img": "/static/Journey/Launch.png",
+                "alt": "A woman recieiving a space training lesson."
             },
             {
                 "title": "Launch",
                 "description": "Take off from Earth, experiencing 3 Gs of force. This takes around 8-9 minutes, accelerating from 0 to 7,500 m/s. ",
-                "img": "/static/Gallery/2.jpg",
-                "alt": "First Pic"
+                "img": "/static/Journey/Launch.png",
+                "alt": "A rocket taking off from Earth."
             },
             {
                 "title": "Refueling",
                 "description": "To sustain the aircraft for the journey to mars, another Starship will launch and meet the ship, depositing all of its fuel.",
-                "img": "/static/Gallery/1.jpg",
-                "alt": "First Pic"
+                "img": "/static/Journey/StarshipRefueling.png",
+                "alt": "One Starship supplying fuel to another Starship."
             },
             {
                 "title": "Orbit Alignment",
                 "description": "Having taken off, the ship will undergo orbital alignment, experiencing slight G-force shifts as the ship moves and orients itself towards Mars. This process will continue throughout the flight.",
-                "img": "/static/Gallery/2.jpg",
-                "alt": "First Pic"
+                "img": "/static/Journey/OrbitAlignment.png",
+                "alt": "A diagram about orbit alignment."
             },
             {
                 "title": "Travel",
-                "description": "Once en route to Mars, passengers can choose to spend the 3 months on-flight in cryosleep, or awake while enjoying the activities and features Starship has to offer"
+                "description": "Once en route to Mars, passengers can choose to spend the 3 months on-flight in cryosleep, or awake while enjoying the activities and features Starship has to offer",
+                "img": "/static/Journey/Travel.png",
+                "alt": "A rocket with its boosters detaching."
             },
             {
                 "title": "Landing",
                 "description": "Starship will enter Mar's atmosphere and perform aerodynamic braking. After reaching an altitude of 2 km, the ship will rotate to propulsively brake and land vertically on the surface of Mars.",
-                "img": "/static/Gallery/2.jpg",
-                "alt": "First Pic"
+                "img": "/static/packages/Mars.png",
+                "alt": "A futuristic base where Starships would land on Mars."
             },
             {
                 "title": "Return",
                 "description": "Fliers will have the opportunity to experience the same in-flight amenities as before, and swiftly reach Earth",
-                "img": "/static/Gallery/1.jpg",
-                "alt": "First Pic"
+                "img": "/static/Journey/Return.png",
+                "alt": "A Space-X Starship going through re-entry."
             },
             {
                 "title": "Post-Flight Rehabilitation",
                 "description": "After returning to Earth, fliers will undergo physical training and monitoring to get their bodies readjusted to Earth's gravity and climate",
-                "img": "/static/Gallery/1.jpg",
-                "alt": "sdf"
+                "img": "/static/Journey/Rehab.png",
+                "alt": "A woman exiting the capsule."
             }
         ],
         "details": [
@@ -637,37 +655,37 @@
             {
                 "title": "Training",
                 "description": "Fliers must undergo Spacecraft training, Zero G training, Psychological training and G-Force training",
-                "img": "/static/Gallery/1.jpg",
-                "alt": "First Pic"
+                "img": "/static/Journey/Training.png",
+                "alt": "A woman recieiving a space training lesson."
             },
             {
                 "title": "Launch",
                 "description": "Take off from Earth, experiencing 3 Gs of force. This takes around 8-9 minutes, accelerating from 0 to 7,500 m/s. ",
-                "img": "/static/Gallery/2.jpg",
-                "alt": "First Pic"
+                "img": "/static/Journey/Launch.png",
+                "alt": "A rocket taking off from Earth."
             },
             {
                 "title": "Orbit Alignment",
                 "description": "Having taken off, the ship will undergo orbital alignment, experiencing slight G-force shifts as the ship moves and orients itself towards the moon. This takes approximately 2 days",
-                "img": "/static/Gallery/3.jpg",
-                "alt": "First Pic"
+                "img": "/static/Journey/OrbitAlignment.png",
+                "alt": "A diagram about orbit alignment."
             },
             {
                 "title": "Travel",
                 "description": "Once oriented, begin moving towards Moon, taking only 1 day",
-                "img": "/static/Gallery/4.jpg",
-                "alt": "First Pic"
+                "img": "/static/Journey/Travel.png",
+                "alt": "A Space-X Starship going through re-entry."
             },
             {
                 "title": "Orbit",
                 "description": "Spend 3 days being 200 km above the Moon while enjoying the activities and anemities Space Oasis provides.",
-                "img": "/static/Gallery/2.jpg",
+                "img": "/static/packages/MoonOrbit.jpg",
                 "alt": "First Pic"
             },
             {
                 "title": "Return",
                 "description": "A 3 day journey from the Moon. This includes a Moon exit burn, Earth atmosphere re-entry, and Earth landing. Passengers will experience a maximum of 6 Gs of force during Earth landing.",
-                "img": "/static/Gallery/2.jpg",
+                "img": "/static/Journey/Return.png",
                 "alt": "First Pic"
             }
         ],
@@ -795,42 +813,44 @@
             {
                 "title": "Training",
                 "description": "Fliers must undergo Spacecraft training, Zero G training and G-Force training, Cryosleep training.",
-                "img": "/static/Gallery/1.jpg",
-                "alt": "First Pic"
+                "img": "/static/Journey/Training.png",
+                "alt": "A woman recieiving a space training lesson."
             },
             {
                 "title": "Launch",
                 "description": "Take off from Earth, experiencing 3 Gs of force. This takes around 8-9 minutes, accelerating from 0 to 7,500 m/s. ",
-                "img": "/static/Gallery/2.jpg",
-                "alt": "First Pic"
+                "img": "/static/Journey/Launch.png",
+                "alt": "A rocket taking off from Earth."
             },
             {
                 "title": "Refueling",
                 "description": "To sustain the aircraft for the journey to mars, another Starship will launch and meet the ship, depositing all of its fuel.",
-                "img": "/static/Gallery/1.jpg",
-                "alt": "First Pic"
+                "img": "/static/Journey/StarshipRefueling.png",
+                "alt": "One Starship supplying fuel to another Starship."
             },
             {
                 "title": "Orbit Alignment",
                 "description": "Having taken off, the ship will undergo orbital alignment, experiencing slight G-force shifts as the ship moves and orients itself towards Mars. This process will continue throughout the flight.",
-                "img": "/static/Gallery/2.jpg",
-                "alt": "First Pic"
+                "img": "/static/Journey/OrbitAlignment.png",
+                "alt": "A diagram about orbit alignment."
             },
             {
                 "title": "Travel",
-                "description": "Once en route to Mars, passengers can choose to spend the 3 months on-flight in cryosleep, or awake while enjoying the activities and features Starship has to offer"
+                "description": "Once en route to Mars, passengers can choose to spend the 3 months on-flight in cryosleep, or awake while enjoying the activities and features Starship has to offer",
+                "img": "/static/Journey/Travel.png",
+                "alt": "A rocket with its boosters detaching."
             },
             {
                 "title": "Return",
                 "description": "Fliers will have the opportunity to experience the same in-flight amenities as before, and swiftly reach Earth",
-                "img": "/static/Gallery/1.jpg",
-                "alt": "First Pic"
+                "img": "/static/Journey/Return.png",
+                "alt": "A Space-X Starship going through re-entry."
             },
             {
                 "title": "Post-Flight Rehabilitation",
                 "description": "After returning to Earth, fliers will undergo physical training and monitoring to get their bodies readjusted to Earth's gravity and climate",
-                "img": "/static/Gallery/1.jpg",
-                "alt": "sdf"
+                "img": "/static/Journey/Rehab.png",
+                "alt": "A woman exiting the capsule."
             }
         ],
         "details": [

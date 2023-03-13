@@ -34,7 +34,7 @@ export default function ProductDetail() {
     const data = dataset[packageName];
     const gallery = data["gallery"];
 
-    const renderGallery = [gallery[0], gallery[1], gallery[2]].map((img, i) => (
+    const renderGallery = gallery.map((img, i) => (
         <div key={"Gallery" + i} className={styles.galleryImg}>
             <Image src={img.src} fill alt={img.alt} key={"Gallery" + i} />
         </div>
