@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
 import Wrapper from "../../../components/Wrapper/index";
-import { Navbar, Icon } from "../../../components";
+import { Navbar, Icon, Footer } from "../../../components";
 import styles from "./styles.module.css";
 import dataset from "./content.json";
 import VehicleDetails from "./_vehicle";
@@ -126,6 +126,7 @@ export default function ProductDetail() {
                 {tab == "Journey" && <Journey packageName={packageName} />}
                 <QuoteForm />
             </Wrapper>
+            <Footer />
         </>
     );
 }

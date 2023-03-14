@@ -40,12 +40,17 @@
   width: 100%;
   margin-bottom: 10px;
   margin-top: 10px;
-  transition: border-bottom 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 .locationCard {
-  border-bottom: 0px solid var(--clr-background-s1);
+  border-bottom: 0px solid var(--clr-background);
+  box-sizing: border-box;
 }
 
+.locationCard:hover,
+.locationCard:focus {
+  box-shadow: 2px 0px 10px rgba(255, 255, 255, 0.5);
+}
 .activeLocationCard {
   border-bottom: 3px solid var(--clr-primary);
 }

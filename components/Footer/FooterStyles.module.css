@@ -1,0 +1,41 @@
+.footer,
+.footerRoot {
+  background-color: var(--clr-background-s2);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 15px;
+}
+.footerRoot {
+  margin-top: 20px;
+}
+.branding {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.quicklinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quicklinks a {
+  color: white;
+  text-decoration: none;
+}
+
+.quicklinks a:hover,
+.quicklinks a:focus {
+  text-decoration: underline;
+}
+
+.footer div {
+  flex: 1;
+  min-width: 200px;
+}

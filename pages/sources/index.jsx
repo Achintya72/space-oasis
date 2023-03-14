@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Wrapper from "../../components/Wrapper";
-import { Navbar, Icon } from "../../components";
+import { Navbar, Icon, Footer } from "../../components";
 import data from "./content.json";
 import Citations from "./_CitationCard";
 import styles from "./styles.module.css";
@@ -19,6 +19,7 @@ export default function Sources() {
                     ))}
                 </div>
             </Wrapper>
+            <Footer />
         </>
     );
 }
