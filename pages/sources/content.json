@@ -33,7 +33,11 @@
             "Sudin, M. (2020, June 3). Going to space will cost only $2,000. Warp News. https://www.warpnews.org/essays/wip-going-to-space-will-cost-only-2-000/",
             "Hehir, J. (2021, August 6). Watch Countdown: Inspiration4 Mission to Space | Netflix Official Site. Www.netflix.com; Netflix. https://www.netflix.com/title/81441273",
             "g-force. Oxford Reference. Retrieved 12 Mar. 2023, from https://www.oxfordreference.com/view/10.1093/oi/authority.20110803095850382. ",
-            "Ask an Astronomer. (n.d.). Cool Cosmos. https://coolcosmos.ipac.caltech.edu/ask/174-How-long-does-it-take-to-travel-to-the-Moon-"
+            "Ask an Astronomer. (n.d.). Cool Cosmos. https://coolcosmos.ipac.caltech.edu/ask/174-How-long-does-it-take-to-travel-to-the-Moon-",
+            "Origin, B. (2022). New glenn. New Glenn. Retrieved March 13, 2023, from https://www.blueorigin.com/new-glenn/",
+            "X, S. (2022). Starship. Retrieved March 13, 2023, from https://www.spacex.com/vehicles/starship/",
+            "X, S. (2023). Falcon 9. Retrieved March 13, 2023, from https://www.spacex.com/vehicles/falcon-9/",
+            "Zak, A. (2023, March 9). The Soyuz-2 rocket series. Soyuz-2 launch vehicle. Retrieved March 13, 2023, from https://www.russianspaceweb.com/soyuz2_lv.html "
         ],
         "icon": "menu"
     },
@@ -78,11 +82,29 @@
         ],
         "icon": "menu"
     },
+    "Mars Orbit": {
+        "citations": [
+            "X, S. (2022, February 10). Starship animation. YouTube. Retrieved March 13, 2023, from https://www.youtube.com/watch?v=-Oox2w5sMcA",
+            "Foust, J. (2023, February 22). Space junk in orbit is bad enough, but on Mars? SpaceNews. Retrieved March 13, 2023, from https://spacenews.com/space-junk-in-orbit-is-bad-enough-but-on-mars/"
+        ],
+        "icon": "menu"
+    },
+    "Moon Orbit": {
+        "citations": [
+            "A, S. (2021, July 7). Circumlunar mission. Space Adventures. Retrieved March 13, 2023, from https://spaceadventures.com/experiences/circumlunar-mission/",
+            "Diamindis, P. Spaceil's Moon orbit creates a new era for space. XPRIZE. (2019, April 10). Retrieved March 13, 2023, from https://www.xprize.org/prizes/google-lunar/articles/spaceil-moon-orbit",
+            "Maxim, H. (2019, August 15). ARRL. Chinese Satellite Profiles Earth's RF Spectrum as Seen from Lunar Orbit. Retrieved March 13, 2023, from http://www.arrl.org/news/chinese-satellite-profiles-earth-s-rf-spectrum-as-seen-from-lunar-orbit"
+        ],
+        "icon": "menu"
+    },
     "Safety": {
         "citations": [
             "Mars, K. (2018, March 27). 5 hazards of human spaceflight. NASA. Retrieved March 12, 2023, from https://www.nasa.gov/hrp/5-hazards-of-human-spaceflight ",
             "Carr, M. (2022, August 5). Struck by lightning: What are the odds? NewsNation. Retrieved March 12, 2023, from https://www.newsnationnow.com/weather/struck-by-lightning-odds/",
-            "Pultarova, T. (2021, September 27). Do space tourists really understand the risk they're taking? Space.com. Retrieved March 12, 2023, from https://www.space.com/space-tourism-risk-safety-regulations"
+            "Pultarova, T. (2021, September 27). Do space tourists really understand the risk they're taking? Space.com. Retrieved March 12, 2023, from https://www.space.com/space-tourism-risk-safety-regulations",
+            "Dodd. T (2019). Why won’t Starship have an abort system? Should it?! YouTube. Retrieved March 13, 2023, from https://www.youtube.com/watch?v=v6lPMFgZU5Q.",
+            "Origin, B. (2022). New glenn. New Glenn. Retrieved March 13, 2023, from https://www.blueorigin.com/new-glenn/",
+            "New, S. (2010, May 21). Handbrakes and nine lives: Keeping falcon 9 crew safe. New Scientist. Retrieved March 13, 2023, from https://www.newscientist.com/gallery/spacex-safety-smart/"
         ],
         "icon": "menu"
     },
