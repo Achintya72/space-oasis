@@ -264,3 +264,9 @@
   background-color: var(--clr-background-s2);
   border-bottom: 2px solid var(--clr-primary);
 }
+
+.qualInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
