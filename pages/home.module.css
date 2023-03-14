@@ -83,6 +83,7 @@
 .promoHeader div:hover,
 .promoHeader div:focus {
   border-bottom: 1px solid #fff;
+  cursor: pointer;
 }
 .cardGrid {
   display: grid;

@@ -17,6 +17,7 @@
 .card:hover,
 .card:focus {
   background-color: var(--clr-background-s1);
+  cursor: pointer;
 }
 
 .header {
@@ -50,6 +51,7 @@
 .locationCard:hover,
 .locationCard:focus {
   box-shadow: 2px 0px 10px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
 .activeLocationCard {
   border-bottom: 3px solid var(--clr-primary);
@@ -117,6 +119,11 @@
   position: relative;
   transition: border-bottom 300ms ease-out;
 }
+.activityCard:hover,
+.activityCard:focus {
+  cursor: pointer;
+}
+
 .activityImg {
   position: relative;
   aspect-ratio: 16/9;

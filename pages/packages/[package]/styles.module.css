@@ -102,6 +102,7 @@
 }
 .option:hover {
   background-color: var(--clr-background-s1);
+  cursor: pointer;
 }
 
 .active {
@@ -242,6 +243,7 @@
 .inactiveStep:hover {
   background-color: var(--clr-background-s1);
   border-bottom: 2px solid var(--clr-background-s1);
+  cursor: pointer;
 }
 .activeStep {
   background-color: var(--clr-background-s2);
