@@ -40,7 +40,11 @@ export default function Journey({ packageName }) {
 const Step = ({ step, stateStyle, index, changeCurrentStop }) => {
     return (
         <div className={styles.stepRoot} onClick={() => changeCurrentStop(index)}>
-            <div className={styles.stepBullet} />
+            <div className={styles.timeline}>
+                <div className={styles.startLine} />
+                <div className={styles.stepBullet} />
+                <div className={styles.endLine} />
+            </div>
             <div className={getClasses(stateStyle, styles.step)}>
                 <h4>{step.title}</h4>
                 <p>{step.description}</p>
