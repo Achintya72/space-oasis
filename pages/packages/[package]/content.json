@@ -107,47 +107,47 @@
             {
                 "title": "Astronaut training",
                 "description": "Before embarking, fliers will have to undergo extensive training. We will provide the necessary training, including zero-gravity simulations, G-force training, lunar surface training, and spacewalk training.",
-                "icon": "I"
+                "icon": "astroTraining"
             },
             {
                 "title": "Luxury accommodation",
                 "description": "While in space, fliers need a place to stay. We will provide comfortable, luxurious accommodations that are equipped with everything fliers need to feel at home.",
-                "icon": "I"
+                "icon": "accomodations"
             },
             {
                 "title": "Spacewalks",
                 "description": "We offer the chance for fliers to go on spacewalks, allowing them to experience the thrill of floating in space and seeing the Earth from above.",
-                "icon": "I"
+                "icon": "astronaut"
             },
             {
                 "title": "Personalized meals",
                 "description": "We offer personalized meal plans that cater to the individual needs and preferences of each flier.",
-                "icon": "I"
+                "icon": "food"
             },
             {
                 "title": "Low-gravity sports",
                 "description": "Fliers can participate in zero-gravity sports, such as zero-gravity basketball or soccer; a fun and unique way to pass the time while in space.",
-                "icon": "I"
+                "icon": "sports"
             },
             {
                 "title": "Entertainment",
                 "description": "We provide in-flight entertainment options for fliers, including movies, books, and games.",
-                "icon": "I"
+                "icon": "entertainment"
             },
             {
                 "title": "Souvenirs",
                 "description": "Fliers can purchase unique souvenirs, such as personalized space suits, mission patches, or space rocks.",
-                "icon": "I"
+                "icon": "gift"
             },
             {
                 "title": "Post-flight experiences",
                 "description": "We also provide post-flight experiences, such as debriefings and meetings with space experts, to help fliers process their experiences and make the most of their journey.",
-                "icon": "I"
+                "icon": "landing"
             },
             {
                 "title": "Personalized mementos",
                 "description": "To commemorate the experience, We also provide personalized mementos, such as photos, videos, and certificates of participation, available for purchase",
-                "icon": "I"
+                "icon": "mementos"
             }
         ],
         "journey": [
@@ -324,42 +324,42 @@
             {
                 "title": "Astronaut training",
                 "description": "Before embarking, fliers will have to undergo extensive training. We will provide the necessary training, including zero-gravity simulations, G-force training, and spacewalk training.",
-                "icon": "I"
+                "icon": "astroTraining"
             },
             {
                 "title": "Luxury accommodation",
                 "description": "While in space, fliers need a place to stay. We will provide comfortable, luxurious accommodations that are equipped with everything fliers need to feel at home.",
-                "icon": "I"
+                "icon": "accomodations"
             },
             {
                 "title": "Spacewalks",
                 "description": "We offer the chance for fliers to go on spacewalks, allowing them to experience the thrill of floating in space and seeing the Earth from above.",
-                "icon": "I"
+                "icon": "astronaut"
             },
             {
                 "title": "Personalized meals",
                 "description": "We offer personalized meal plans that cater to the individual needs and preferences of each flier.",
-                "icon": "I"
+                "icon": "food"
             },
             {
                 "title": "Entertainment",
                 "description": "We provide in-flight entertainment options for fliers, including movies, books, and games.",
-                "icon": "I"
+                "icon": "entertainment"
             },
             {
                 "title": "Souvenirs",
                 "description": "Fliers can purchase unique souvenirs, such as personalized space suits, mission patches, or space rocks.",
-                "icon": "I"
+                "icon": "gift"
             },
             {
                 "title": "Post-flight experiences",
                 "description": "We also provide post-flight experiences, such as debriefings and meetings with space experts, to help fliers process their experiences and make the most of their journey.",
-                "icon": "I"
+                "icon": "landing"
             },
             {
                 "title": "Personalized mementos",
                 "description": "To commemorate the experience, We also provide personalized mementos, such as photos, videos, and certificates of participation, available for purchase",
-                "icon": "I"
+                "icon": "mementos"
             }
         ]
     },
@@ -494,67 +494,67 @@
             {
                 "title": "Astronaut training",
                 "description": "Before embarking, fliers will have to undergo extensive training. We will provide the necessary training, including zero-gravity simulations, G-force training, low-gravity training, cryosleep training, martian surface training, and spacewalk training.",
-                "icon": "I"
+                "icon": "astroTraining"
             },
             {
                 "title": "Luxury accommodation",
                 "description": "While in space, or on Mars, fliers need a place to stay. We will provide comfortable, luxurious accommodations that are equipped with everything fliers need to feel at home.",
-                "icon": "I"
+                "icon": "accomodations"
             },
             {
                 "title": "Spacewalks",
                 "description": "We offer the chance for fliers to go on spacewalks, allowing them to experience the thrill of floating in space and seeing the Earth from above.",
-                "icon": "I"
+                "icon": "astronaut"
             },
             {
                 "title": "Personalized meals",
                 "description": "We offer personalized meal plans that cater to the individual needs and preferences of each flier.",
-                "icon": "I"
+                "icon": "food"
             },
             {
                 "title": "Entertainment",
                 "description": "We provide in-flight entertainment options for fliers, including movies, books, and games.",
-                "icon": "I"
+                "icon": "entertainment"
             },
             {
                 "title": "Souvenirs",
                 "description": "Fliers can purchase unique souvenirs, such as personalized space suits, mission patches, or space rocks.",
-                "icon": "I"
+                "icon": "gift"
             },
             {
                 "title": "Post-flight experiences",
                 "description": "We also provide post-flight experiences, such as debriefings and meetings with space experts, to help fliers process their experiences and make the most of their journey.",
-                "icon": "I"
+                "icon": "landing"
             },
             {
                 "title": "Personalized mementos",
                 "description": "To commemorate the experience, We also provide personalized mementos, such as photos, videos, and certificates of participation, available for purchase",
-                "icon": "I"
+                "icon": "mementos"
             },
             {
                 "title": "Dust Surfing",
                 "description": "Take an exhilarating ride over the powerful winds and currents of Martian dust.",
-                "icon": "I"
+                "icon": "surf"
             },
             {
                 "title": "Mars Hike",
                 "description": "Explore the Martian terrain and landscapes on a rover or by foot, visit and study geological features such as canyons, mountains, and valleys.",
-                "icon": ""
+                "icon": "hike"
             },
             {
                 "title": "Cave Exploration",
                 "description": "Experience a thrilling adventure that reveals the secrets of what lies under the surface of the Red Planet.",
-                "icon": "I"
+                "icon": "cave"
             },
             {
                 "title": "ATV Ride",
                 "description": "Explore the tough terrains and craters of mars on your own ATV's",
-                "icon": "I"
+                "icon": "atv"
             },
             {
                 "title": "Cryosleep",
                 "description": "NASA's Torpor Inducing Transfer Habitat For Human Stasis works by putting passengers to sleep for extended periods of time, lowering metabolic rates extensively, preserving their body for the journey",
-                "icon": "I"
+                "icon": "cryosleep"
             }
         ]
     },
@@ -693,47 +693,47 @@
             {
                 "title": "Astronaut training",
                 "description": "Before embarking, fliers will have to undergo extensive training. We will provide the necessary training, including zero-gravity simulations, G-force training, and spacewalk training.",
-                "icon": "I"
+                "icon": "astroTraining"
             },
             {
                 "title": "Luxury accommodation",
                 "description": "While in space, fliers need a place to stay. We will provide comfortable, luxurious accommodations that are equipped with everything fliers need to feel at home.",
-                "icon": "I"
+                "icon": "accomodations"
             },
             {
                 "title": "Spacewalks",
                 "description": "We offer the chance for fliers to go on spacewalks, allowing them to experience the thrill of floating in space and seeing the Earth from above.",
-                "icon": "I"
+                "icon": "astronaut"
             },
             {
                 "title": "Space Obstacle Course",
                 "description": "The space obstacle course provides space tourists with a unique and exciting opportunity to experience the challenges and thrills of navigating through various obstacles in a zero-gravity environment.",
-                "icon": "I"
+                "icon": "obstacle"
             },
             {
                 "title": "Personalized meals",
                 "description": "We offer personalized meal plans that cater to the individual needs and preferences of each flier.",
-                "icon": "I"
+                "icon": "food"
             },
             {
                 "title": "Entertainment",
                 "description": "We provide in-flight entertainment options for fliers, including movies, books, and games.",
-                "icon": "I"
+                "icon": "entertainment"
             },
             {
                 "title": "Souvenirs",
                 "description": "Fliers can purchase unique souvenirs, such as personalized space suits, mission patches, or space rocks.",
-                "icon": "I"
+                "icon": "gift"
             },
             {
                 "title": "Post-flight experiences",
                 "description": "We also provide post-flight experiences, such as debriefings and meetings with space experts, to help fliers process their experiences and make the most of their journey.",
-                "icon": "I"
+                "icon": "landing"
             },
             {
                 "title": "Personalized mementos",
                 "description": "To commemorate the experience, We also provide personalized mementos, such as photos, videos, and certificates of participation, available for purchase",
-                "icon": "I"
+                "icon": "mementos"
             }
         ]
     },
@@ -857,47 +857,47 @@
             {
                 "title": "Astronaut training",
                 "description": "Before embarking, fliers will have to undergo extensive training. We will provide the necessary training, including zero-gravity simulations, G-force training, low-gravity training, cryosleep training, martian surface training, and spacewalk training.",
-                "icon": "I"
+                "icon": "astroTraining"
             },
             {
                 "title": "Luxury accommodation",
                 "description": "While in space, or on Mars, fliers need a place to stay. We will provide comfortable, luxurious accommodations that are equipped with everything fliers need to feel at home.",
-                "icon": "I"
+                "icon": "accomodations"
             },
             {
                 "title": "Spacewalks",
                 "description": "We offer the chance for fliers to go on spacewalks, allowing them to experience the thrill of floating in space and seeing the Earth from above.",
-                "icon": "I"
+                "icon": "astronaut"
             },
             {
                 "title": "Personalized meals",
                 "description": "We offer personalized meal plans that cater to the individual needs and preferences of each flier.",
-                "icon": "I"
+                "icon": "food"
             },
             {
                 "title": "Entertainment",
                 "description": "We provide in-flight entertainment options for fliers, including movies, books, and games.",
-                "icon": "I"
+                "icon": "entertainment"
             },
             {
                 "title": "Souvenirs",
                 "description": "Fliers can purchase unique souvenirs, such as personalized space suits, mission patches, or space rocks.",
-                "icon": "I"
+                "icon": "gift"
             },
             {
                 "title": "Post-flight experiences",
                 "description": "We also provide post-flight experiences, such as debriefings and meetings with space experts, to help fliers process their experiences and make the most of their journey.",
-                "icon": "I"
+                "icon": "landing"
             },
             {
                 "title": "Personalized mementos",
                 "description": "To commemorate the experience, We also provide personalized mementos, such as photos, videos, and certificates of participation, available for purchase",
-                "icon": "I"
+                "icon": "mementos"
             },
             {
                 "title": "Cryosleep",
                 "description": "NASA's Torpor Inducing Transfer Habitat For Human Stasis works by putting passengers to sleep for extended periods of time, lowering metabolic rates extensively, preserving their body for the journey",
-                "icon": "I"
+                "icon": "cryosleep"
             }
         ]
     }

@@ -6,6 +6,17 @@ import MoneyIcon from "./MoneyIcon";
 import TimeIcon from "./TimeIcon";
 import LocationIcon from "./LocationIcon";
 import FoodIcon from "./FoodIcon";
+import AstroTraining from "./AstroTraining";
+import SportsIcon from "./SportsIcon";
+import HikeIcon from "./Hike"
+import LandingIcon from "./Landing"
+import GiftIcon from "./Gift";
+import AccomodationsIcon from "./Accomodations";
+import AstronautIcon from "./Astronaut";
+import ATVIcon from "./ATV";
+import Entertainment from "./Entertainment";
+import SurfIcon from "./Surf.jsx";
+import Mementos from "./Mementos";
 
 function Icon({ name, size }) {
     const icons = {
@@ -16,7 +27,18 @@ function Icon({ name, size }) {
         money: <MoneyIcon size={size} />,
         time: <TimeIcon size={size} />,
         location: <LocationIcon size={size} />,
-        food: <FoodIcon size={size} />
+        food: <FoodIcon size={size} />,
+        astroTraining: <AstroTraining size={size} />,
+        sports: <SportsIcon size={size} />,
+        hike: <HikeIcon size={size} />,
+        landing: <LandingIcon size={size} />,
+        gift: <GiftIcon size={size} />,
+        accomodations: <AccomodationsIcon size={size} />,
+        astronaut: <AstronautIcon size={size} />,
+        atv: <ATVIcon size={size} />,
+        entertainment: <Entertainment size={size} />,
+        surf: <SurfIcon size={size} />,
+        mementos: <Mementos size={size} />
     }
     return icons[name];
 }

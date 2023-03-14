@@ -2,7 +2,7 @@
     "certificates": [
         {
             "img": "/static/Journey/Launch.png",
-            "alt": "The Hero Img",
+            "alt": "A spacecraft taking off",
             "title": "Spaceraft Certification",
             "location": "Orbit, Moon, Mars",
             "description": "Certification that shows you understand how to operate the space-craft and know emergency procedures.",
@@ -10,7 +10,7 @@
         },
         {
             "img": "/static/2guys.jpg",
-            "alt": "The Hero Img",
+            "alt": "Two guys in spacesuits.",
             "title": "Gravitational Adaptability Certification",
             "location": "Orbit, Moon, Mars",
             "description": "Certification that shows you can adapt to different gravitational pulls and handle high G-Forces.",
@@ -18,7 +18,7 @@
         },
         {
             "img": "/static/Training/ExtraTerrestrialTraining.jpg",
-            "alt": "The Hero Img",
+            "alt": "Two astronauts participating in a training exercise.",
             "title": "Extra-terrestrial Terrain Certification",
             "location": "Moon, Mars",
             "description": "Certification that shows you are aware of the dangers on the terrain of other planets and can successfully and safely navigate them.",
@@ -26,7 +26,7 @@
         },
         {
             "img": "/static/Gallery/7.jpg",
-            "alt": "The Hero Img",
+            "alt": "An astronaut standing on mars",
             "title": "Deep Space Travel Certification",
             "location": "Mars",
             "description": "Certification that shows you know the risks of deep space travel, understand how cryosleep works, and how to enter and exit cryosleep.",
@@ -34,7 +34,7 @@
         },
         {
             "img": "/static/Gallery/2.jpg",
-            "alt": "The Hero Img",
+            "alt": "An astronaut floating in space.",
             "title": "Space Walk Certification",
             "location": "Orbit, Moon, Mars",
             "description": "Certification that shows you know how the procedure of a space walk, and how to safely perform one.",

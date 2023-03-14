@@ -6,7 +6,7 @@ export default function Citations({ page }) {
 
     const enclosing = data?.[page] ?? undefined;
     const icon = enclosing?.icon ?? "money";
-    const citations = enclosing?.citations ?? undefined;
+    const citations = enclosing?.citations?.sort() ?? undefined;
 
     return (
         <div className={styles.card}>

@@ -2,7 +2,7 @@
     "packages": [
         {
             "title": "Low Earth Orbit",
-            "img": "/static/packages/LowEarthOrbit.png",
+            "img": "/static/packages/LowEarthOrbit.jpg",
             "description": "Experience zero gravity, enjoy the breath-taking views, & relax in space for 3 Days.",
             "price": 1250,
             "location": "Orbit",
