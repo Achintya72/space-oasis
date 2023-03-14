@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from './styles.module.css';
-import { Navbar, Button } from "../../components";
+import { Navbar, Button, Footer } from "../../components";
 import Wrapper from "../../components/Wrapper/index";
 import PackageCard from "./_packagecard";
 import LocationCard from "./_locationcard"
@@ -109,6 +109,7 @@ export default function Packages() {
                 </h3>
                 <QuoteForm />
             </Wrapper>
+            <Footer />
         </>
     )
 }

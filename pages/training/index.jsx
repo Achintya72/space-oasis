@@ -1,4 +1,4 @@
-import { Navbar } from "../../components"
+import { Footer, Navbar } from "../../components"
 import Wrapper from "../../components/Wrapper"
 import styles from "./trainingStyles.module.css";
 import Image from "next/image";
@@ -7,29 +7,32 @@ import YoutubeEmbed from "./YoutubeEmbed";
 
 export default function Training(props) {
     return (
-        <Wrapper>
-            <Navbar />
-            <h1>Training</h1>
-            <h2>Certifications Required</h2>
-            <div className={styles.certificates}>
-                {data["certificates"] != undefined && data["certificates"].map((value, index) => (
-                    <Certificate {...value} key={`certificate-${index}`} />
-                ))}
-            </div>
-            <h2>Spaceflight Stages</h2>
-            <div className={styles.stages}>
-                {data['stages'] != undefined && data['stages'].map((value, index) => (
-                    <Stage {...value} num={index + 1} key={`stage-${index}`} />
-                ))}
-            </div>
-            <h2>Spaceflight Videos</h2>
-            <div className={styles.stages}>
-                {data['videos'] != undefined && data['videos'].map((value, index) => (
-                    <YoutubeEmbed {...value} key={`video-${index}`} />
-                ))
-                }
-            </div>
-        </Wrapper>
+        <>
+            <Wrapper>
+                <Navbar />
+                <h1>Training</h1>
+                <h2>Certifications Required</h2>
+                <div className={styles.certificates}>
+                    {data["certificates"] != undefined && data["certificates"].map((value, index) => (
+                        <Certificate {...value} key={`certificate-${index}`} />
+                    ))}
+                </div>
+                <h2>Spaceflight Stages</h2>
+                <div className={styles.stages}>
+                    {data['stages'] != undefined && data['stages'].map((value, index) => (
+                        <Stage {...value} num={index + 1} key={`stage-${index}`} />
+                    ))}
+                </div>
+                <h2>Spaceflight Videos</h2>
+                <div className={styles.stages}>
+                    {data['videos'] != undefined && data['videos'].map((value, index) => (
+                        <YoutubeEmbed {...value} key={`video-${index}`} />
+                    ))
+                    }
+                </div>
+            </Wrapper>
+            <Footer />
+        </>
     )
 }
 

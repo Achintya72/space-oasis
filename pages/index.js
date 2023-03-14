@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from './home.module.css';
-import { Navbar, Button, Icon } from "../components";
+import { Navbar, Button, Icon, Footer } from "../components";
 import Wrapper from "../components/Wrapper/index";
 import PackageCard from "./packages/_packagecard";
 import getClasses from './api/_getClasses';
@@ -45,7 +45,7 @@ const gallery = [
 const options = {
   root: null,
   rootMargin: "0px",
-  threshold: 0.7
+  threshold: 0.6
 };
 export default function Home() {
   const router = useRouter();
@@ -102,6 +102,7 @@ export default function Home() {
           </div>
         </section>
       </Wrapper>
+      <Footer />
     </>
   )
 }
