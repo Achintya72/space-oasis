@@ -17,6 +17,9 @@ import ATVIcon from "./ATV";
 import Entertainment from "./Entertainment";
 import SurfIcon from "./Surf.jsx";
 import Mementos from "./Mementos";
+import Cave from "./Cave";
+import Cryosleep from "./Cryosleep";
+import Obstacle from "./Obstacle";
 
 function Icon({ name, size }) {
     const icons = {
@@ -38,7 +41,10 @@ function Icon({ name, size }) {
         atv: <ATVIcon size={size} />,
         entertainment: <Entertainment size={size} />,
         surf: <SurfIcon size={size} />,
-        mementos: <Mementos size={size} />
+        mementos: <Mementos size={size} />,
+        cave: <Cave size={size} />,
+        cryosleep: <Cryosleep size={size} />,
+        obstacle: <Obstacle size={size} />
     }
     return icons[name];
 }
