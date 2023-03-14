@@ -1,6 +1,5 @@
 import styles from "./shipSection.module.css";
 import Image from "next/image";
-import { Icon } from "../../components";
 
 export default function ShipSection(props) {
     const {
@@ -17,7 +16,6 @@ export default function ShipSection(props) {
                 {features != undefined && features.map((feature, i) => (
                     <div className={styles.feature} key={i}>
                         <div className={styles.featureHeader}>
-                            <Icon name={feature.icon} size={30} />
                             <h4>{feature.title}</h4>
                         </div>
                         <p>{feature.description}</p>

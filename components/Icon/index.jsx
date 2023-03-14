@@ -20,6 +20,13 @@ import Mementos from "./Mementos";
 import Cave from "./Cave";
 import Cryosleep from "./Cryosleep";
 import Obstacle from "./Obstacle";
+import Radiation from "./Radiation";
+import Isolation from "./Isolation";
+import Distance from "./Distance";
+import Hostile from "./Hostile";
+import Gravity from "./Gravity";
+import Life from "./Life";
+import Injury from "./Injury";
 
 function Icon({ name, size }) {
     const icons = {
@@ -44,7 +51,14 @@ function Icon({ name, size }) {
         mementos: <Mementos size={size} />,
         cave: <Cave size={size} />,
         cryosleep: <Cryosleep size={size} />,
-        obstacle: <Obstacle size={size} />
+        obstacle: <Obstacle size={size} />,
+        isolation: <Isolation size={size} />,
+        gravity: <Gravity size={size} />,
+        radiation: <Radiation size={size} />,
+        distance: <Distance size={size} />,
+        hostile: <Hostile size={size} />,
+        life: <Life size={size} />,
+        injury: <Injury size={size} />
     }
     return icons[name];
 }
