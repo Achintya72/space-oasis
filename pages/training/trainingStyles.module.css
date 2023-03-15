@@ -54,7 +54,13 @@
 .stages {
   display: flex;
   gap: 15px;
-  overflow-x: scroll;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+.videos {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
   margin: 1.5rem 0;
 }
 
@@ -64,7 +70,7 @@
   background-color: var(--clr-background-s1);
   overflow: hidden;
   min-width: 315px;
-  margin: 0.5rem 0;
+  flex: 1;
 }
 .stage video {
   width: 100%;

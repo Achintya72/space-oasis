@@ -30,7 +30,7 @@ export default function Training(props) {
                     ))}
                 </div>
                 <h2>Spaceflight Videos</h2>
-                <div className={styles.stages}>
+                <div className={styles.videos}>
                     {data['videos'] != undefined && data['videos'].map((value, index) => (
                         <YoutubeEmbed {...value} key={`video-${index}`} />
                     ))
