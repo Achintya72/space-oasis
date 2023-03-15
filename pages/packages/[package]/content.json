@@ -162,7 +162,7 @@
             {
                 "title": "Launch",
                 "description": "Take off from Earth, experiencing 3 Gs of force. This takes around 8-9 minutes, accelerating from 0 to 7,500 m/s. ",
-                "img": "/static/Journey/Launch.png",
+                "img": "/static/Journey/MarsLaunch.png",
                 "alt": "SpaceX's FalconX rocket taking off from Earth."
             },
             {
@@ -448,13 +448,13 @@
             {
                 "title": "Training",
                 "description": "Fliers must undergo Spacecraft training, Zero G training and G-Force training, Martian Terrain Training, Low Gravity Training, Cryosleep training.",
-                "img": "/static/Journey/Launch.png",
+                "img": "/static/Journey/Training.png",
                 "alt": "A woman receiving a space training lesson."
             },
             {
                 "title": "Launch",
                 "description": "Take off from Earth, experiencing 3 Gs of force. This takes around 8-9 minutes, accelerating from 0 to 7,500 m/s. ",
-                "img": "/static/Journey/Launch.png",
+                "img": "/static/Journey/MarsLaunch.png",
                 "alt": "A rocket taking off from Earth."
             },
             {
@@ -663,7 +663,7 @@
             {
                 "title": "Launch",
                 "description": "Take off from Earth, experiencing 3 Gs of force. This takes around 8-9 minutes, accelerating from 0 to 7,500 m/s. ",
-                "img": "/static/Journey/Launch.png",
+                "img": "/static/Journey/MarsLaunch.png",
                 "alt": "A rocket taking off from Earth."
             },
             {
@@ -680,7 +680,7 @@
             },
             {
                 "title": "Orbit",
-                "description": "Spend 3 days being 200 km above the Moon while enjoying the activities and anemities Space Oasis provides.",
+                "description": "Spend 3 days being 200 km above the Moon while enjoying the activities and amenities Space Oasis provides.",
                 "img": "/static/packages/MoonOrbit.jpg",
                 "alt": "A picture of the earth from the Moon orbit"
             },
@@ -817,7 +817,7 @@
             {
                 "title": "Launch",
                 "description": "Take off from Earth, experiencing 3 Gs of force. This takes around 8-9 minutes, accelerating from 0 to 7,500 m/s. ",
-                "img": "/static/Journey/Launch.png",
+                "img": "/static/Journey/MarsLaunch.png",
                 "alt": "A rocket taking off from Earth."
             },
             {
