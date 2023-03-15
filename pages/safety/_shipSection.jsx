@@ -23,7 +23,7 @@ export default function ShipSection(props) {
                 ))}
             </div>
             <div className={styles.shipImg}>
-                <Image src={img} alt={alt} fill />
+                <Image src={img} alt={alt} fill placeholder="blur" blurDataURL="/static/Placeholder.jpg" />
             </div>
         </div>
     )

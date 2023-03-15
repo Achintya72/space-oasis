@@ -27,7 +27,6 @@ export default function About() {
                     <Link href="/static/SignedWorkLog.pdf" locale={false} target="_blank">Signed Plan of Work Log</Link>
                 </div>
             </Wrapper>
-            <Footer />
         </>
     )
 }

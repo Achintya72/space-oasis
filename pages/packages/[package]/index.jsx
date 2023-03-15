@@ -36,7 +36,7 @@ export default function ProductDetail() {
 
     const renderGallery = gallery.map((img, i) => (
         <div key={"Gallery" + i} className={styles.galleryImg}>
-            <Image src={img.src} fill alt={img.alt} key={"Gallery" + i} />
+            <Image src={img.src} fill alt={img.alt} key={"Gallery" + i} placeholder="blur" blurDataURL="/static/Placeholder.jpg" />
         </div>
     ));
 

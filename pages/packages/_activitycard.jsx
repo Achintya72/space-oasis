@@ -30,7 +30,7 @@ export default function ActivityCard(props) {
     return (
         <div onClick={onClick} className={getClasses(activityCard, activeClass)}>
             <div className={activityImg}>
-                <Image src={img} alt={alt} fill />
+                <Image src={img} alt={alt} fill placeholder="blur" blurDataURL="/static/Placeholder.jpg" />
             </div>
             <div className={overlay}>
                 <div className={cardHeader}>

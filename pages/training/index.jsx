@@ -54,7 +54,7 @@ function Certificate(props) {
     return (
         <div className={styles.certificate}>
             <div className={styles.certificateImg}>
-                <Image src={img} alt={alt} fill />
+                <Image src={img} alt={alt} fill placeholder="blur" blurDataURL="/static/Placeholder.jpg" />
             </div>
             <div>
                 <h4>{title}</h4>

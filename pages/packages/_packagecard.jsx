@@ -37,6 +37,8 @@ export default function PackageCard({ img, title, description, price, location, 
                 <Image
                     src={img}
                     fill
+                    placeholder="blur"
+                    blurDataURL="/static/Fallback.jpg"
                     alt={description}
                 />
             </div>
