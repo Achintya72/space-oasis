@@ -3,7 +3,7 @@
         {
             "title": "Low Earth Orbit",
             "img": "/static/packages/LowEarthOrbit.jpg",
-            "description": "Experience zero gravity, enjoy the breath-taking views, & relax in space for 3 Days.",
+            "description": "Experience zero gravity, enjoy the breathtaking views of your home planet, and relax in space for three days.",
             "price": 1250,
             "location": "Orbit",
             "stars": 4
@@ -11,7 +11,7 @@
         {
             "title": "Lunar Exploration",
             "img": "/static/packages/Moon.jpg",
-            "description": "Take your next vacation to the moon, experience how Neil Armstrong felt when he took the giant leap for mankind.",
+            "description": "Experience an unforgettable vacation to the moon with its low gravity, astonishing view of the Earth, and tours to the place where Neil Armstrong took one giant step for mankind.",
             "price": 2000,
             "location": "Moon",
             "stars": 5
@@ -19,7 +19,7 @@
         {
             "title": "Mars Adventure",
             "img": "/static/packages/Mars.png",
-            "description": "Our premium experience, a once in a lifetime chance to visit humanity's next home.",
+            "description": "Embark on a groundbreaking journey to Mars, featuring hikes, stargazing, and cave exploring while unlocking the mysteries of the Red Planet.",
             "price": 35700,
             "location": "Mars",
             "stars": 5
@@ -28,14 +28,14 @@
             "title": "Moon Orbit",
             "img": "/static/packages/MoonOrbit.jpg",
             "location": "Moon",
-            "description": "Orbit the moon for 3 days, while enjoying spectacular food and a view of the cradle of humanity.",
+            "description": "Embark on an otherworldly expedition, treating your taste buds to a stunning culinary voyage during your three-day journey around the moon.",
             "price": 1750,
             "stars": 4
         },
         {
             "title": "Mars Orbit",
             "location": "Mars",
-            "description": "Enjoy striking views of the red planet as you dine with our 5 star chef Jignesh.",
+            "description": "Discover the wonders of Mars, featuring spectacular views, Martian landscapes, and thrilling spacewalks. Truly an unforgettable journey around the Red Planet.",
             "price": 28000,
             "stars": 4,
             "img": "/static/packages/MarsOrbit.jpg"
