@@ -6,7 +6,7 @@ const useGetVisibility = (options) => {
 
     const callBack = (entries) => {
         const [entry] = entries;
-        changeVisible(entry.isIntersecting);
+        changeVisible(prev => !prev ? entry.isIntersecting : prev);
     }
 
     useEffect(() => {
