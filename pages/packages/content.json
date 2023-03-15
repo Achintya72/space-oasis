@@ -67,7 +67,7 @@
             {
                 "title": "Spacewalk",
                 "age": "12+",
-                "description": "Take an anti-gravity stroll, while tethered to the ship. Perform mock maintainence tasks around the ship, much like real astronauts.",
+                "description": "Take an anti-gravity stroll, while tethered to the ship. Perform mock maintenance tasks around the ship, much like real astronauts.",
                 "img": "/static/Activities/Spacewalk.jpg",
                 "alt": "rocket",
                 "cost": 400,
