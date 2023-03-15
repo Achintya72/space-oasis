@@ -12,6 +12,8 @@
 }
 .footerRoot {
   margin-top: 20px;
+  position: static;
+  bottom: 0;
 }
 .branding {
   font-family: "DM Serif Display", sans-serif;
@@ -36,6 +38,5 @@
 }
 
 .footer div {
-  flex: 1;
   min-width: 200px;
 }
