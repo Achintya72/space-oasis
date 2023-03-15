@@ -30,6 +30,7 @@ export default function Journey({ packageName }) {
                         src={steps[currentStop].img}
                         alt={steps[currentStop].alt}
                         fill
+                        placeholder="empty"
                     />
                 }
             </div>

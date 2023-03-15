@@ -1,8 +1,24 @@
+.links {
+  margin: 0.5rem 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.links a,
+.about a {
+  color: white;
+}
+
+
+.links a:hover,
+.links a:focus {
+  color: var(--clr-primary);
+}
 .card {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   flex: 1;
   border-radius: var(--font-size-p);
   width: 100%;
@@ -20,19 +36,16 @@
 }
 
 .citation {
+  font-size: 13px;
   padding-left: calc(2 * var(--font-size-p));
   text-indent: calc(-2 * var(--font-size-p));
-  /* These are technically the same, but use both */
   overflow-wrap: break-word;
   word-wrap: break-word;
 
   -ms-word-break: break-all;
-  /* This is the dangerous one in WebKit, as it breaks things wherever */
   word-break: break-all;
-  /* Instead use this non-standard one: */
   word-break: break-word;
 
-  /* Adds a hyphen where the word breaks, if supported (No Blink) */
   -ms-hyphens: auto;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;

@@ -63,6 +63,7 @@ export default function QuoteForm() {
                     value={name}
                     onChange={handleContactChange}
                     placeholder="Ex: John Doe"
+                    autoComplete="given-name"
                 />
                 <input
                     name="email"
@@ -71,6 +72,8 @@ export default function QuoteForm() {
                     value={email}
                     onChange={handleContactChange}
                     placeholder="Ex: jdoe@example.com"
+                    autoComplete="email"
+
                 />
                 <input
                     name="number"
@@ -79,6 +82,7 @@ export default function QuoteForm() {
                     value={number}
                     onChange={handleContactChange}
                     placeholder="+1 (111)-111-1111 (opt.)"
+                    autoComplete="tel"
                 />
                 <Button size="large"> Get A Quote</Button>
             </div>

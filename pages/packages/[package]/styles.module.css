@@ -235,13 +235,8 @@
   border-bottom: 2px solid var(--clr-background);
   margin-bottom: 2rem;
 }
-@media screen and (max-width: 1100px) {
-  .journeySteps {
-    flex: 2;
-  }
-}
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1100px) {
   .journeyContainer {
     flex-direction: column-reverse;
     align-items: flex-start;

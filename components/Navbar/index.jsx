@@ -28,6 +28,7 @@ export default function Navbar() {
                 <Link href="/packages">Packages</Link>
                 <Link href="/safety">Safety</Link>
                 <Link href="/training">Training</Link>
+                <Link href="/about">About</Link>
                 <Link href="/sources">Sources</Link>
             </div>
         </nav>

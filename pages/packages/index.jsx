@@ -55,7 +55,7 @@ export default function Packages() {
                     </div>
                     <p>*Cost approximations based on 2150 projections</p>
                 </section>
-                <section id='customize'>
+                <section id='customize' style={{ paddingTop: "15px" }}>
                     <div className={styles.header}>
                         <h2>Customize</h2>
                         <Button size="regular" onClick={() => goTo("existing")}>Existing Packages</Button>
@@ -104,7 +104,7 @@ export default function Packages() {
                         {location == "" ? "Please select a location to select your activities" : ""}
                     </div>
                 </section>
-                <h3 style={{ marginTop: "10px", marginBottom: "10px" }}>
+                <h3 style={{ marginTop: "20px" }}>
                     Get A Quote:
                 </h3>
                 <QuoteForm />

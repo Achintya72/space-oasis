@@ -23,7 +23,10 @@ export default function LocationCard({ img, title, time, description, price, act
                 />
             </div>
             <div className={styles.locationText}>
-                <h4>{title}</h4>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+                    <h4>{title}</h4>
+                    <p className={active ? styles.selectedText : null}>{active ? "Selected" : "Click to Select"}</p>
+                </div>
                 <p>{description}</p>
                 <div className={styles.iconPairs}>
                     <div className={styles.pair}>

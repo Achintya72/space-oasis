@@ -11,7 +11,6 @@ export default function Citations({ page }) {
     return (
         <div className={styles.card}>
             <div className={styles.header}>
-                <Icon name={icon} size="16px" />
                 <h3>{((page?.charAt(0)?.toUpperCase()) ?? "") + (page?.slice(1) ?? "") + " Page"}</h3>
             </div>
 
