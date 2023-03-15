@@ -11,11 +11,11 @@ import { useRouter } from 'next/router';
 const gallery = [
   {
     src: "/static/Gallery/1.jpg",
-    alt: "An astronaut on the moon."
+    alt: "Buzz Aldrin on the Moon"
   },
   {
     src: "/static/Gallery/2.jpg",
-    alt: "An astronaut floating in the space."
+    alt: "American astronaut in space"
   },
   {
     src: "/static/Gallery/3.jpg",
@@ -23,7 +23,7 @@ const gallery = [
   },
   {
     src: "/static/Gallery/4.jpg",
-    alt: "A couple of astronauts on mars."
+    alt: "Astronauts Holding Hands Standing on Mars"
   },
   {
     src: "/static/Gallery/5.jpg",
@@ -31,7 +31,7 @@ const gallery = [
   },
   {
     src: "/static/Gallery/6.jpg",
-    alt: "A rocket on the moon."
+    alt: "SpaceX Starship on the moon."
   },
   {
     src: "/static/Gallery/7.jpg",

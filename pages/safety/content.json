@@ -10,7 +10,7 @@
             "icon": "isolation",
             "title": "Isolation",
             "description": "Our spacecraft offer limited space for passengers to move around, unlike their homes and facilities on Earth, causing changes in behavior such as sleep cycle disturbances and feelings of isolation without personal device Internet access.",
-            "solution": "All of our sleep cabins use light therapy to maintain circadian rhythms, and provide numerous activties on-board, allowing passengers to socialize and stay active."
+            "solution": "All of our sleep cabins use light therapy to maintain circadian rhythms, and provide numerous activities on-board, allowing passengers to socialize and stay active."
         },
         {
             "icon": "distance",
@@ -22,7 +22,7 @@
             "icon": "gravity",
             "title": "Gravity Changes",
             "description": "Changes in gravity from Earth, to space, to on Mars can have various effects on astronauts' bodies. Additionally, readjusting to Earth's gravity on return can be an extensive process",
-            "solution": "To keep passengers' bones and muscles strong, even in low gravity situations, we have state-of-the-art exercise machines that all passengers must use. Additionally, we provide passengers with FDA-approved osteoporosis medicine to keep thier bones healthy"
+            "solution": "To keep passengers' bones and muscles strong, even in low gravity situations, we have state-of-the-art exercise machines that all passengers must use. Additionally, we provide passengers with FDA-approved osteoporosis medicine to keep their bones healthy"
         },
         {
             "icon": "hostile",
@@ -42,7 +42,7 @@
                 {
                     "icon": "menu",
                     "title": "Landing Systems",
-                    "description": "Starship is designed to be able to land on any surface, it employs both propuslive and aerodynamic landing to make one of the most safe landing systems."
+                    "description": "Starship is designed to be able to land on any surface, it employs both propulsive and aerodynamic landing to make one of the most safe landing systems."
                 },
                 {
                     "icon": "menu",
@@ -52,11 +52,11 @@
                 {
                     "icon": "menu",
                     "title": "State-of-the-Art Heat Shielding",
-                    "description": "Starship has industry leading heat shields gauranteeing that you will feel no different during your atmospheric entry."
+                    "description": "Starship has industry leading heat shields guaranteeing that you will feel no different during your atmospheric entry."
                 }
             ],
             "img": "/static/Rockets/Starship.png",
-            "alt": "Picture of Space-X Starship"
+            "alt": "Rendering of the Space-X Starship launching."
         },
         "Falcon 9": {
             "features": [
@@ -73,7 +73,7 @@
                 {
                     "icon": "menu",
                     "title": "Water Landing",
-                    "description": "The Dragon Capsule will be able to land on any body of water in the world using Falcon 9's advanced pathfinding and landing systems."
+                    "description": "The Dragon Capsule will be able to land on any body of water in the world using Falcon 9's advanced path-finding and landing systems."
                 },
                 {
                     "icon": "menu",
@@ -81,8 +81,8 @@
                     "description": "The Dragon Capsule can rapidly boost away from the Falcon 9 in the unlikely event of an emergency, protecting all passengers on board."
                 }
             ],
-            "img": "/static/Rockets/Falcon.png",
-            "alt": "Picture of the Falcon-9 Rocket"
+            "img": "/static/Rockets/Falcon.jpg",
+            "alt": "Picture of the SpaceX Falcon-9 Rocket launching."
         },
         "New Glenn": {
             "features": [
@@ -103,7 +103,7 @@
                 }
             ],
             "img": "/static/Rockets/NewGlenn.png",
-            "alt": "Picture of Space-X Starship"
+            "alt": "A picture of Blue Origin's New Glenn Rocket blasting off into space"
         }
     },
     "statistics": [

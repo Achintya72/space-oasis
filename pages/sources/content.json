@@ -37,7 +37,8 @@
             "Origin, B. (2022). New glenn. New Glenn. Retrieved March 13, 2023, from https://www.blueorigin.com/new-glenn/",
             "X, S. (2022). Starship. Retrieved March 13, 2023, from https://www.spacex.com/vehicles/starship/",
             "X, S. (2023). Falcon 9. Retrieved March 13, 2023, from https://www.spacex.com/vehicles/falcon-9/",
-            "Zak, A. (2023, March 9). The Soyuz-2 rocket series. Soyuz-2 launch vehicle. Retrieved March 13, 2023, from https://www.russianspaceweb.com/soyuz2_lv.html "
+            "Zak, A. (2023, March 9). The Soyuz-2 rocket series. Soyuz-2 launch vehicle. Retrieved March 13, 2023, from https://www.russianspaceweb.com/soyuz2_lv.html ",
+            "NASA. “Apollo 11 Mission Overview.” NASA, NASA, 15 May 2019, www.nasa.gov/mission_pages/apollo/missions/apollo11.html. Accessed 14 Mar. 2023."
         ],
         "icon": "menu"
     },
@@ -62,7 +63,7 @@
     },
     "Low Earth Orbit": {
         "citations": [
-            "Falcon 9 rocket. (2018). [Online Image]. In Wikipedia. https://en.wikipedia.org/wiki/Falcon_9_Block_5",
+            "SpaceX. “SpaceX Falcon 9 Launch,” Unplash.com, 24 Jan. 2018, unsplash.com/photos/uj3hvdfQujI. Accessed 14 Mar. 2023.",
             "Aubrey, G. (2017). Soyuz MS-04 launches from Baikonur Cosmodrome in Kazakhstan [Online Image]. In Space Flight Insider. https://www.spaceflightinsider.com/wp-content/uploads/2017/04/33344869493_e87332de6b_k.jpg",
             "NASA. (2016). Earth as seen by the Expedition 47 crew on May 31, 2016, from the International Space Station [Online Image]. In npr. https://www.npr.org/sections/13.7/2016/07/14/485992587/were-there-aliens-before-us",
             "Pesquet, T. (2021). A SpaceX Cargo Dragon capsule approaches the International Space Station Monday [Online Image]. In SpaceFlight Now. https://spaceflightnow.com/2021/08/30/dragon-supply-freighter-docks-at-space-station-with-2-4-tons-of-cargo/",
@@ -78,14 +79,17 @@
             "SpaceX. (2022b). Starship Refueling [Video]. In Youtube. https://www.youtube.com/watch?v=-Oox2w5sMcA",
             "NASA. (2015). Expedition 43 Italian astronaut Samantha Cristoforetti from European Space Agency (ESA) is helped out of the Soyuz TMA-15M spacecraft just minutes after she landed in a remote area in Kazakhstan on Thursday, June 11, 2015. [Online Image]. In NASA. https://www.nasa.gov/content/walk-the-line-nasa-studies-physical-performance-after-spaceflight",
             "AFP. (2021). Astronauts from a team from Europe and Israel walk in spacesuits during a training mission for planet Mars [Online Image]. In ynetnews. https://ynet-pic1.yit.co.il/picserver5/crop_images/2021/10/10/r1LMJpxHK/r1LMJpxHK_0_0_3000_1894_0_x-large.jpg",
-            "Lobos, N. (2020). Is humanity ready to live in space? [Online Image]. In Sciworthy. https://sciworthy.com/wp-content/uploads/2020/10/nicolas-lobos-NR_tXTuyTak-unsplash-scaled.jpg"
+            "Lobos, N. (2020). Is humanity ready to live in space? [Online Image]. In Sciworthy. https://sciworthy.com/wp-content/uploads/2020/10/nicolas-lobos-NR_tXTuyTak-unsplash-scaled.jpg",
+            "JPL. “Utopia Planitia,” Jpl.nasa.gov, 4 June 2002, www.jpl.nasa.gov/images/pia03796-utopia-planitia. Accessed 14 Mar. 2023.",
+            "Spotify. (2021). #1609 - Elon Musk. Joe Rogan Podcast. Retrieved March 14, 2023, from https://open.spotify.com/episode/2aB2swgyXqbFA06AxPlFmr?si=3eb526bf902e4b37."
         ],
         "icon": "menu"
     },
     "Mars Orbit": {
         "citations": [
             "X, S. (2022, February 10). Starship animation. YouTube. Retrieved March 13, 2023, from https://www.youtube.com/watch?v=-Oox2w5sMcA",
-            "Foust, J. (2023, February 22). Space junk in orbit is bad enough, but on Mars? SpaceNews. Retrieved March 13, 2023, from https://spacenews.com/space-junk-in-orbit-is-bad-enough-but-on-mars/"
+            "Foust, J. (2023, February 22). Space junk in orbit is bad enough, but on Mars? SpaceNews. Retrieved March 13, 2023, from https://spacenews.com/space-junk-in-orbit-is-bad-enough-but-on-mars/",
+            "Spotify. (2021). #1609 - Elon Musk. Joe Rogan Podcast. Retrieved March 14, 2023, from https://open.spotify.com/episode/2aB2swgyXqbFA06AxPlFmr?si=3eb526bf902e4b37."
         ],
         "icon": "menu"
     },
@@ -104,7 +108,8 @@
             "Pultarova, T. (2021, September 27). Do space tourists really understand the risk they're taking? Space.com. Retrieved March 12, 2023, from https://www.space.com/space-tourism-risk-safety-regulations",
             "Dodd. T (2019). Why won’t Starship have an abort system? Should it?! YouTube. Retrieved March 13, 2023, from https://www.youtube.com/watch?v=v6lPMFgZU5Q.",
             "Origin, B. (2022). New glenn. New Glenn. Retrieved March 13, 2023, from https://www.blueorigin.com/new-glenn/",
-            "New, S. (2010, May 21). Handbrakes and nine lives: Keeping falcon 9 crew safe. New Scientist. Retrieved March 13, 2023, from https://www.newscientist.com/gallery/spacex-safety-smart/"
+            "New, S. (2010, May 21). Handbrakes and nine lives: Keeping falcon 9 crew safe. New Scientist. Retrieved March 13, 2023, from https://www.newscientist.com/gallery/spacex-safety-smart/",
+            "Nasa. (2021, March 18). NASA, spacex sign joint spaceflight safety agreement. PR Newswire: press release distribution, targeting, monitoring and marketing. Retrieved March 14, 2023, from https://www.prnewswire.com/news-releases/nasa-spacex-sign-joint-spaceflight-safety-agreement-301250514.html"
         ],
         "icon": "menu"
     },
@@ -120,7 +125,8 @@
             "Illustration of an astronaut watching the sunrise on Mars. (2021). [Online Image]. In Forbes. https://www.forbes.com/sites/valeriestimac/2021/12/29/these-are-the-most-mars-like-locations-on-earth/?sh=16f61cde10a9",
             "SpaceX. (2022, February 10). Starship Animation. Www.youtube.com. https://www.youtube.com/embed/-Oox2w5sMcA",
             "SpaceX. (2023, March 3). Starlink Mission. Www.youtube.com. https://youtube.com/embed/BAkApUbevaA",
-            "Everyday Astronaut. (2023, February 4). How Stoke Space’s Unique Rocket Works. Www.youtube.com. https://youtube.com/embed/EY8nbSwjtEY"
+            "Everyday Astronaut. (2023, February 4). How Stoke Space’s Unique Rocket Works. Www.youtube.com. https://youtube.com/embed/EY8nbSwjtEY",
+            "---. “The Human Body in Space.” NASA, NASA, 2 Feb. 2021, www.nasa.gov/hrp/bodyinspace. Accessed 14 Mar. 2023."
         ],
         "icon": "menu"
     }

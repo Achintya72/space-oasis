@@ -26,8 +26,13 @@ export default function QuoteForm() {
         changeContactInfo(prev => ({ ...prev, [name]: value }));
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert("Thanks," + name + "\n\nYour details have been sent to a representative. We will get back to you soon via email.");
+    }
+
     return (
-        <div className={form}>
+        <form className={form} onSubmit={handleSubmit}>
             <div className={col}>
                 <div className={formInfoPair}>
                     <h4>People: </h4>
@@ -64,6 +69,7 @@ export default function QuoteForm() {
                     onChange={handleContactChange}
                     placeholder="Ex: John Doe"
                     autoComplete="given-name"
+                    required
                 />
                 <input
                     name="email"
@@ -73,6 +79,7 @@ export default function QuoteForm() {
                     onChange={handleContactChange}
                     placeholder="Ex: jdoe@example.com"
                     autoComplete="email"
+                    required
 
                 />
                 <input
@@ -83,11 +90,12 @@ export default function QuoteForm() {
                     onChange={handleContactChange}
                     placeholder="+1 (111)-111-1111 (opt.)"
                     autoComplete="tel"
+
                 />
                 <Button size="large"> Get A Quote</Button>
             </div>
 
-        </div>
+        </form>
     )
 }
 

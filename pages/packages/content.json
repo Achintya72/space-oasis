@@ -104,7 +104,7 @@
             },
             {
                 "title": "Apollo Mission Site Tour",
-                "age": "5-60",
+                "age": "5+",
                 "description": "Get your own personal tour guide to visit the famous bootprint and U.S. flag, and eat some specialty space food",
                 "img": "/static/Activities/Tour.jpg",
                 "alt": "rocket",
@@ -113,7 +113,7 @@
             },
             {
                 "title": "Stargazing",
-                "age": "5-60",
+                "age": "5+",
                 "description": "Climb Mons Pico, and watch the skies with a glass of champagne (ID needed)",
                 "img": "/static/Activities/Stargazing.jpg",
                 "alt": "rocket",

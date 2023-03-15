@@ -3,14 +3,14 @@
         {
             "img": "/static/Journey/Launch.png",
             "alt": "A spacecraft taking off",
-            "title": "Spaceraft Certification",
+            "title": "Spacecraft Certification",
             "location": "Orbit, Moon, Mars",
             "description": "Certification that shows you understand how to operate the space-craft and know emergency procedures.",
             "instructions": "To receive training for this certification, book any of our flights and show the booking confirmation to the front-desk advisor at any of SpaceX's Starbases or NASA's Jet Propulsion Laboratory to receive training lessons from them. Receive training lessons for 1 week."
         },
         {
             "img": "/static/2guys.jpg",
-            "alt": "Two guys in spacesuits.",
+            "alt": "Two guys in spacesuits inside a spaceship",
             "title": "Gravitational Adaptability Certification",
             "location": "Orbit, Moon, Mars",
             "description": "Certification that shows you can adapt to different gravitational pulls and handle high G-Forces.",
