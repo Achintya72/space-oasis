@@ -28,7 +28,7 @@ export default function QuoteForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert("Thanks," + name + "\n\nYour details have been sent to a representative. We will get back to you soon via email.");
+        alert("Thanks, " + name + "\n\nYour details have been sent to a representative. We will get back to you soon via email.");
     }
 
     return (
