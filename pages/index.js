@@ -8,6 +8,7 @@ import getClasses from './api/_getClasses';
 import useGetVisibility from './api/_useGetVisibility';
 import data from "./packages/content.json";
 import { useRouter } from 'next/router';
+import Testimonials from './_testimonials';
 const gallery = [
   {
     src: "/static/Gallery/1.jpg",
@@ -95,6 +96,7 @@ export default function Home() {
             {renderPromo}
           </div>
         </section>
+        <Testimonials />
         <section className={styles.gallery}>
           <h1>Gallery</h1>
           <div className={styles.galleryGrid}>
