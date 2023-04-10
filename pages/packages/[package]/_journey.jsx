@@ -31,6 +31,7 @@ export default function Journey({ packageName }) {
                         alt={steps[currentStop].alt}
                         fill
                         placeholder="empty"
+                        priority={true}
                     />
                 }
             </div>
