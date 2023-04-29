@@ -14,18 +14,22 @@ export default function Navbar() {
                 <div>
                     <h6 onClick={() => router.push("/")}>SpaceOasis</h6>
                 </div>
-                {showLinks ?
-                    <div className={styles.menuIcon} onClick={() => changeShowLinks(false)}>
-                        <Icon name="close" size={30} />
-                    </div>
-                    :
-                    <div className={styles.menuIcon} onClick={() => changeShowLinks(true)}>
-                        <Icon name="menu" size={30} />
-                    </div>
-                }
+                <div style={{ display: "flex", alignItems: "center" }}>
+                    <Icon name="money" size={20} />
+                    {showLinks ?
+                        <div className={styles.menuIcon} onClick={() => changeShowLinks(false)}>
+                            <Icon name="close" size={20} />
+                        </div>
+                        :
+                        <div className={styles.menuIcon} onClick={() => changeShowLinks(true)}>
+                            <Icon name="menu" size={20} />
+                        </div>
+                    }
+                </div>
             </div>
             <div className={getClasses(styles.navLinks, showLinks ? styles.navLinksShow : styles.navLinksHide)}>
                 <Link href="/packages">Packages</Link>
+                <Link href="/vehicles">Vehicles</Link>
                 <Link href="/safety">Safety</Link>
                 <Link href="/training">Training</Link>
                 <Link href="/about">About</Link>

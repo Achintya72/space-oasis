@@ -2,16 +2,27 @@ import styles from "./button.module.css";
 
 function Button(props) {
     const {
-        size,
+        background,
         children,
-        onClick
+        corners,
+        onClick,
+        hasIcon
     } = props;
     return (
-        <button onClick={onClick} className={`${styles.button} ${styles[size]}`}>{children}</button>
+        <button
+            onClick={onClick}
+            className={`${styles.button} ${hasIcon ? styles.thin : styles.fat} ${styles[corners]} ${styles[background]}`}
+        >
+            {children}
+        </button>
     )
 }
 
 Button.defaultProps = {
-    size: "regular"
+    background: "dark",
+    children: "Click Me!",
+    corners: "sharp",
+    hasIcon: false,
+    onClick: () => { }
 }
 export default Button;

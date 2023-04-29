@@ -55,9 +55,9 @@ export default function PackageCard({ img, title, description, price, location, 
 
                 <p>{description} <span className={styles.viewMore}>View More...</span>
                 </p>
-                <div style={{ display: "flex", gap: "10px" }}>
+                <div style={{ display: "flex", gap: "1px" }}>
                     {starsList.map((value, index) => (
-                        <Image key={`star${index}`} className={styles.star} src={value} width={25} height={25} alt="A colored star" />
+                        <Image key={`star${index}`} className={styles.star} src={value} width={20} height={20} alt="A colored star" />
                     ))}
                 </div>
             </div>

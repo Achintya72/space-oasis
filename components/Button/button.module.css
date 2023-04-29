@@ -1,24 +1,39 @@
 .button {
-  background-color: var(--clr-primary);
-  color: #fff;
   outline: none;
   border: none;
   font-family: "Inter", sans-serif;
   font-weight: 700;
+  font-size: var(--font-size-p);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  color: var(--clr-primary);
 }
 
-.large {
-  padding: 10px 20px;
-  border-radius: 5px;
-  min-width: 150px;
+.sharp {
+  border-radius: 10px;
+}
+.rounded {
+  border-radius: 40px;
 }
 
-.regular {
+.dark {
+  background-color: #372f21;
+}
+.light {
+  background-color: #4c3e23;
+}
+
+.fat {
   padding: 10px 20px;
-  border-radius: 30px;
-  min-width: 150px;
+}
+
+.thin {
+  padding: 10px;
+}
+
+.solid {
+  background-color: var(--clr-primary);
+  color: var(--clr-background);
 }

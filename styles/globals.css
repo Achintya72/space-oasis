@@ -26,7 +26,7 @@ body {
   --clr-background: #121212;
   --clr-background-s1: #202020;
   --clr-background-s2: #313131;
-  --clr-primary: #db930e;
+  --clr-primary: #ffb120;
   --font-size-h1: clamp(40px, 5vw, 84px);
   --font-size-h2: clamp(20px, 2.7vw, 40px);
   --font-size-h3: 24px;
