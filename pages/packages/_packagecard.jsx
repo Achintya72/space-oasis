@@ -67,9 +67,6 @@ export default function PackageCard({ img, title, description, price, location, 
                     </div>
                     <div style={{ display: "flex", gap: "10px" }}>
                         <Button
-                            background="dark" hasIcon corners="sharp"
-                        ><Icon size={20} name="cart" /></Button>
-                        <Button
                             background="dark"
                             corners="sharp"
                             onClick={redirect}
