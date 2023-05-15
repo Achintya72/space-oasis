@@ -2,10 +2,12 @@ import styles from "./navStyles.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Icon from "../Icon";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import getClasses from "../../pages/api/_getClasses";
+import { UserContext } from "../../pages/api/_userContext";
 
 export default function Navbar() {
+    const { auth } = useContext(UserContext);
     const router = useRouter();
     const [showLinks, changeShowLinks] = useState(false);
     return (
@@ -15,9 +17,6 @@ export default function Navbar() {
                     <h6 onClick={() => router.push("/")}>SpaceOasis</h6>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "10px", color: "#fff" }}>
-                    <Link href="/cart" style={{ marginRight: "10px" }}>
-                        <Icon name="cart" size={20} />
-                    </Link>
                     {showLinks ? (
                         <div
                             className={styles.menuIcon}
@@ -47,6 +46,14 @@ export default function Navbar() {
                 <Link href="/training">Training</Link>
                 <Link href="/about">About</Link>
                 <Link href="/sources">Sources</Link>
+                {auth ?
+                    <>
+                        <Link href="/dashboard">Dashboard</Link>
+                        <Link href="">Sign Out</Link>
+                    </>
+                    :
+                    <Link href="/signin">Sign In</Link>
+                }
             </div>
         </nav>
     );
