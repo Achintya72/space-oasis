@@ -68,6 +68,7 @@
   background-color: var(--clr-background-s1);
   border-radius: 20px;
   padding: 20px;
+  min-width: 320px;
 }
 
 .picAndTime {
@@ -77,6 +78,7 @@
 .booking {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .picAndTime,
@@ -85,6 +87,7 @@
   aspect-ratio: 16 / 9;
   border-radius: 10px;
   overflow: hidden;
+  min-width: 200px;
 }
 
 .editable {
@@ -139,6 +142,7 @@
 .timings {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .timings div {
   display: flex;
@@ -197,4 +201,16 @@
 }
 .close {
   display: none;
+}
+
+@media screen and (max-width: 930px) {
+  .details {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .userDashboard {
+    flex-direction: column;
+  }
 }

@@ -24,6 +24,14 @@ export default function Booking({ booking, i }) {
             return { ...prev };
         })
     }
+
+    const handleMealChange = (val) => {
+        changeUser(prev => {
+            prev.bookings[i].meal = options[val];
+            return { ...prev };
+        })
+    }
+
     return (
         <div className={styles.booking} key={(booking?.departure ?? new Date()).toISOString()}>
             <div className={styles.picAndTime}>
@@ -36,21 +44,17 @@ export default function Booking({ booking, i }) {
                             <p>{(booking?.departure ?? new Date()).toLocaleString().split(",")[0]}</p>
                         </div>
                         <div>
-                            <Icon name="depart" size={24} />
+                            <Icon name="arrive" size={24} />
                             <p>{(booking?.arrival ?? new Date()).toLocaleString().split(",")[0]}</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className={styles.editable}>
-                <div className={styles.labelInput}>
-                    <p className="caption">PEOPLE</p>
-                    <Counter count={booking?.passengers} />
-                </div>
+            <div className={styles.editable} style={{ borderRadius: "0px" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <div className={styles.labelInput}>
                         <p className="caption">MEAL</p>
-                        <Dropdown options={options} selected={options.indexOf(user.meal)} />
+                        <Dropdown options={options} selected={options.indexOf(booking.meal)} changeSelected={handleMealChange} />
                     </div>
                     <div className={styles.buttons}>
                         <DateModal startDate={booking?.departure ?? new Date()} endDate={new Date((booking?.departure ?? new Date()).getFullYear() + 2, (booking?.departure ?? new Date()).getMonth(), (booking?.departure ?? new Date()).getDate())} setDate={handleChange} />

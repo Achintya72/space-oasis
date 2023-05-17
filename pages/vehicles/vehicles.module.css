@@ -7,26 +7,41 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
 }
 
 .starship {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(18, 18, 18, 0.25),
+      rgba(18, 18, 18, 1) 95%
+    ),
     url("/static/Rockets/Starship.png");
 }
 
 .newGlenn {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(18, 18, 18, 0.25),
+      rgba(18, 18, 18, 1) 95%
+    ),
     url("/static/Rockets/NewGlenn.png");
 }
 
 .falcon {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(18, 18, 18, 0.25),
+      rgba(18, 18, 18, 1) 95%
+    ),
     url("/static/Rockets/Falcon.jpg");
 }
 
 .soyuz {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(18, 18, 18, 0.25),
+      rgba(18, 18, 18, 1) 95%
+    ),
     url("/static/Rockets/Soyuz.png");
 }
 
@@ -44,6 +59,8 @@
   justify-content: flex-end;
   padding: 20px;
   box-sizing: border-box;
+  border: 1px solid var(--clr-background-s2);
+  min-width: 230px;
 }
 
 .card:hover {
@@ -51,11 +68,8 @@
 }
 
 .cardGrid {
-  margin-top: 15px;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  column-gap: 15px;
-  row-gap: 15px;
+  display: flex;
+  gap: 20px;
   overflow-x: scroll;
 }
 

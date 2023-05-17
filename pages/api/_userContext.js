@@ -14,7 +14,7 @@ const UserContextProvider = ({ children }) => {
             type: "Mars Exploration",
             departure: new Date("2024-12-17T03:24:00"),
             arrival: new Date("2025-12-17T03:24:00"),
-            meal: "Vegetarian",
+            meal: "Veg.",
             passengers: 3,
             img: "Mars.png"
         }],
