@@ -7,7 +7,7 @@ import getClasses from "../../pages/api/_getClasses";
 import { UserContext } from "../../pages/api/_userContext";
 
 export default function Navbar() {
-    const { auth } = useContext(UserContext);
+    const { auth, changeAuth } = useContext(UserContext);
     const router = useRouter();
     const [showLinks, changeShowLinks] = useState(false);
     return (
@@ -49,7 +49,7 @@ export default function Navbar() {
                 {auth ?
                     <>
                         <Link href="/dashboard">Dashboard</Link>
-                        <Link href="">Sign Out</Link>
+                        <Link href="/" onClick={() => changeAuth(false)}>Sign Out</Link>
                     </>
                     :
                     <Link href="/signin">Sign In</Link>
