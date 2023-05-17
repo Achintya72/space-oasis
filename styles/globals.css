@@ -84,6 +84,13 @@ p {
   font-weight: 400;
   font-size: var(--font-size-p);
 }
+.caption {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1.5pt;
+}
 
 * {
   scrollbar-width: thin;
