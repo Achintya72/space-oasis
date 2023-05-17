@@ -1,0 +1,127 @@
+.spaceship {
+  display: flex;
+  color: #fff;
+  gap: 10%;
+  overflow: hidden;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.starship {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    url("/static/Rockets/Starship.png");
+}
+
+.newGlenn {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    url("/static/Rockets/NewGlenn.png");
+}
+
+.falcon {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    url("/static/Rockets/Falcon.jpg");
+}
+
+.soyuz {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    url("/static/Rockets/Soyuz.png");
+}
+
+.card {
+  width: 100%;
+  min-width: 100px;
+  padding-bottom: 1rem;
+  border-radius: 15px;
+  aspect-ratio: 3/4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.cardGrid {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 15px;
+  row-gap: 15px;
+  overflow-x: scroll;
+}
+
+.dataPoint {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.dataPoint h4 {
+  font-weight: 300;
+}
+
+.dataPoint h2 {
+  font-weight: 500;
+}
+
+.dataGrid {
+  margin-top: -50px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+@media screen and (max-width: 975px) {
+  .dataGrid {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .dataGrid {
+    grid-template-columns: 100%;
+  }
+}
+
+.spaceshipText {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
+}
+
+.spaceshipText h1 {
+  margin-top: -5px;
+  font-size: clamp(60px, 8vw, 123px);
+}
+.spaceshipText h5 {
+  font-weight: 300;
+  margin-top: 20vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(25px, 8vw, 50px);
+  width: 85%;
+}
+
+.spaceshipText,
+.img {
+  z-index: 2;
+}
+.img {
+  flex: 1;
+  aspect-ratio: 3 / 4;
+  position: relative;
+  border-radius: var(--font-size-p);
+  overflow: hidden;
+}

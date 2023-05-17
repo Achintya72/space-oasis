@@ -8,7 +8,7 @@ export default function Injury({ size }) {
             xmlns="http://www.w3.org/2000/svg"
         >
 
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M59.9351 5V40.0649H95V58.7662H59.9351V95H41.2338V58.7662H5V40.0649H41.2338V5H59.9351Z" fill="currentColor" />
+            <path fillRule="evenodd" clipRule="evenodd" d="M59.9351 5V40.0649H95V58.7662H59.9351V95H41.2338V58.7662H5V40.0649H41.2338V5H59.9351Z" fill="currentColor" />
         </svg>
     );
 }

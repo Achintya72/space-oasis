@@ -28,6 +28,9 @@ import Gravity from "./Gravity";
 import Life from "./Life";
 import Injury from "./Injury";
 import Cart from "./Cart";
+import Calendar from "./Calendar";
+import Arrive from "./Arrive";
+import Depart from "./Depart";
 
 function Icon({ name, size }) {
     const icons = {
@@ -60,7 +63,10 @@ function Icon({ name, size }) {
         hostile: <Hostile size={size} />,
         life: <Life size={size} />,
         injury: <Injury size={size} />,
-        cart: <Cart size={size} />
+        cart: <Cart size={size} />,
+        calendar: <Calendar size={size} />,
+        arrive: <Arrive size={size} />,
+        depart: <Depart size={size} />
     }
     return icons[name];
 }
