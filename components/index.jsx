@@ -3,10 +3,15 @@ import Button from "./Button";
 import Icon from "./Icon";
 import Footer from "./Footer";
 import Wrapper from "./Wrapper";
+import Counter from "./Counter";
+import Dropdown from "./Dropdown";
+
 export {
     Navbar,
     Button,
     Icon,
     Footer,
-    Wrapper
+    Wrapper,
+    Counter,
+    Dropdown
 };

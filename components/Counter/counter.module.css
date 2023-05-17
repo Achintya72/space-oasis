@@ -1,0 +1,14 @@
+.counter {
+  display: flex;
+  gap: 5px;
+}
+
+.counter p {
+  width: 30px;
+  height: 30px;
+  background-color: var(--clr-background-s2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
