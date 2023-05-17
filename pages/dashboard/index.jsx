@@ -33,7 +33,6 @@ export default function Dashboard() {
         return user.bookings[0].departure;
     }
 
-    console.log(user.training.lessons);
     return (
         <div className={styles.root}>
             <Wrapper styles={styles.container}>

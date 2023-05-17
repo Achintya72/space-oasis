@@ -3,7 +3,7 @@ import { Dropdown, Icon, Button } from "../../components";
 import getClasses from "../api/_getClasses";
 import styles from "./dashboardStyles.module.css"
 
-export default function DateModal({ setDate, startDate, endDate }) {
+export default function DateModal({ setDate, startDate = new Date(), endDate = new Date() }) {
     const getYears = () => {
         let years = [];
         for (let i = startDate.getFullYear(); i <= endDate.getFullYear(); i++) {
@@ -35,11 +35,11 @@ export default function DateModal({ setDate, startDate, endDate }) {
         return days;
     }
     const [open, setOpen] = useState(false);
-    const [day, setDay] = useState(startDate.getDate() - 1);
-    const [month, setMonth] = useState(startDate.getMonth());
+    const [day, setDay] = useState((startDate ?? new Date()).getDate() - 1);
+    const [month, setMonth] = useState((startDate ?? new Date()).getMonth());
     const [year, setYear] = useState(0);
 
-    const date = new Date(year + startDate.getFullYear(), month, day + 1);
+    const date = new Date(year + (startDate ?? new Date()).getFullYear(), month, day + 1);
 
 
     const handleSubmit = () => {

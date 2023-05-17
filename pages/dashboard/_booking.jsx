@@ -25,19 +25,19 @@ export default function Booking({ booking, i }) {
         })
     }
     return (
-        <div className={styles.booking} key={booking.departure.toISOString()}>
+        <div className={styles.booking} key={(booking?.departure ?? new Date()).toISOString()}>
             <div className={styles.picAndTime}>
-                <Image src={`/static/packages/${booking.img}`} alt={booking.type} fill />
+                <Image src={`/static/packages/${booking?.img}`} alt={booking?.type} fill />
                 <div className={styles.overlay}>
-                    <a>{booking.type}</a>
+                    <a>{booking?.type}</a>
                     <div className={styles.timings}>
                         <div>
                             <Icon name="depart" size={24} />
-                            <p>{booking.departure.toLocaleString().split(",")[0]}</p>
+                            <p>{(booking?.departure ?? new Date()).toLocaleString().split(",")[0]}</p>
                         </div>
                         <div>
                             <Icon name="depart" size={24} />
-                            <p>{booking.arrival.toLocaleString().split(",")[0]}</p>
+                            <p>{(booking?.arrival ?? new Date()).toLocaleString().split(",")[0]}</p>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ export default function Booking({ booking, i }) {
             <div className={styles.editable}>
                 <div className={styles.labelInput}>
                     <p className="caption">PEOPLE</p>
-                    <Counter count={booking.passengers} />
+                    <Counter count={booking?.passengers} />
                 </div>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <div className={styles.labelInput}>
@@ -53,7 +53,7 @@ export default function Booking({ booking, i }) {
                         <Dropdown options={options} selected={options.indexOf(user.meal)} />
                     </div>
                     <div className={styles.buttons}>
-                        <DateModal startDate={booking.departure} endDate={new Date(booking.departure.getFullYear() + 2, booking.departure.getMonth(), booking.departure.getDate())} setDate={handleChange} />
+                        <DateModal startDate={booking?.departure ?? new Date()} endDate={new Date((booking?.departure ?? new Date()).getFullYear() + 2, (booking?.departure ?? new Date()).getMonth(), (booking?.departure ?? new Date()).getDate())} setDate={handleChange} />
                         <Button hasIcon background="light" onClick={removeBooking}>
                             <Icon name="close" size={20} />
                         </Button>
