@@ -50,9 +50,9 @@ export default function ProductDetail() {
             <Wrapper>
                 <Navbar />
                 <h1>{packageName}</h1>
-                <div style={{ display: "flex", gap: "20px", alignItems: "stretch", marginBottom: "2rem" }}>
+                <div className={styles.picsAndText} style={{ display: "flex", gap: "20px", alignItems: "stretch", marginBottom: "2rem" }}>
                     <div className={styles.checkoutPrompt}>
-                        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                        <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "flex-start" }}>
                             <span style={{ display: "flex", alignItems: "baseline" }}><h2>${data.cost.toLocaleString()}</h2><p><strong>/person</strong></p></span>
                             <h3>Select Date and Travelers</h3>
                             <p className="caption">DATE</p>

@@ -27,7 +27,7 @@ export default function Packages() {
                 <Navbar />
                 <section className={styles.existing}>
                     <div className={styles.stats}>
-                        <div style={{ flex: 1, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                             <h1>{planet.name}</h1>
                             <div style={{ display: "flex", gap: "10px" }}>
                                 {index == 0 ? <div style={{ width: "30px", height: "30px" }} /> :
@@ -58,7 +58,7 @@ export default function Packages() {
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <p><strong>Offered Trips</strong></p>
-                        <div style={{ display: "flex", gap: "20px" }}>
+                        <div style={{ display: "flex", gap: "20px", overflowX: "auto" }}>
                             {planet.packages.map(packageI => {
                                 let p = data.packages[packageI];
                                 return (
