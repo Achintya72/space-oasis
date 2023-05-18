@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./styles.module.css";
+import { Icon } from "../../../components";
 import Image from "next/image";
 import getClasses from "../../api/_getClasses";
 import useGetVisibility from "../../api/_useGetVisibility";
@@ -9,23 +10,9 @@ export default function Journey({ packageName }) {
     const [currentStop, changeCurrentStop] = useState(0);
     const steps = (data?.[packageName]?.["journey"]) ?? undefined;
     return (
-        <div className={styles.journeyContainer}>
-            <div className={styles.journeySteps} id="steps">
-                {steps !== undefined && steps.map((step, i) => {
-                    const stateStyle = i == currentStop ? styles.activeStep : styles.inactiveStep;
-                    return (
-                        <Step
-                            key={i}
-                            index={i}
-                            changeCurrentStop={changeCurrentStop}
-                            stateStyle={stateStyle}
-                            step={step}
-                        />
-                    )
-                })}
-            </div>
-            <div className={styles.journeyImg}>
-                {steps !== undefined &&
+        <div className={styles.stepContainer}>
+            {steps !== undefined &&
+                <>
                     <Image
                         src={steps[currentStop].img}
                         alt={steps[currentStop].alt}
@@ -33,8 +20,20 @@ export default function Journey({ packageName }) {
                         placeholder="empty"
                         priority={true}
                     />
-                }
-            </div>
+                    <div className={styles.stepOverlay}>
+                        <h2>{steps[currentStop].title}</h2>
+                        <p>{steps[currentStop].description}</p>
+                        <div style={{ marginTop: "20px", display: "flex", justifyContent: "center", gap: "20px" }}>
+                            {currentStop == 0 ? <div style={{ width: "30px", height: "30px" }} /> :
+                                <Icon name="leftButton" size={30} onClick={() => changeCurrentStop(prev => prev - 1)} />
+                            }
+                            {currentStop == steps.length - 1 ? <div style={{ width: "30px", height: "30px" }} /> :
+                                <Icon name="rightButton" size={30} onClick={() => changeCurrentStop(prev => prev + 1)} />
+                            }
+                        </div>
+                    </div>
+                </>
+            }
         </div>
     )
 }

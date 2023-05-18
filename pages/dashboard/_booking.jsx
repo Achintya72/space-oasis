@@ -54,7 +54,7 @@ export default function Booking({ booking, i }) {
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <div className={styles.labelInput}>
                         <p className="caption">MEAL</p>
-                        <Dropdown options={options} selected={options.indexOf(booking.meal)} changeSelected={handleMealChange} />
+                        <Dropdown options={options} selected={options.indexOf(booking?.meal ?? "Veg.")} changeSelected={handleMealChange} />
                     </div>
                     <div className={styles.buttons}>
                         <DateModal startDate={booking?.departure ?? new Date()} endDate={new Date((booking?.departure ?? new Date()).getFullYear() + 2, (booking?.departure ?? new Date()).getMonth(), (booking?.departure ?? new Date()).getDate())} setDate={handleChange} />

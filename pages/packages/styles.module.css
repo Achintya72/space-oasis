@@ -25,71 +25,6 @@
   align-items: center;
 }
 
-.header button {
-  z-index: 3;
-}
-/* Location Card Styles */
-.locationCard,
-.activeLocationCard {
-  border-radius: var(--font-size-p);
-  background: var(--clr-background-s1);
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  width: 100%;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  transition: all 200ms ease-in;
-}
-.locationCard {
-  border-bottom: 0px solid var(--clr-background);
-  box-sizing: border-box;
-}
-
-.locationCard:hover,
-.locationCard:focus {
-  box-shadow: 2px 0px 10px rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-}
-.activeLocationCard {
-  border-bottom: 3px solid var(--clr-primary);
-}
-.locationText {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.iconPairs {
-  display: flex;
-  justify-content: space-around;
-}
-.locationCard .iconPairs,
-.activeLocationCard .iconPairs {
-  background-color: var(--clr-background-s2);
-  padding: 10px;
-  border-radius: 10px;
-}
-.bookBack {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: min(45vh, 300px);
-  background-color: #fff;
-  opacity: 17%;
-  z-index: 0;
-}
-.pair {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-.pair p {
-  font-weight: 700;
-}
 .cardImg {
   aspect-ratio: 16 / 9;
   position: relative;
@@ -110,56 +45,114 @@
   column-gap: 15px;
   row-gap: 15px;
 }
-
-.activityCard {
-  padding: 5px;
-  background-color: var(--clr-background-s1);
-  border-radius: 20px;
+.packagesRoot {
   position: relative;
-  transition: border-bottom 300ms ease-out;
-}
-.activityCard:hover,
-.activityCard:focus {
-  cursor: pointer;
-}
-
-.activityImg {
-  position: relative;
-  aspect-ratio: 16/9;
-  overflow: hidden;
-  border-radius: 15px;
-}
-.activityImg img {
-  object-fit: cover;
-}
-.overlay {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: calc(100% - 10px);
-  aspect-ratio: 16/9;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  padding: 25px 25px 20px 25px;
-  box-sizing: border-box;
-  border-radius: 15px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  overflow: hidden;
 }
-.activityCard .iconPairs {
+
+.package {
+  max-width: 250px;
+  min-width: 250px;
+  aspect-ratio: 3/ 4;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 7px solid rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+}
+
+.overlay {
+  background: linear-gradient(to bottom, rgba(18, 18, 18, 0), #121212);
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
   padding: 10px;
-}
-.cardHeader {
+  box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
+}
+.bgImg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  filter: blur(25px);
+  position: absolute;
+}
+.bgOverlay {
+  position: absolute;
+  background: linear-gradient(to left, rgba(18, 18, 18, 0) 50%, #121212);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+}
+.package img {
+  object-fit: cover;
 }
 
-.active {
-  border-bottom: 4px solid var(--clr-primary);
+.existing {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.inactive {
-  border-bottom: 4px solid var(--clr-background-s2);
+.stats {
+  min-width: 270px;
+  max-width: 400px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stat h2 {
+  font-weight: 600;
+}
+
+.stat p {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  opacity: 80%;
+}
+.on,
+.off {
+  height: 2px;
+  border-radius: 2px;
+  transition: all ease-in-out 300ms;
+}
+
+.on {
+  flex: 5;
+  background-color: white;
+}
+.off {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 840px) {
+  .existing {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .stats {
+    max-width: unset;
+    flex: unset;
+  }
 }
 @media screen and (max-width: 975px) {
   .cardGrid {
@@ -175,21 +168,6 @@
     transition-delay: 0ms !important;
   }
 }
-.card:nth-child(2) {
-  transition-delay: 100ms;
-}
-.card:nth-child(3) {
-  transition-delay: 200ms;
-}
-.card:nth-child(4) {
-  transition-delay: 300ms;
-}
-.card:nth-child(5) {
-  transition-delay: 400ms;
-}
-.card:nth-child(6) {
-  transition-delay: 500ms;
-}
 
 .show,
 .hide {
@@ -203,9 +181,4 @@
 .hide {
   transform: translateY(10%);
   opacity: 0;
-}
-.viewMore,
-.selectedText {
-  color: var(--clr-primary);
-  font-weight: 600;
 }

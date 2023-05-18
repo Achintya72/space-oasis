@@ -31,8 +31,10 @@ import Cart from "./Cart";
 import Calendar from "./Calendar";
 import Arrive from "./Arrive";
 import Depart from "./Depart";
+import RightButton from "./RightButton";
+import LeftButton from "./LeftButton";
 
-function Icon({ name, size }) {
+function Icon({ name, size, onClick = () => { } }) {
     const icons = {
         menu: <MenuIcon size={size} />,
         close: <CloseIcon size={size} />,
@@ -66,7 +68,9 @@ function Icon({ name, size }) {
         cart: <Cart size={size} />,
         calendar: <Calendar size={size} />,
         arrive: <Arrive size={size} />,
-        depart: <Depart size={size} />
+        depart: <Depart size={size} />,
+        rightButton: <RightButton size={size} onClick={onClick} />,
+        leftButton: <LeftButton size={size} onClick={onClick} />
     }
     return icons[name];
 }

@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Wrapper from "./Wrapper";
 import Counter from "./Counter";
 import Dropdown from "./Dropdown";
+import DatePicker from "./DatePicker";
 
 export {
     Navbar,
@@ -13,5 +14,6 @@ export {
     Footer,
     Wrapper,
     Counter,
-    Dropdown
+    Dropdown,
+    DatePicker
 };
