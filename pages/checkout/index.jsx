@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react"
-import { Button, Counter, Navbar, Wrapper } from "../../components"
+import { Button, Counter, Navbar, Wrapper, Dropdown } from "../../components"
 import { UserContext } from "../api/_userContext"
 import { useRouter } from "next/router";
 import getClasses from "../api/_getClasses";
@@ -89,6 +89,7 @@ export default function Checkout() {
     const { auth, currentOrder, changeCurrentOrder } = useContext(UserContext);
     const [count, changeCount] = useState(currentOrder?.count ?? 0);
     const [stage, setStage] = useState(0);
+    const [meal, changeMeal] = useState("Veg.")
     const [costs, changeCosts] = useState({
         activities: [
             {
@@ -98,6 +99,8 @@ export default function Checkout() {
             },
         ]
     })
+    const options = ["Veg.", "Hal.", "Kos.", "Reg."];
+
     useEffect(() => {
         changeCurrentOrder(prev => ({ ...prev, count }))
     }, [changeCurrentOrder, count])
@@ -110,16 +113,24 @@ export default function Checkout() {
         }
     }, [auth, currentOrder, router]);
 
+
+    const handleMealChange = (val) => {
+        changeMeal(options[val]);
+    }
     return (
         <Wrapper>
             <Navbar />
             <div className={styles.container}>
                 <div className={styles.left}>
                     <h1>Checkout</h1>
+                    <p className="caption">PEOPLE</p>
                     <Counter
                         count={count}
                         updateCount={changeCount}
                     />
+                    {console.log(meal)}
+                    <Dropdown options={options} selected={options.indexOf(meal)} changeSelected={handleMealChange} />
+
                 </div>
                 <StageAndCost
                     stage={stage}
