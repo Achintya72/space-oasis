@@ -7,18 +7,22 @@ import styles from "./styles.module.css";
 import dataset from "./content.json";
 import Image from "next/image";
 import Tabs from "./_tabs";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Details from "./_details";
-import QuoteForm from "../_quoteForm";
 import Journey from "./_journey";
 import Gallery from "./_gallery";
 import activityData from "../content.json";
 import Vehicles from "./_vehicles";
+import { UserContext } from "../../api/_userContext";
 
 export default function ProductDetail() {
     const router = useRouter();
     const packageName = router.query.package;
     const [tab, changeTab] = useState("Details");
+    const { changeCurrentOrder } = useContext(UserContext);
+    const [peopleCount, changePeopleCount] = useState(0);
+    const [date, changeDate] = useState(new Date());
+
     if (Object.keys(dataset).indexOf(packageName) == -1) {
         return (
             <>
@@ -33,12 +37,22 @@ export default function ProductDetail() {
         );
     }
 
+    const handleSubmit = () => {
+        changeCurrentOrder({
+            count: peopleCount,
+            date: date,
+            type: packageName
+        });
+        router.push("/checkout");
+    }
+
     const data = dataset[packageName];
     const gallery = data["gallery"];
     let activities = [];
     data.activities.forEach(type => {
         activities = [...activities, ...activityData.activities[type]];
     });
+
 
     return (
         <>
@@ -56,10 +70,17 @@ export default function ProductDetail() {
                             <span style={{ display: "flex", alignItems: "baseline" }}><h2>${data.cost.toLocaleString()}</h2><p><strong>/person</strong></p></span>
                             <h3>Select Date and Travelers</h3>
                             <p className="caption">DATE</p>
-                            <DatePicker startDate={new Date()} endDate={new Date(new Date().getFullYear() + 1, new Date().getMonth(), new Date().getDate())} setDate={() => { }} />
+                            <DatePicker
+                                startDate={date}
+                                endDate={new Date(date.getFullYear() + 1, date.getMonth(), date.getDate())}
+                                setDate={() => { }}
+                            />
                             <p className="caption">ADULTS</p>
-                            <Counter />
-                            <Button background="light">Proceed to Checkout</Button>
+                            <Counter
+                                count={peopleCount}
+                                updateCount={changePeopleCount}
+                            />
+                            <Button background="light" onClick={handleSubmit}>Proceed to Checkout</Button>
                         </div>
                         <div>
                             <p>* Prices are based off of 2150 projections.</p>

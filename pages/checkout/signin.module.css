@@ -1,0 +1,49 @@
+.signIn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+}
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  border: none;
+  padding: 10px;
+  background-color: var(--clr-background-s1);
+  color: white;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: var(--font-size-p);
+}
+
+.input:focus {
+  outline: 1px solid var(--clr-background-s2);
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:focus {
+  -webkit-box-shadow: inset 0 0 0px 99999px var(--clr-background-s2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: auto;
+  width: 100%;
+}
+
+.formLabelPair {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.error {
+  font-weight: 600;
+  color: #ed4337;
+}
