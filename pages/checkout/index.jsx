@@ -1,9 +1,10 @@
-import { useContext, useEffect, useState } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import { Button, Counter, Navbar, Wrapper, Dropdown, DatePicker } from "../../components"
 import { UserContext } from "../api/_userContext"
 import { useRouter } from "next/router";
 import getClasses from "../api/_getClasses";
 import styles from "./styles.module.css";
+import content from "./content.json"
 
 const mars_flights = [
     {
@@ -90,6 +91,11 @@ export default function Checkout() {
     const [count, changeCount] = useState(currentOrder?.count ?? 1);
     const [stage, setStage] = useState(0);
     const [costs, changeCosts] = useState({
+        tickets: {
+            name: currentOrder?.type + " Tickets" ?? "Tickets",
+            cost: content[currentOrder?.type].cost ?? 2000,
+            quantity: count
+        },
         activities: [
             {
                 name: "ATV Ride",
@@ -98,38 +104,27 @@ export default function Checkout() {
             },
         ]
     })
-    const [currentPassenger, changeCurrentPassenger] = useState(0);
-    const [passengers, changePassengers] = useState([]);
     const [passenger_options, changePassOps] = useState([]);
 
     const createPassengers = () => {
-        let p = [];
         let p_ops = [];
 
         for (let i = 0; i < count; i++) {
-            let n = {
-                birthday: new Date(),
-                name: "",
-                email: "",
-                phone: "",
-                meal_type: ""
-            }
             let n_op = "Passenger " + (i + 1);
-            p.push(n);
             p_ops.push(n_op);
         }
         changePassOps(p_ops)
-        changePassengers(p);
-        changeCurrentPassenger(0);
     }
 
     const options = ["Veg.", "Hal.", "Kos.", "Reg."];
 
     useEffect(() => {
         createPassengers();
-    }, [count])
-    useEffect(() => {
         changeCurrentOrder(prev => ({ ...prev, count }))
+
+        let c = costs;
+        c['tickets'].quantity = count
+        changeCosts(c);
     }, [changeCurrentOrder, count])
     useEffect(() => {
         if (auth == false) {
@@ -154,34 +149,22 @@ export default function Checkout() {
                     {count > 0 ? (
                         <div style={{ padding: "5px" }}>
                             <div className={styles.spaceBetween}>
-                                <h3>Passenger Info</h3>
-                                <Dropdown selected={"Passenger" + (currentPassenger + 1)} changeSelected={changeCurrentPassenger} options={passenger_options} />
+                                <h2>Passenger Info</h2>
                             </div>
                             <div className={styles.passengerInfo}>
-                                <div className={styles.formLabelPair}>
-                                    <div className={styles.label}>Birthday</div>
-                                    <DatePicker setDate={(d) => console.log(d)} startDate={new Date(1950, 6, 5)} endDate={new Date()} />
-                                </div>
-                                <div className={styles.formLabelPair}>
-                                    <div className={styles.label}>Full Name</div>
-                                    <input className={styles.input} placeholder="John Doe" />
-                                </div>
-                                <div className={styles.formLabelPair}>
-                                    <div className={styles.label}>Email</div>
-                                    <input className={styles.input} placeholder="JohnDoe@gmail.com" />
-                                </div>
-                                <div className={styles.formLabelPair}>
-                                    <div className={styles.label}>Phone Number</div>
-                                    <input className={styles.input} placeholder="123-456-7890" />
-                                </div>
-                                <div className={styles.spaceBetween}>
-                                    <div className={styles.formLabelPair}>
-                                        <div className={styles.label}>Meal Type</div>
-                                        <Dropdown selected={0} changeSelected={(d) => console.log(d)} options={options} />
+                                {passenger_options.map((val, index) =>
+                                    <div key={index}>
+                                        <h3>{val}</h3>
+                                        <div className={styles.formLabelPair}>
+                                            <div className={styles.label}>Birthday</div>
+                                            <DatePicker setDate={(d) => console.log(d)} startDate={new Date(1950, 6, 5)} endDate={new Date(2005, 6, 1)} />
+                                        </div>
+                                        <div className={styles.formLabelPair}>
+                                            <div className={styles.label}>Full Name</div>
+                                            <input className={styles.input} placeholder="John Doe" />
+                                        </div>
                                     </div>
-                                    <Button>Make Primary Contact</Button>
-                                </div>
-                                <button onClick={() => console.log(passengers)}>Click</button>
+                                )}
                             </div>
                         </div>) : "Please have at least one person"
                     }
@@ -198,6 +181,16 @@ export default function Checkout() {
 
 const StageAndCost = ({ costs, flight, stage, setStage }) => {
     let totalCost = 0;
+    const renderTickets = () => {
+        let p = costs.tickets
+        totalCost += p.cost * p.quantity
+        return (
+            <div key={p.name} className={styles.expense}>
+                <p>{p.name} ({p.quantity}x)</p>
+                <p>${(p.cost * p.quantity).toLocaleString()}</p>
+            </div>
+        )
+    }
     const renderActivities = costs.activities.map(p => {
         totalCost += p.cost * p.quantity;
         return (
@@ -232,6 +225,8 @@ const StageAndCost = ({ costs, flight, stage, setStage }) => {
             <div>
                 <h3>Total Cost:</h3>
                 <div className={styles.breakdown}>
+                    <p><strong>Tickets</strong></p>
+                    {renderTickets()}
                     <p><strong>Activities</strong></p>
                     {renderActivities}
                     <div className={styles.expense}>

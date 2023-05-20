@@ -1,0 +1,17 @@
+{
+    "Lunar Exploration": {
+        "cost": 2000
+    },
+    "Low Earth Orbit": {
+        "cost": 1250
+    },
+    "Mars Adventure": {
+        "cost": 35700
+    },
+    "Moon Orbit": {
+        "cost": 1750
+    },
+    "Mars Orbit": {
+        "cost": 28000
+    }
+}

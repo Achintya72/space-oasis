@@ -59,6 +59,9 @@
   padding: 20px;
   border-radius: 20px;
   margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .input {
