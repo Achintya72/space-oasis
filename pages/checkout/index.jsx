@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import getClasses from "../api/_getClasses";
 import styles from "./styles.module.css";
 import content from "./content.json"
+import Image from "next/image";
 
 const mars_flights = [
     {
@@ -93,7 +94,7 @@ export default function Checkout() {
     const [costs, changeCosts] = useState({
         tickets: {
             name: currentOrder?.type + " Tickets" ?? "Tickets",
-            cost: content[currentOrder?.type].cost ?? 2000,
+            cost: content[currentOrder?.type ?? "Lunar Exploration"].cost ?? 2000,
             quantity: count
         },
         activities: [
@@ -105,6 +106,12 @@ export default function Checkout() {
         ]
     })
     const [passenger_options, changePassOps] = useState([]);
+
+    let activities = [];
+    const data = content[currentOrder?.type ?? "Lunar Exploration"]
+    data.activities.forEach(type => {
+        activities = [...activities, ...content.activities[type]];
+    });
 
     const createPassengers = () => {
         let p_ops = [];
@@ -148,9 +155,7 @@ export default function Checkout() {
                     />
                     {count > 0 ? (
                         <div style={{ padding: "5px" }}>
-                            <div className={styles.spaceBetween}>
-                                <h2>Passenger Info</h2>
-                            </div>
+                            <h2>Passenger Info</h2>
                             <div className={styles.passengerInfo}>
                                 {passenger_options.map((val, index) =>
                                     <div key={index}>
@@ -168,6 +173,18 @@ export default function Checkout() {
                             </div>
                         </div>) : "Please have at least one person"
                     }
+                    <h2>
+                        Activities
+                    </h2>
+                    {activities.map(act => (
+                        <div key={act.title} className={styles.activityCard}>
+                            <Image src={act.img} alt={act.alt} fill />
+                            <div>
+                                <h4>{act.title}</h4>
+                                <p>${act.cost.toLocaleString()}</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
                 <StageAndCost
                     stage={stage}
