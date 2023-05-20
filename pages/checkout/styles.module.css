@@ -1,5 +1,7 @@
 .container {
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .left {
   flex: 1;
@@ -50,4 +52,35 @@
 .expense {
   display: flex;
   justify-content: space-between;
+}
+
+.passengerInfo {
+  background-color: var(--clr-background-s1);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+.input {
+  border: none;
+  padding: 10px;
+  background-color: var(--clr-background-s2);
+  color: white;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: var(--font-size-p);
+}
+
+.formLabelPair {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
