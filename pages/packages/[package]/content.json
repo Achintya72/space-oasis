@@ -57,42 +57,8 @@
             }
         ],
         "vehicles": [
-            {
-                "company": "Blue Origin",
-                "title": "New Glenn",
-                "safety": [
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    },
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    }
-                ],
-                "img": "/static/Rockets/NewGlenn.png",
-                "alt": "A digital rendering of Blue Origin's New Glenn"
-            },
-            {
-                "company": "SpaceX",
-                "title": "Starship",
-                "safety": [
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    },
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    }
-                ],
-                "img": "/static/Rockets/Starship.png",
-                "alt": "SpaceX Starship"
-            }
+            "New Glenn",
+            "Starship"
         ],
         "details": [
             {
@@ -234,43 +200,8 @@
             }
         ],
         "vehicles": [
-            {
-                "company": "SpaceX",
-                "title": "Falcon 9",
-                "safety": [
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    },
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    }
-                ],
-                "img": "/static/Rockets/Falcon.jpg",
-                "alt": "A picture of SpaceX's FalconX rocket launching into space"
-            },
-            {
-                "company": "Roscosmos",
-                "title": "Soyuz MS",
-                "description": "The Soyuz MS is a spacecraft designed for crewed spaceflight operations and cargo transport to the International Space Station. It is a modernized version of the Soyuz family of spacecraft and features upgrades and improvements, such as the ability to carry up to three crew members and remain in space for up to 200 days. The Soyuz MS consists of three modules and is launched from the Baikonur Cosmodrome in Kazakhstan. Its reliability and safety have made it one of the most widely used spacecraft in spaceflight history.",
-                "img": "/static/Rockets/Soyuz.png",
-                "safety": [
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    },
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    }
-                ],
-                "alt": "A picture of the Soyuz MS rocket launching into space"
-            }
+            "Falcon 9",
+            "Soyuz MS"
         ],
         "journey": [
             {
@@ -395,24 +326,7 @@
             }
         ],
         "vehicles": [
-            {
-                "company": "SpaceX",
-                "title": "Starship",
-                "safety": [
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    },
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    }
-                ],
-                "img": "/static/Rockets/Starship.png",
-                "alt": "SpaceX Starship"
-            }
+            "Starship"
         ],
         "journey": [
             {
@@ -574,42 +488,8 @@
             }
         ],
         "vehicles": [
-            {
-                "company": "Blue Origin",
-                "title": "New Glenn",
-                "safety": [
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    },
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    }
-                ],
-                "img": "/static/Rockets/NewGlenn.png",
-                "alt": "A digital rendering of Blue Origin's New Glenn"
-            },
-            {
-                "company": "SpaceX",
-                "title": "Starship",
-                "safety": [
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    },
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    }
-                ],
-                "img": "/static/Rockets/Starship.png",
-                "alt": "SpaceX Starship"
-            }
+            "New Glenn",
+            "Starship"
         ],
         "journey": [
             {
@@ -741,24 +621,7 @@
             }
         ],
         "vehicles": [
-            {
-                "company": "SpaceX",
-                "title": "Starship",
-                "safety": [
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    },
-                    {
-                        "title": "Eject",
-                        "icon": "cryosleep",
-                        "description": "Lorem ipsum dolor sit amet consectetur. Placerat interdum fermentum egestas tempor cursus semper in sit. Eu lectus ornare sed mus amet."
-                    }
-                ],
-                "img": "/static/Rockets/Starship.png",
-                "alt": "SpaceX Starship"
-            }
+            "Starship"
         ],
         "journey": [
             {

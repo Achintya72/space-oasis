@@ -3,6 +3,7 @@ import { createContext, useState } from "react";
 const UserContext = createContext(null);
 const UserContextProvider = ({ children }) => {
     const [auth, changeAuth] = useState(false);
+    const [currentOrder, changeCurrentOrder] = useState(null);
     const [user, changeUser] = useState({
         name: "John Doe",
         email: "john_doe@gmail.com",
@@ -59,7 +60,9 @@ const UserContextProvider = ({ children }) => {
         user,
         auth,
         changeAuth,
-        changeUser
+        changeUser,
+        currentOrder,
+        changeCurrentOrder
     }
     return (
         <UserContext.Provider value={values}>

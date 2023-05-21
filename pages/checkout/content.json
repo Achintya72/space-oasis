@@ -1,0 +1,132 @@
+{
+    "Lunar Exploration": {
+        "cost": 2000,
+        "activities": [
+            "Orbit",
+            "Moon"
+        ]
+    },
+    "Low Earth Orbit": {
+        "cost": 1250,
+        "activities": [
+            "Orbit"
+        ]
+    },
+    "Mars Adventure": {
+        "cost": 35700,
+        "activities": [
+            "Orbit",
+            "Mars"
+        ]
+    },
+    "Moon Orbit": {
+        "cost": 1750,
+        "activities": [
+            "Orbit"
+        ]
+    },
+    "Mars Orbit": {
+        "cost": 28000,
+        "activities": [
+            "Orbit"
+        ]
+    },
+    "activities": {
+        "Orbit": [
+            {
+                "title": "Spacewalk",
+                "age": "12+",
+                "description": "Take an anti-gravity stroll, while tethered to the ship. Perform mock maintenance tasks around the ship, much like real astronauts.",
+                "img": "/static/Activities/Spacewalk.jpg",
+                "alt": "rocket",
+                "cost": 400,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "Obstacle Course",
+                "age": "12+",
+                "description": "An anti-gravity obstacle course in space with challenges that will test your agility, endurance, and problem-solving skills.",
+                "img": "/static/Activities/ObstacleCourse.webp",
+                "alt": "rocket",
+                "cost": 100,
+                "time": "1 HOUR"
+            }
+        ],
+        "Moon": [
+            {
+                "title": "ATV Ride",
+                "age": "18+",
+                "description": "Explore the tough terrains and craters of the moon on your own ATV's",
+                "img": "/static/Activities/ATV.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "Lunarball",
+                "age": "18+",
+                "description": "Play basketball in low gravity, jumping tall and high, dunking hard and gloriously",
+                "img": "/static/Activities/Lunarball.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "Apollo Mission Site Tour",
+                "age": "5+",
+                "description": "Get your own personal tour guide to visit the famous bootprint and U.S. flag, and eat some specialty space food",
+                "img": "/static/Activities/Tour.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "Stargazing",
+                "age": "5+",
+                "description": "Climb Mons Pico, and watch the skies with a glass of champagne (ID needed)",
+                "img": "/static/Activities/Stargazing.jpg",
+                "alt": "rocket",
+                "cost": 50,
+                "time": "2 HOURS"
+            }
+        ],
+        "Mars": [
+            {
+                "title": "ATV Ride",
+                "age": "18+",
+                "description": "Explore the tough terrains and craters of mars on your own ATV's",
+                "img": "/static/Activities/ATV.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "Mars Hike",
+                "age": "15+",
+                "description": "Explore the Martian terrain and landscapes on a rover or by foot, visit and study geological features such as canyons, mountains, and valleys.",
+                "img": "/static/Activities/MarsHike.png",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "Dust Surfing",
+                "age": "18+",
+                "description": "Take an exhilarating ride over the powerful winds and currents of Martian dust.",
+                "img": "/static/Activities/DustSurfing.jpg",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            },
+            {
+                "title": "Cave Exploration",
+                "age": "15+",
+                "description": "Experience a thrilling adventure that reveals the secrets of what lies under the surface of the Red Planet.",
+                "img": "/static/Activities/CaveExploration.png",
+                "alt": "rocket",
+                "cost": 300,
+                "time": "2 HOURS"
+            }
+        ]
+    }
+}
