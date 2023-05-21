@@ -56,7 +56,8 @@
                 }
             ],
             "img": "/static/Rockets/Starship.png",
-            "alt": "Rendering of the Space-X Starship launching."
+            "alt": "Rendering of the Space-X Starship launching.",
+            "company": "Space-X"
         },
         "Falcon 9": {
             "features": [
@@ -82,7 +83,8 @@
                 }
             ],
             "img": "/static/Rockets/Falcon.jpg",
-            "alt": "Picture of the SpaceX Falcon-9 Rocket launching."
+            "alt": "Picture of the SpaceX Falcon-9 Rocket launching.",
+            "company": "Space-X"
         },
         "New Glenn": {
             "features": [
@@ -103,7 +105,30 @@
                 }
             ],
             "img": "/static/Rockets/NewGlenn.png",
-            "alt": "A picture of Blue Origin's New Glenn Rocket blasting off into space"
+            "alt": "A picture of Blue Origin's New Glenn Rocket blasting off into space",
+            "company": "Blue Origin"
+        },
+        "Soyuz MS": {
+            "features": [
+                {
+                    "icon": "menu",
+                    "title": "Launch Escape System",
+                    "description": "Soyuz MS's escape system consists of four solid-fueled rocket motors that can quickly pull the spacecraft away from the rocket."
+                },
+                {
+                    "icon": "menu",
+                    "title": "Dual Parachutes",
+                    "description": "The spacecraft has two parachutes: a drogue chute that slows it down to about 230 mph (370 km/h) and a main chute that slows it down to about 16 mph (25 km/h)."
+                },
+                {
+                    "icon": "menu",
+                    "title": "Solid Ground Landing",
+                    "description": "Soyuz MS's ability to land on solid ground instead of water, allowing for a more controlled environment and reduces the risk of injury."
+                }
+            ],
+            "img": "/static/Rockets/Soyuz.png",
+            "alt": "A picture of Blue Origin's New Glenn Rocket blasting off into space",
+            "company": "Roscosmos"
         }
     },
     "statistics": [

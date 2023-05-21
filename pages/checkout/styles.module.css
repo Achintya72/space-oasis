@@ -76,6 +76,8 @@
   border-radius: 5px;
   font-family: "Inter", sans-serif;
   font-size: var(--font-size-p);
+  min-width: 100px;
+  flex: 2;
 }
 
 .formLabelPair {
@@ -119,7 +121,20 @@
 }
 
 .activityCardGrid {
-   display: flex;
-   gap: 20px;
-   overflow: scroll;
+  display: flex;
+  gap: 20px;
+  overflow: scroll;
+}
+
+.flightCard {
+  background-color: var(--clr-background-s1);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
 }

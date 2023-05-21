@@ -13,90 +13,28 @@ import getClasses from "../api/_getClasses";
 import styles from "./styles.module.css";
 import content from "./content.json";
 import Image from "next/image";
+import FlightOptions from "./_flightOptions";
+import Payment from "./_payment";
 
-const mars_flights = [
-  {
-    name: "HBD",
-    spots: 2,
-    start: new Date(2023, 6, 2),
-    end: new Date(2024, 6, 2),
-  },
-  {
-    name: "XQY",
-    spots: 10,
-    start: new Date(2023, 8, 15),
-    end: new Date(2024, 8, 15),
-  },
-  {
-    name: "JZL",
-    spots: 5,
-    start: new Date(2023, 9, 1),
-    end: new Date(2024, 9, 1),
-  },
-  {
-    name: "FPK",
-    spots: 3,
-    start: new Date(2023, 10, 12),
-    end: new Date(2024, 10, 12),
-  },
-  {
-    name: "MWD",
-    spots: 8,
-    start: new Date(2023, 11, 5),
-    end: new Date(2024, 11, 5),
-  },
-  {
-    name: "GVB",
-    spots: 12,
-    start: new Date(2024, 0, 20),
-    end: new Date(2025, 0, 20),
-  },
-  {
-    name: "RKT",
-    spots: 2,
-    start: new Date(2024, 1, 26),
-    end: new Date(2025, 1, 26),
-  },
-];
+const defaultPassenger = {
+  name: "Elon Musk",
+  birth: new Date(1954, 5, 28),
+};
 
-const moon_flights = [
-  {
-    name: "QWE",
-    spots: 7,
-    start: new Date(2023, 6, 7),
-    end: new Date(2023, 6, 12),
-  },
-  {
-    name: "TYU",
-    spots: 9,
-    start: new Date(2023, 6, 13),
-    end: new Date(2023, 6, 18),
-  },
-  {
-    name: "ASD",
-    spots: 4,
-    start: new Date(2023, 6, 19),
-    end: new Date(2023, 6, 24),
-  },
-  {
-    name: "FGH",
-    spots: 6,
-    start: new Date(2023, 6, 25),
-    end: new Date(2023, 6, 30),
-  },
-  {
-    name: "ZXC",
-    spots: 11,
-    start: new Date(2023, 6, 31),
-    end: new Date(2023, 7, 5),
-  },
-];
+const generateListOfPassengers = (count) => {
+  let list = [];
+  for (let i = 0; i < count; i++) {
+    list.push({ ...defaultPassenger });
+  }
+  return list;
+};
 
 export default function Checkout() {
   const router = useRouter();
   const { auth, currentOrder, changeCurrentOrder } = useContext(UserContext);
-  const [count, changeCount] = useState(currentOrder?.count ?? 1);
+  const [count, changeCount] = useState(currentOrder?.count ?? 0);
   const [stage, setStage] = useState(0);
+  const [flightChosen, changeFlightChosen] = useState(-1);
   const [costs, changeCosts] = useState({
     tickets: {
       name: currentOrder?.type + " Tickets" ?? "Tickets",
@@ -105,34 +43,44 @@ export default function Checkout() {
     },
     activities: [],
   });
-  const [passenger_options, changePassOps] = useState([]);
-
+  const [passenger_options, changePassOps] = useState(
+    generateListOfPassengers(count)
+  );
   let activities = [];
   const data = content[currentOrder?.type ?? "Lunar Exploration"];
   data.activities.forEach((type) => {
     activities = [...activities, ...content.activities[type]];
   });
 
-  const createPassengers = () => {
-    let p_ops = [];
-
-    for (let i = 0; i < count; i++) {
-      let n_op = "Passenger " + (i + 1);
-      p_ops.push(n_op);
+  const getCanAdvance = () => {
+    if (stage == 0) {
+      return [count > 0, "Please Add People To Move On"];
+    } else if (stage == 1) {
+      return [flightChosen > -1, "Please Select a Flight to Move On"];
     }
-    changePassOps(p_ops);
+    return [true, ""];
+  };
+
+  const updateNumPassengers = (callBack) => {
+    let newNum = callBack(count);
+    if (newNum < count) {
+      changePassOps((prev) => {
+        return prev.slice(0, prev.length - 1);
+      });
+    } else {
+      changePassOps((prev) => [
+        ...prev,
+        ...generateListOfPassengers(newNum - prev.length),
+      ]);
+    }
+    changeCosts((prev) => {
+      prev.tickets.quantity = newNum;
+      changeCosts(prev);
+    });
+    changeCount(newNum);
   };
 
   const options = ["Veg.", "Hal.", "Kos.", "Reg."];
-
-  useEffect(() => {
-    createPassengers();
-    changeCurrentOrder((prev) => ({ ...prev, count }));
-
-    let c = costs;
-    c["tickets"].quantity = count;
-    changeCosts(c);
-  }, [changeCurrentOrder, count]);
   useEffect(() => {
     if (auth == false) {
       router.push("/checkout/signin");
@@ -140,7 +88,7 @@ export default function Checkout() {
     if (currentOrder == null) {
       router.push("/packages");
     }
-  }, [auth, currentOrder, router]);
+  }, []);
 
   return (
     <Wrapper>
@@ -148,53 +96,87 @@ export default function Checkout() {
       <h1>Checkout</h1>
       <div className={styles.container}>
         <div className={styles.left}>
-          <div style={{ padding: "5px" }}>
-            <h2>Passenger Info</h2>
-            <div className={styles.passengerInfo}>
-              <p className="caption">PEOPLE</p>
-              <Counter count={count} updateCount={changeCount} />
-              {count > 0
-                ? passenger_options.map((val, index) => (
-                    <div key={index}>
-                      <h4>{val}</h4>
-                      <div className={styles.formLabelPair}>
-                        <div className={getClasses(styles.label, "caption")}>
-                          BIRTHDAY
+          {stage == 0 && (
+            <>
+              <div style={{ padding: "5px" }}>
+                <h3>Passenger Info</h3>
+                <div className={styles.passengerInfo}>
+                  <p className="caption">PEOPLE</p>
+                  <Counter count={count} updateCount={updateNumPassengers} />
+                  {count > 0
+                    ? passenger_options.map((val, pIndex) => (
+                        <div key={pIndex}>
+                          <h4>Passenger {pIndex + 1} </h4>
+                          <div className={styles.formLabelPair}>
+                            <div
+                              className={getClasses(styles.label, "caption")}
+                            >
+                              DATE OF BIRTH
+                            </div>
+                            <DatePicker
+                              value={val.birth}
+                              setDate={(d) => {
+                                changePassOps((prev) => {
+                                  console.log(d);
+                                  prev[pIndex].birth = d;
+                                  return [...prev];
+                                });
+                              }}
+                              startDate={new Date(1950, 6, 5)}
+                              endDate={new Date(2005, 6, 1)}
+                            />
+                          </div>
+                          <div className={styles.formLabelPair}>
+                            <div
+                              className={getClasses(styles.label, "caption")}
+                            >
+                              FULL NAME
+                            </div>
+                            <input
+                              className={styles.input}
+                              placeholder="John Doe"
+                              value={val.name}
+                              onChange={(e) => {
+                                changePassOps((prev) => {
+                                  prev[pIndex].name = e.target.value;
+                                  return [...prev];
+                                });
+                              }}
+                            />
+                          </div>
                         </div>
-                        <DatePicker
-                          setDate={(d) => d}
-                          startDate={new Date(1950, 6, 5)}
-                          endDate={new Date(2005, 6, 1)}
-                        />
-                      </div>
-                      <div className={styles.formLabelPair}>
-                        <div className={getClasses(styles.label, "caption")}>
-                          FULL NAME
-                        </div>
-                        <input
-                          className={styles.input}
-                          placeholder="John Doe"
-                        />
-                      </div>
-                    </div>
-                  ))
-                : "Please have at least one person"}
-            </div>
-          </div>
-          <h2>Activities</h2>
-          <div className={styles.activityCardGrid}>
-            {activities.map((act) => (
-              <ActivityCard
-                key={act.title}
-                limit={count}
-                act={act}
-                costs={costs}
-                changeCosts={changeCosts}
-              />
-            ))}
-          </div>
+                      ))
+                    : ""}
+                </div>
+              </div>
+              <h3>Activities</h3>
+              <div className={styles.activityCardGrid}>
+                {activities.map((act) => (
+                  <ActivityCard
+                    key={act.title}
+                    limit={count}
+                    act={act}
+                    costs={costs}
+                    changeCosts={changeCosts}
+                  />
+                ))}
+              </div>
+            </>
+          )}
+          {stage == 1 && (
+            <FlightOptions
+              flightChosen={flightChosen}
+              changeFlightChosen={changeFlightChosen}
+            />
+          )}
+          {stage == 2 && <Payment />}
         </div>
-        <StageAndCost stage={stage} setStage={setStage} costs={costs} />
+        <StageAndCost
+          stage={stage}
+          setStage={setStage}
+          costs={costs}
+          canAdvance={getCanAdvance()}
+        />
       </div>
     </Wrapper>
   );
@@ -251,7 +233,7 @@ const ActivityCard = ({ limit, act, costs, changeCosts }) => {
   }
 };
 
-const StageAndCost = ({ costs, stage, setStage }) => {
+const StageAndCost = ({ costs, stage, setStage, canAdvance }) => {
   let totalCost = 0;
   const renderTickets = () => {
     let p = costs.tickets;
@@ -319,7 +301,7 @@ const StageAndCost = ({ costs, stage, setStage }) => {
             {stage > 0 && (
               <Button onClick={() => setStage((prev) => prev - 1)}>Back</Button>
             )}
-            {stage < 2 && (
+            {stage < 2 && canAdvance[0] && (
               <Button
                 onClick={() => setStage((prev) => prev + 1)}
                 background="solid"
@@ -327,7 +309,13 @@ const StageAndCost = ({ costs, stage, setStage }) => {
                 Next
               </Button>
             )}
+            {stage == 2 && (
+              <Button background="solid" onClick={() => console.log("Hi")}>
+                Submit
+              </Button>
+            )}
           </div>
+          <p className="error">{!canAdvance[0] && canAdvance[1]}</p>
         </div>
       </div>
     </div>
@@ -342,7 +330,6 @@ const StatusIndicator = ({ number, name, state, changeStage }) => {
           styles.button,
           state ? styles.active : styles.inactive
         )}
-        onClick={() => changeStage(number)}
       >
         {number + 1}
       </div>

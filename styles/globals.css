@@ -112,3 +112,7 @@ p {
   border-radius: 5px;
   border: 1px solid none;
 }
+.error {
+  font-weight: 600;
+  color: #ed4337;
+}

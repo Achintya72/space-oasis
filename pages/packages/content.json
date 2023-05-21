@@ -4,7 +4,7 @@
             "title": "Low Earth Orbit",
             "img": "/static/packages/LowEarthOrbit.jpg",
             "description": "Experience zero gravity, enjoy the breathtaking views of your home planet, and relax in space for three days.",
-            "short_description": "Lorem ipsum dolor sit amet consectetur. Aliquet enim sed.",
+            "short_description": "Relax in zero gravity and enjoy space for 3 days.",
             "price": 1250,
             "location": "Orbit",
             "stars": 4
@@ -13,7 +13,7 @@
             "title": "Lunar Exploration",
             "img": "/static/packages/Moon.jpg",
             "description": "Experience an unforgettable vacation to the moon with its low gravity, astonishing view of the Earth, and tours to the place where Neil Armstrong took one giant step for mankind.",
-            "short_description": "Lorem ipsum dolor sit amet consectetur. Aliquet enim sed.",
+            "short_description": "Experience the views and low gravity of the moon.",
             "price": 2000,
             "location": "Moon",
             "stars": 5
@@ -22,7 +22,7 @@
             "title": "Mars Adventure",
             "img": "/static/packages/Mars.png",
             "description": "Embark on a groundbreaking journey to Mars, featuring hikes, stargazing, and cave exploring while unlocking the mysteries of the Red Planet.",
-            "short_description": "Lorem ipsum dolor sit amet consectetur. Aliquet enim sed.",
+            "short_description": "Explore Mars and the fun activities there.",
             "price": 35700,
             "location": "Mars",
             "stars": 5
@@ -32,7 +32,7 @@
             "img": "/static/packages/MoonOrbit.jpg",
             "location": "Moon",
             "description": "Embark on an otherworldly expedition, treating your taste buds to a stunning culinary voyage during your three-day journey around the moon.",
-            "short_description": "Lorem ipsum dolor sit amet consectetur. Aliquet enim sed.",
+            "short_description": "Enjoy the moon like you've never before.",
             "price": 1750,
             "stars": 4
         },
@@ -40,7 +40,7 @@
             "title": "Mars Orbit",
             "location": "Mars",
             "description": "Discover the wonders of Mars, featuring spectacular views, Martian landscapes, and thrilling spacewalks. Truly an unforgettable journey around the Red Planet.",
-            "short_description": "Lorem ipsum dolor sit amet consectetur. Aliquet enim sed.",
+            "short_description": "View the Red Planet and it's magnificent landscapes.",
             "price": 28000,
             "stars": 4,
             "img": "/static/packages/MarsOrbit.jpg"
@@ -53,9 +53,9 @@
                 0
             ],
             "info": {
-                "gravity": 4.3,
-                "day_length": 0.78,
-                "distance": 35000000
+                "gravity": 9.8,
+                "day_length": 1,
+                "distance": 0
             },
             "name": "Earth"
         },
@@ -66,9 +66,9 @@
                 3
             ],
             "info": {
-                "gravity": 4.3,
-                "day_length": 0.78,
-                "distance": 35000000
+                "gravity": 1.62,
+                "day_length": 29.5,
+                "distance": 238900
             },
             "name": "Moon"
         },
@@ -80,9 +80,9 @@
             ],
             "name": "Mars",
             "info": {
-                "gravity": 4.3,
-                "day_length": 0.78,
-                "distance": 35000000
+                "gravity": 3.271,
+                "day_length": 1.03,
+                "distance": 140000000
             }
         }
     ],

@@ -3,10 +3,11 @@
   color: #fff;
   gap: 10%;
   overflow: hidden;
-  background-image: url("/static/HeroImg2.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/static/HeroImg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center 70%;
   background-attachment: fixed;
   width: 100%;
 }

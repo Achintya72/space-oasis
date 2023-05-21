@@ -7,19 +7,23 @@
             "numbers": [
                 {
                     "name": "Height",
-                    "number": "98 m."
+                    "number": "311.68 ft"
                 },
                 {
                     "name": "Diameter",
-                    "number": "7 m."
+                    "number": "22.96 ft"
                 },
                 {
                     "name": "Mass",
-                    "number": "A lot"
+                    "number": "99,000 lb"
                 },
                 {
                     "name": "Payload to Moon",
-                    "number": "13,600 kg"
+                    "number": "30,000 lb"
+                },
+                {
+                    "name": "Passengers",
+                    "number": "5 people"
                 }
             ],
             "description": "New Glenn is a two-stage rocket with a diameter of 7 m (23 ft). Its first stage will be powered by seven BE-4 engines that use liquid methane / liquid oxygen as propellants and is designed to be reusable for up to 25 missions. New Glenn is capable of carrying people and payloads to Earth orbit and beyond.",
@@ -33,23 +37,23 @@
             "numbers": [
                 {
                     "name": "Height",
-                    "number": "120 m."
+                    "number": "393.701 ft"
                 },
                 {
                     "name": "Width",
-                    "number": "9 m."
+                    "number": "29.5276 ft"
                 },
                 {
                     "name": "Mass",
-                    "number": "5,000 tons"
+                    "number": "11,023,000 lb"
                 },
                 {
                     "name": "Payload to Moon",
-                    "number": "105,000 kg"
+                    "number": "150 tons"
                 },
                 {
                     "name": "Passengers",
-                    "number": "100"
+                    "number": "100 people"
                 }
             ],
             "description": "The Starship spacecraft and Super Heavy rocket, which are collectively known as Starship, form a reusable transport system created by SpaceX that can transport both crew and cargo to Earth's orbit, the Moon, Mars, and other destinations. Starship is anticipated to be the most potent launch vehicle ever designed, capable of transporting up to 150 metric tonnes of reusable cargo to Earth's orbit and up to 250 metric tonnes of expendable cargo.",
@@ -63,23 +67,23 @@
             "numbers": [
                 {
                     "name": "Height",
-                    "number": "70 m."
+                    "number": "229.659 ft"
                 },
                 {
                     "name": "Diameter",
-                    "number": "3.7 m."
+                    "number": "12.1391 ft"
                 },
                 {
                     "name": "Mass",
-                    "number": "550 tons"
+                    "number": "1,210,000 lb"
                 },
                 {
                     "name": "Payload to Orbit",
-                    "number": "22,800 kg"
+                    "number": "10.5 tons"
                 },
                 {
                     "name": "Passengers",
-                    "number": "4"
+                    "number": "20 people"
                 }
             ],
             "description": "The Falcon 9 rocket, created and produced by SpaceX, is a two-stage vehicle that is intended to transport individuals into Earth's orbit and beyond in a dependable and secure manner. This rocket is the first reusable rocket in the world capable of orbiting the Earth. The reuse of the Falcon 9 rocket's most costly components helps to reduce the cost of space access.",
@@ -95,23 +99,23 @@
             "numbers": [
                 {
                     "name": "Height",
-                    "number": "46 m."
+                    "number": "162.402 ft"
                 },
                 {
                     "name": "Diameter",
-                    "number": "2.95 m."
+                    "number": "8.92388 ft"
                 },
                 {
                     "name": "Mass",
-                    "number": "312 tons"
+                    "number": "308,000 kg"
                 },
                 {
                     "name": "Payload to Orbit",
-                    "number": "6,600 - 7,400 kg"
+                    "number": "6,173 pounds"
                 },
                 {
                     "name": "Passengers",
-                    "number": "3"
+                    "number": "5 people"
                 }
             ],
             "alt": "A picture of the Soyuz MS rocket launching into space"
