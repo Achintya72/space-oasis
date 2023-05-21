@@ -11,6 +11,10 @@
   background-attachment: fixed;
   width: 100%;
 }
+.cta {
+  margin-top: 2rem;
+}
+
 .heroText {
   height: calc(100vh - 2rem);
   display: flex;

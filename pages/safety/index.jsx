@@ -29,10 +29,10 @@ export default function Safety(props) {
             ))}
         </div>
         <h2 style={{ margin: "1.5rem 0" }}>Spacecraft Features</h2>
-        <Vehicles
-          vehicles={["Starship", "Falcon 9", "New Glenn", "Soyuz MS"]}
-        />
-        <h2>Statistics</h2>
+      </Wrapper>
+      <Vehicles vehicles={["Starship", "Falcon 9", "New Glenn", "Soyuz MS"]} />
+      <Wrapper>
+        <h2 style={{ margin: "1.5rem 0" }}>Statistics</h2>
         <div className={styles.statisticGrid}>
           {data["statistics"].map((value, index) => (
             <Statistic key={`statistic-${index}`} {...value} />

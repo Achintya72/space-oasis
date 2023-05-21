@@ -16,6 +16,129 @@ import Image from "next/image";
 import FlightOptions from "./_flightOptions";
 import Payment from "./_payment";
 
+const mars_flights = [
+  {
+    name: "HBD",
+    spots: 2,
+    start: new Date(2023, 6, 2),
+    end: new Date(2024, 6, 2),
+  },
+  {
+    name: "XQY",
+    spots: 10,
+    start: new Date(2023, 8, 15),
+    end: new Date(2024, 8, 15),
+  },
+  {
+    name: "JZL",
+    spots: 5,
+    start: new Date(2023, 9, 1),
+    end: new Date(2024, 9, 1),
+  },
+  {
+    name: "FPK",
+    spots: 3,
+    start: new Date(2023, 10, 12),
+    end: new Date(2024, 10, 12),
+  },
+  {
+    name: "MWD",
+    spots: 8,
+    start: new Date(2023, 11, 5),
+    end: new Date(2024, 11, 5),
+  },
+  {
+    name: "GVB",
+    spots: 12,
+    start: new Date(2024, 0, 20),
+    end: new Date(2025, 0, 20),
+  },
+  {
+    name: "RKT",
+    spots: 2,
+    start: new Date(2024, 1, 26),
+    end: new Date(2025, 1, 26),
+  },
+];
+
+const moon_flights = [
+  {
+    name: "QWE",
+    spots: 7,
+    start: new Date(2023, 6, 7),
+    end: new Date(2023, 6, 12),
+  },
+  {
+    name: "TYU",
+    spots: 9,
+    start: new Date(2023, 6, 13),
+    end: new Date(2023, 6, 18),
+  },
+  {
+    name: "ASD",
+    spots: 4,
+    start: new Date(2023, 6, 19),
+    end: new Date(2023, 6, 24),
+  },
+  {
+    name: "FGH",
+    spots: 6,
+    start: new Date(2023, 6, 25),
+    end: new Date(2023, 6, 30),
+  },
+  {
+    name: "ZXC",
+    spots: 11,
+    start: new Date(2023, 6, 31),
+    end: new Date(2023, 7, 5),
+  },
+];
+
+const earth_flights = [
+  {
+    name: "HJT",
+    spots: 9,
+    start: new Date(2023, 8, 5),
+    end: new Date(2023, 8, 10),
+  },
+  {
+    name: "LKP",
+    spots: 2,
+    start: new Date(2023, 8, 11),
+    end: new Date(2023, 8, 16),
+  },
+  {
+    name: "DMN",
+    spots: 7,
+    start: new Date(2023, 8, 17),
+    end: new Date(2023, 8, 22),
+  },
+  {
+    name: "GYX",
+    spots: 4,
+    start: new Date(2023, 8, 23),
+    end: new Date(2023, 8, 28),
+  },
+  {
+    name: "QOB",
+    spots: 11,
+    start: new Date(2023, 8, 29),
+    end: new Date(2023, 9, 4),
+  },
+  {
+    name: "NZV",
+    spots: 6,
+    start: new Date(2023, 9, 5),
+    end: new Date(2023, 9, 10),
+  },
+  {
+    name: "FUI",
+    spots: 8,
+    start: new Date(2023, 9, 11),
+    end: new Date(2023, 9, 16),
+  },
+];
+
 const defaultPassenger = {
   name: "Elon Musk",
   birth: new Date(1954, 5, 28),
@@ -31,10 +154,12 @@ const generateListOfPassengers = (count) => {
 
 export default function Checkout() {
   const router = useRouter();
-  const { auth, currentOrder, changeCurrentOrder } = useContext(UserContext);
+  const { auth, currentOrder, changeCurrentOrder, changeUser } =
+    useContext(UserContext);
   const [count, changeCount] = useState(currentOrder?.count ?? 0);
   const [stage, setStage] = useState(0);
   const [flightChosen, changeFlightChosen] = useState(-1);
+  const [meal, changeMeal] = useState("Veg.");
   const [costs, changeCosts] = useState({
     tickets: {
       name: currentOrder?.type + " Tickets" ?? "Tickets",
@@ -42,6 +167,7 @@ export default function Checkout() {
       quantity: count,
     },
     activities: [],
+    rewards: null,
   });
   const [passenger_options, changePassOps] = useState(
     generateListOfPassengers(count)
@@ -52,6 +178,59 @@ export default function Checkout() {
     activities = [...activities, ...content.activities[type]];
   });
 
+  const handleMealChange = (val) => {
+    changeMeal((prev) => {
+      return options[val];
+    });
+  };
+
+  const submit = () => {
+    changeUser((prev) => {
+      const orderType = currentOrder?.type ?? "Lunar Exploration";
+      let flight;
+      if (orderType == "Lunar Exploration" || orderType == "Moon Orbit") {
+        flight = moon_flights[flightChosen];
+      } else if (orderType == "Mars Adventure" || orderType == "Mars Orbit") {
+        flight = mars_flights[flightChosen];
+      } else {
+        flight = earth_flights[flightChosen];
+      }
+      let totalCost = 0;
+      costs.activities.forEach((cost) => {
+        totalCost += cost.quantity * cost.cost;
+      });
+      totalCost += costs.tickets.cost * costs.tickets.quantity;
+      const getImage = (t) => {
+        const images = {
+          "Lunar Exploration": "Moon.jpg",
+          "Mars Orbit": "MarsOrbit.jpg",
+          "Mars Adventure": "Mars.png",
+          "Moon Orbit": "MoonOrbit.jpg",
+          "Low Earth Orbit": "LowEarthOrbit.jpg",
+        };
+        return images[t];
+      };
+      prev.bookings.push({
+        type: currentOrder?.type ?? "Lunar Exploration",
+        departure: flight.start,
+        arrival: flight.end,
+        meal: meal,
+        passengers: passenger_options.length,
+        img: getImage(orderType),
+        cost: totalCost,
+      });
+      if (costs.rewards != null) {
+        prev.miles -= (costs.rewards * 1000000) / 100;
+        prev.miles +=
+          ((content[currentOrder?.type ?? "Lunar Exploration"].cost ?? 2000) /
+            1500) *
+          1000000;
+        prev.miles = Math.round(prev.miles);
+      }
+      return prev;
+    });
+    router.push("/dashboard");
+  };
   const getCanAdvance = () => {
     if (stage == 0) {
       return [count > 0, "Please Add People To Move On"];
@@ -103,6 +282,12 @@ export default function Checkout() {
                 <div className={styles.passengerInfo}>
                   <p className="caption">PEOPLE</p>
                   <Counter count={count} updateCount={updateNumPassengers} />
+                  <p className="caption">MEAL</p>
+                  <Dropdown
+                    options={options}
+                    selected={options.indexOf(meal)}
+                    changeSelected={handleMealChange}
+                  />
                   {count > 0
                     ? passenger_options.map((val, pIndex) => (
                         <div key={pIndex}>
@@ -176,6 +361,8 @@ export default function Checkout() {
           setStage={setStage}
           costs={costs}
           canAdvance={getCanAdvance()}
+          changeCosts={changeCosts}
+          submit={submit}
         />
       </div>
     </Wrapper>
@@ -233,7 +420,15 @@ const ActivityCard = ({ limit, act, costs, changeCosts }) => {
   }
 };
 
-const StageAndCost = ({ costs, stage, setStage, canAdvance }) => {
+const StageAndCost = ({
+  changeCosts,
+  costs,
+  stage,
+  setStage,
+  canAdvance,
+  submit,
+}) => {
+  const { user, changeUser } = useContext(UserContext);
   let totalCost = 0;
   const renderTickets = () => {
     let p = costs.tickets;
@@ -258,6 +453,16 @@ const StageAndCost = ({ costs, stage, setStage, canAdvance }) => {
       </div>
     );
   });
+  const handleSubmit = (e) => {
+    let response = window.confirm(
+      "Are you sure you want to purchase this package?"
+    );
+    if (response) {
+      submit();
+    }
+  };
+
+  totalCost = costs.rewards ? totalCost - costs.rewards : totalCost;
   return (
     <div className={styles.sideSection}>
       <div className={styles.control}>
@@ -291,10 +496,46 @@ const StageAndCost = ({ costs, stage, setStage, canAdvance }) => {
             <strong>Activities</strong>
           </p>
           {renderActivities}
+          {costs.rewards != null && (
+            <div className={styles.expense}>
+              <p className={styles.urgent}>Rewards</p>
+              <p className={styles.urgent}>
+                -${costs.rewards.toLocaleString()}
+              </p>
+            </div>
+          )}
           <div className={styles.expense}>
             <h3>Subtotal:</h3>
             <h3>${totalCost.toLocaleString()}</h3>
           </div>
+          {stage == 2 && (
+            <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+              <input
+                className={styles.checkbox}
+                checked={costs.rewards != null}
+                name="rewards"
+                id="rewards"
+                type="checkbox"
+                onChange={(e) => {
+                  changeCosts((prev) => {
+                    if (e.target.checked) {
+                      prev.rewards = Math.min(
+                        (user.miles * 100) / 1000000,
+                        totalCost
+                      );
+                    } else {
+                      prev.rewards = null;
+                    }
+                    return { ...prev };
+                  });
+                }}
+              />
+              <label for="rewards">
+                Use Rewards Points ($
+                {((user.miles * 100) / 1000000).toLocaleString()})
+              </label>
+            </div>
+          )}
           <div
             style={{ display: "flex", justifySelf: "flex-end", gap: "10px" }}
           >
@@ -310,7 +551,7 @@ const StageAndCost = ({ costs, stage, setStage, canAdvance }) => {
               </Button>
             )}
             {stage == 2 && (
-              <Button background="solid" onClick={() => console.log("Hi")}>
+              <Button background="solid" onClick={handleSubmit}>
                 Submit
               </Button>
             )}

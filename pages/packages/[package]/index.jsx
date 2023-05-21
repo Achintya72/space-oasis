@@ -136,14 +136,17 @@ export default function ProductDetail() {
             ))}
           </div>
         </div>
-
         <h2 style={{ marginTop: "50px" }}>Details</h2>
         <Details />
-        <h2 style={{ marginTop: "50px" }}>Vehicles</h2>
-        <Vehicles vehicles={data.vehicles} />
-        <h2 style={{ marginTop: "50px" }}>Journey</h2>
-        <Journey packageName={packageName} />
       </Wrapper>
+      <Wrapper>
+        <h2 style={{ marginTop: "50px" }}>Vehicles</h2>
+      </Wrapper>
+      <Vehicles vehicles={data.vehicles} />
+      <Wrapper>
+        <h2 style={{ marginTop: "50px" }}>Journey</h2>
+      </Wrapper>
+      <Journey packageName={packageName} />
       <Footer />
     </>
   );

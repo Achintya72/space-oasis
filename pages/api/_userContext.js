@@ -8,7 +8,7 @@ const UserContextProvider = ({ children }) => {
         name: "John Doe",
         email: "john_doe@gmail.com",
         phone: "012-345-6789",
-        miles: 150000000,
+        miles: 20000000,
         bday: "07/02/2007",
         img: "EmilyJones.jpg",
         bookings: [{
@@ -17,7 +17,8 @@ const UserContextProvider = ({ children }) => {
             arrival: new Date("2025-12-17T03:24:00"),
             meal: "Veg.",
             passengers: 3,
-            img: "Mars.png"
+            img: "Mars.png",
+            cost: 4500
         }],
         training: {
             current: 0,

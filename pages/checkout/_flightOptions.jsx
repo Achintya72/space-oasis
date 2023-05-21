@@ -159,14 +159,14 @@ export default function FlightOptions({ flightChosen, changeFlightChosen }) {
           }}
         >
           <h3>${flightCost.toLocaleString()}</h3>
-          <p>
+          <p className={styles.urgent}>
             <strong>{flight.spots} Seats Left</strong>
           </p>
         </div>
       </div>
       <p>
         <strong>Dates: </strong>
-        {flight.start.toLocaleString().split(",")[0]}
+        {flight.start.toLocaleString().split(",")[0]} -{" "}
         {flight.end.toLocaleString().split(",")[0]}
       </p>
       <p style={{ marginBottom: "10px" }}>
