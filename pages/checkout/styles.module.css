@@ -1,10 +1,13 @@
 .container {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  align-items: flex-end;
 }
 .left {
-  flex: 1;
+  flex: 3;
+  overflow: hidden;
+  min-width: min(500px, 100vw);
 }
 .button {
   width: 30px;
@@ -40,6 +43,7 @@
   background-color: var(--clr-background-s1);
   padding: 20px;
   border-radius: 20px;
+  flex: 2;
 }
 
 .breakdown {
@@ -83,6 +87,7 @@
 
 .spaceBetween {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -98,9 +103,10 @@
 
 .activityCard img {
   object-fit: cover;
+  filter: brightness(50%);
 }
 
-.activityCard div {
+.activityCardText {
   position: absolute;
   z-index: 2;
   width: 100%;
@@ -110,4 +116,10 @@
   justify-content: flex-end;
   padding: 10px;
   box-sizing: border-box;
+}
+
+.activityCardGrid {
+   display: flex;
+   gap: 20px;
+   overflow: scroll;
 }

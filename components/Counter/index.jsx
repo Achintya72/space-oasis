@@ -1,8 +1,8 @@
 import styles from "./counter.module.css";
 
 function Counter(props) {
-    const { count, updateCount } = props;
-    const LIMIT = 10;
+    const { count, updateCount, limit } = props;
+    const LIMIT = limit;
     const increment = () => {
         updateCount(prev => prev + 1 > LIMIT ? 0 : prev + 1);
     }
@@ -24,7 +24,8 @@ function Counter(props) {
 
 Counter.defaultProps = {
     count: 0,
-    updateCount: () => { }
+    updateCount: () => { },
+    limit: 10
 }
 
 export default Counter;
