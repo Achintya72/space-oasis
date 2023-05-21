@@ -129,19 +129,14 @@ const earth_flights = [
 
 export default function FlightOptions({ flightChosen, changeFlightChosen }) {
   const { currentOrder } = useContext(UserContext);
+  const orderType = currentOrder?.type ?? "Lunar Exploration";
   const flightCost = data["packages"].filter(
-    (obj) => obj.title === currentOrder.type
+    (obj) => obj.title === orderType
   )[0].price;
   let flights = [];
-  if (
-    currentOrder.type == "Lunar Exploration" ||
-    currentOrder.type == "Moon Orbit"
-  ) {
+  if (orderType == "Lunar Exploration" || orderType == "Moon Orbit") {
     flights = moon_flights;
-  } else if (
-    currentOrder.type == "Mars Adventure" ||
-    currentOrder.type == "Mars Orbit"
-  ) {
+  } else if (orderType == "Mars Adventure" || orderType == "Mars Orbit") {
     flights = mars_flights;
   } else {
     flights = earth_flights;

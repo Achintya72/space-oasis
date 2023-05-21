@@ -5,10 +5,10 @@ import { Button, Icon, Wrapper } from "../../../components";
 import { useRouter } from "next/router";
 import content from "../../safety/content.json";
 
-export default function Vehicles({ vehicles }) {
+export default function Vehicles({ vehicles = ["Starship"] }) {
   const [current, changeCurrent] = useState(0);
   const router = useRouter();
-  const vehicle = content.vehicles[vehicles[current]];
+  const vehicle = content?.vehicles?.[vehicles[current]];
   const take = () => {
     router.push(`/vehicles/${vehicles[current]}`);
   };
