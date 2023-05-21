@@ -77,7 +77,7 @@ export default function Home() {
         <Wrapper>
           <Navbar />
           <div title='heading' className={getClasses(styles.heroText)} ref={heroRef} >
-            <h1 title="title" className={heroVisible ? styles.show : styles.hide}>Let's Touch the Stars</h1>
+            <h1 title="title" className={heroVisible ? styles.show : styles.hide}>Let&apos;s Touch the Stars</h1>
             <h2 title='subtitle' className={heroVisible ? styles.show : styles.hide}>Fly to the edges of space, experience a different world, and fly back in comfort</h2>
             <Button className={styles.cta} onClick={() => router.push("/packages")} background="light">Start Exploring</Button>
           </div>
