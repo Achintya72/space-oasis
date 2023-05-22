@@ -109,7 +109,7 @@ export default function Payment() {
       </div>
       <p className="caption">NAME ON CARD</p>
       <input
-        name="country"
+        name="nameOnCard"
         onChange={handleChange}
         className={styles.input}
         value={details.nameOnCard}

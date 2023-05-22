@@ -1,12 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import styles from "./countup.module.css";
 import { animate, motion, useMotionValue, useTransform } from "framer-motion";
 
 export default function CountUp({ children, number }) {
-  const count = useMotionValue(0);
-  const rounded = useTransform(
-    count,
-    (latest) => Math.round(latest * 100) / 100
+  const count = useMotionValue("0");
+  const rounded = useTransform(count, (latest) =>
+    (Math.round(latest * 100) / 100).toLocaleString()
   );
 
   useEffect(() => {
