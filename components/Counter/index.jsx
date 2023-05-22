@@ -1,5 +1,4 @@
 import styles from "./counter.module.css";
-
 function Counter(props) {
   const { count, updateCount, limit } = props;
   const LIMIT = limit;
