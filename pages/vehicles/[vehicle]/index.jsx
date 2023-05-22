@@ -69,11 +69,24 @@ export default function Vehicle(props) {
 }
 
 function DataPoint({ name, number }) {
+  const getUnits = (name) => {
+    const units = {
+      Height: "ft",
+      Diameter: "ft",
+      Mass: "lb",
+      Passengers: "people",
+    };
+    if (units[name] == undefined) {
+      return "tons";
+    }
+    return units[name];
+  };
+
   return (
     <div className={styles.dataPoint}>
       <h4>{name}</h4>
       <CountUp number={number}>
-        <h2>tons</h2>
+        <h2>{getUnits(name)}</h2>
       </CountUp>
     </div>
   );
